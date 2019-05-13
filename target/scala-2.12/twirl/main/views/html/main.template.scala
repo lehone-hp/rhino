@@ -36,21 +36,7 @@ object main extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlF
 
 
 Seq[Any](format.raw/*8.1*/("""
-"""),format.raw/*9.1*/("""<!DOCTYPE html>
-<html lang="en">
-    <head>
-        """),format.raw/*12.62*/("""
-        """),format.raw/*13.9*/("""<title>"""),_display_(/*13.17*/title),format.raw/*13.22*/("""</title>
-        <link rel="stylesheet" media="screen" href=""""),_display_(/*14.54*/routes/*14.60*/.Assets.versioned("stylesheets/main.css")),format.raw/*14.101*/("""">
-        <link rel="shortcut icon" type="image/png" href=""""),_display_(/*15.59*/routes/*15.65*/.Assets.versioned("images/favicon.png")),format.raw/*15.104*/("""">
-    </head>
-    <body>
-        """),format.raw/*19.32*/("""
-        """),_display_(/*20.10*/content),format.raw/*20.17*/("""
-
-        """),format.raw/*22.9*/("""<script src=""""),_display_(/*22.23*/routes/*22.29*/.Assets.versioned("javascripts/main.js")),format.raw/*22.69*/("""" type="text/javascript"></script>
-    </body>
-</html>
+"""),format.raw/*26.4*/("""
 """))
       }
     }
@@ -67,11 +53,11 @@ Seq[Any](format.raw/*8.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat May 11 01:52:05 WAT 2019
+                  DATE: Mon May 13 14:45:30 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/main.scala.html
-                  HASH: 863271db3bc90c425db2fb95e8fb0ff62c83f9b4
-                  MATRIX: 1206->260|1330->291|1357->292|1437->397|1473->406|1508->414|1534->419|1623->481|1638->487|1701->528|1789->589|1804->595|1865->634|1927->758|1964->768|1992->775|2029->785|2070->799|2085->805|2146->845
-                  LINES: 33->7|38->8|39->9|42->12|43->13|43->13|43->13|44->14|44->14|44->14|45->15|45->15|45->15|48->19|49->20|49->20|51->22|51->22|51->22|51->22
+                  HASH: 901802d147e4f3be9b3dab41c82bb10fb4e98e7d
+                  MATRIX: 1206->260|1330->291|1358->904
+                  LINES: 33->7|38->8|39->26
                   -- GENERATED --
               */
           

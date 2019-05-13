@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rhino.iml" filepath="$PROJECT_DIR$/.idea/modules/rhino.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rhino-build.iml" filepath="$PROJECT_DIR$/.idea/modules/rhino-build.iml" />
+    </modules>
+  </component>
+</project>

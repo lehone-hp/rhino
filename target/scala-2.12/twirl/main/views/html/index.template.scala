@@ -50,7 +50,7 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat May 11 01:52:05 WAT 2019
+                  DATE: Mon May 13 14:03:55 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/index.scala.html
                   HASH: 101fa511ddebe89cb9bf324b96e228b7b59b8d04
                   MATRIX: 941->1|1037->4|1064->6|1095->29|1134->31|1163->34|1219->61
