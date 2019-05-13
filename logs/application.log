@@ -563,3 +563,23 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[value at is not 
     play.filters.hosts.AllowedHostsFilter
 
 2019-05-13 16:59:31,202 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-335 - Application started (Dev) (no global state)
+2019-05-13 17:01:24,970 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2019-05-13 17:01:29,684 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-342 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-13 17:01:29,684 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-342 - Creating Pool for datasource 'default'
+2019-05-13 17:01:29,722 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-342 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-05-13 17:01:29,726 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-342 - Application started (Dev) (no global state)
+2019-05-13 17:03:38,968 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-05-13 17:03:48,711 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-348 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-13 17:03:48,712 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-348 - Creating Pool for datasource 'default'
+2019-05-13 17:03:48,764 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-348 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-05-13 17:03:48,769 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-348 - Application started (Dev) (no global state)

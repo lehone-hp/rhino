@@ -60,39 +60,33 @@ Seq[Any](format.raw/*2.1*/("""
 
     """),format.raw/*30.5*/("""</head>
     <body>
-
-
             <!-- Left Panel -->
         <aside id="left-panel" class="left-panel">
             <nav class="navbar navbar-expand-sm navbar-default">
                 <div id="main-menu" class="main-menu collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active">
-                            <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                            <a href="#"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                         </li>
                         <li class="menu-title">UI elements</li><!-- /.menu-title -->
                         <li class="menu-item-has-children dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>
                                 Components</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
-                                <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
-                                <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
+                                <li><i class="fa fa-puzzle-piece"></i><a href="#">Buttons</a></li>
+                                <li><i class="fa fa-id-badge"></i><a href="#">Badges</a></li>
+                                <li><i class="fa fa-bars"></i><a href="#">Tabs</a></li>
 
-                                <li><i class="fa fa-id-card-o"></i><a href="ui-cards.html">Cards</a></li>
-                                <li><i class="fa fa-exclamation-triangle"></i><a href="ui-alerts.html">Alerts</a></li>
-                                <li><i class="fa fa-spinner"></i><a href="ui-progressbar.html">Progress Bars</a></li>
-                                <li><i class="fa fa-fire"></i><a href="ui-modals.html">Modals</a></li>
-                                <li><i class="fa fa-book"></i><a href="ui-switches.html">Switches</a></li>
-                                <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
-                                <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
+                                <li><i class="fa fa-id-card-o"></i><a href="#">Cards</a></li>
+                                <li><i class="fa fa-exclamation-triangle"></i><a href="#">Alerts</a></li>
+                                <li><i class="fa fa-spinner"></i><a href="#">Progress Bars</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>
                                 Tables</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
+                                <li><i class="fa fa-table"></i><a href="#">Basic Table</a></li>
                                 <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
                             </ul>
                         </li>
@@ -100,43 +94,18 @@ Seq[Any](format.raw/*2.1*/("""
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>
                                 Forms</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-th"></i><a href="forms-basic.html">Basic Form</a></li>
-                                <li><i class="menu-icon fa fa-th"></i><a href="forms-advanced.html">Advanced Form</a></li>
+                                <li><i class="menu-icon fa fa-th"></i><a href="#">Basic Form</a></li>
+                                <li><i class="menu-icon fa fa-th"></i><a href="#">Advanced Form</a></li>
                             </ul>
                         </li>
 
                         <li class="menu-title">Icons</li><!-- /.menu-title -->
 
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>
-                                Icons</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">
-                                    Font Awesome</a></li>
-                                <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
-                            </ul>
-                        </li>
+
                         <li>
-                            <a href="widgets.html"> <i class="menu-icon ti-email"></i>Widgets </a>
-                        </li>
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>
-                                Charts</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-                                <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-                                <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-                            </ul>
+                            <a href="#"> <i class="menu-icon ti-email"></i>Widgets </a>
                         </li>
 
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-map-marker"></i>
-                                Maps</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                                <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-                            </ul>
-                        </li>
                         <li class="menu-title">Extras</li><!-- /.menu-title -->
                         <li class="menu-item-has-children dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>
@@ -161,8 +130,8 @@ Seq[Any](format.raw/*2.1*/("""
             <header id="header" class="header">
                 <div class="top-left">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*133.70*/routes/*133.76*/.Assets.versioned("images/logo.png")),format.raw/*133.112*/("""" alt="Logo"></a>
-                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*134.77*/routes/*134.83*/.Assets.versioned("images/logo2.png")),format.raw/*134.120*/("""" alt="Logo"></a>
+                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*102.70*/routes/*102.76*/.Assets.versioned("images/logo.png")),format.raw/*102.112*/("""" alt="Logo"></a>
+                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*103.77*/routes/*103.83*/.Assets.versioned("images/logo2.png")),format.raw/*103.120*/("""" alt="Logo"></a>
                         <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                     </div>
                 </div>
@@ -202,7 +171,7 @@ Seq[Any](format.raw/*2.1*/("""
 
                         <div class="user-area dropdown float-right">
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="user-avatar rounded-circle" src=""""),_display_(/*174.79*/routes/*174.85*/.Assets.versioned("images/admin.jpg")),format.raw/*174.122*/("""" alt="User Avatar">
+                                <img class="user-avatar rounded-circle" src=""""),_display_(/*143.79*/routes/*143.85*/.Assets.versioned("images/admin.jpg")),format.raw/*143.122*/("""" alt="User Avatar">
                             </a>
 
                             <div class="user-menu dropdown-menu">
@@ -224,9 +193,9 @@ Seq[Any](format.raw/*2.1*/("""
 
             <div class="content pb-0">
 
-                """),_display_(/*196.18*/content),format.raw/*196.25*/("""
+            """),_display_(/*165.14*/content),format.raw/*165.21*/("""
 
-            """),format.raw/*198.13*/("""</div> <!-- .content -->
+            """),format.raw/*167.13*/("""</div> <!-- .content -->
 
 
             <div class="clearfix"></div>
@@ -247,31 +216,31 @@ Seq[Any](format.raw/*2.1*/("""
         </div><!-- /#right-panel -->
 
 
-        <script src=""""),_display_(/*219.23*/routes/*219.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*219.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*220.23*/routes/*220.29*/.Assets.versioned("js/popper.min.js")),format.raw/*220.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*221.23*/routes/*221.29*/.Assets.versioned("js/plugins.js")),format.raw/*221.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*222.23*/routes/*222.29*/.Assets.versioned("js/main.js")),format.raw/*222.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*188.23*/routes/*188.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*188.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*189.23*/routes/*189.29*/.Assets.versioned("js/popper.min.js")),format.raw/*189.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*190.23*/routes/*190.29*/.Assets.versioned("js/plugins.js")),format.raw/*190.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*191.23*/routes/*191.29*/.Assets.versioned("js/main.js")),format.raw/*191.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
-        <script src=""""),_display_(/*224.23*/routes/*224.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*224.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*193.23*/routes/*193.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*193.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
             <!--Chartist Chart-->
-        <script src=""""),_display_(/*228.23*/routes/*228.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*228.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*229.23*/routes/*229.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*229.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*197.23*/routes/*197.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*197.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*198.23*/routes/*198.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*198.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*232.23*/routes/*232.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*232.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*233.23*/routes/*233.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*233.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*234.23*/routes/*234.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*234.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*201.23*/routes/*201.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*201.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*202.23*/routes/*202.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*202.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*203.23*/routes/*203.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*203.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*237.23*/routes/*237.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*237.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*238.23*/routes/*238.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*238.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*206.23*/routes/*206.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*206.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*207.23*/routes/*207.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*207.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*241.23*/routes/*241.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*241.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*242.23*/routes/*242.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*242.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*243.23*/routes/*243.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*243.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*210.23*/routes/*210.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*210.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*211.23*/routes/*211.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*211.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*212.23*/routes/*212.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*212.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
         <div id="container">
@@ -279,8 +248,8 @@ Seq[Any](format.raw/*2.1*/("""
 
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff61747dd8d7db758f2acf61-|49" defer=""></script>
 
-        """),_display_(/*251.10*/footerScript),format.raw/*251.22*/("""
-    """),format.raw/*252.5*/("""</body>
+        """),_display_(/*220.10*/footerScript),format.raw/*220.22*/("""
+    """),format.raw/*221.5*/("""</body>
 </html>
 """))
       }
@@ -298,11 +267,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon May 13 16:59:25 WAT 2019
+                  DATE: Mon May 13 17:03:36 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html
-                  HASH: 1416920cb91c7da50e0cd8e15d9edd4540cb6018
-                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|10591->8644|10607->8650|10666->8686|10788->8780|10804->8786|10864->8823|13473->11404|13489->11410|13549->11447|14419->12289|14448->12296|14491->12310|15163->12954|15179->12960|15251->13010|15361->13092|15377->13098|15436->13135|15546->13217|15562->13223|15618->13257|15728->13339|15744->13345|15797->13376|15908->13459|15924->13465|15998->13517|16144->13635|16160->13641|16234->13693|16344->13775|16360->13781|16444->13843|16556->13927|16572->13933|16647->13986|16757->14068|16773->14074|16852->14131|16962->14213|16978->14219|17060->14279|17172->14363|17188->14369|17269->14428|17379->14510|17395->14516|17464->14563|17576->14647|17592->14653|17658->14697|17768->14779|17784->14785|17855->14834|17965->14916|17981->14922|18053->14972|18379->15270|18413->15282|18446->15287
-                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|164->133|164->133|164->133|165->134|165->134|165->134|205->174|205->174|205->174|227->196|227->196|229->198|250->219|250->219|250->219|251->220|251->220|251->220|252->221|252->221|252->221|253->222|253->222|253->222|255->224|255->224|255->224|259->228|259->228|259->228|260->229|260->229|260->229|263->232|263->232|263->232|264->233|264->233|264->233|265->234|265->234|265->234|268->237|268->237|268->237|269->238|269->238|269->238|272->241|272->241|272->241|273->242|273->242|273->242|274->243|274->243|274->243|282->251|282->251|283->252
+                  HASH: ee61a66dd9290a3350fc4b47476cb3da73d90286
+                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|7832->5885|7848->5891|7907->5927|8029->6021|8045->6027|8105->6064|10714->8645|10730->8651|10790->8688|11656->9526|11685->9533|11728->9547|12400->10191|12416->10197|12488->10247|12598->10329|12614->10335|12673->10372|12783->10454|12799->10460|12855->10494|12965->10576|12981->10582|13034->10613|13145->10696|13161->10702|13235->10754|13381->10872|13397->10878|13471->10930|13581->11012|13597->11018|13681->11080|13793->11164|13809->11170|13884->11223|13994->11305|14010->11311|14089->11368|14199->11450|14215->11456|14297->11516|14409->11600|14425->11606|14506->11665|14616->11747|14632->11753|14701->11800|14813->11884|14829->11890|14895->11934|15005->12016|15021->12022|15092->12071|15202->12153|15218->12159|15290->12209|15616->12507|15650->12519|15683->12524
+                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|133->102|133->102|133->102|134->103|134->103|134->103|174->143|174->143|174->143|196->165|196->165|198->167|219->188|219->188|219->188|220->189|220->189|220->189|221->190|221->190|221->190|222->191|222->191|222->191|224->193|224->193|224->193|228->197|228->197|228->197|229->198|229->198|229->198|232->201|232->201|232->201|233->202|233->202|233->202|234->203|234->203|234->203|237->206|237->206|237->206|238->207|238->207|238->207|241->210|241->210|241->210|242->211|242->211|242->211|243->212|243->212|243->212|251->220|251->220|252->221
                   -- GENERATED --
               */
           
