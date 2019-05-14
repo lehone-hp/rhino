@@ -69,7 +69,7 @@ Seq[Any](format.raw/*2.1*/("""
 
                         <li class="menu-title">Dashboard</li><!-- /.menu-title -->
                         <li class="active">
-                            <a href="#"><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
+                            <a href=""""),_display_(/*41.39*/routes/*41.45*/.AdminController.getDashboard()),format.raw/*41.76*/(""""><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
                         </li>
 
                         <li class="menu-title">Properties</li><!-- /.menu-title -->
@@ -103,18 +103,19 @@ Seq[Any](format.raw/*2.1*/("""
                             </ul>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-th-list"></i>Features </a>
+                            <a href=""""),_display_(/*75.39*/routes/*75.45*/.AmenitiesController.getAmenities()),format.raw/*75.80*/("""">
+                                <i class="menu-icon fa fa-th-list"></i>Amenities/Features </a>
                         </li>
 
                         <li class="menu-title">Authorization</li><!-- /.menu-title -->
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-user-tag"></i>Roles </a>
+                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Roles </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon ti-email"></i>Permissions </a>
+                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Permissions </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon ti-email"></i>Logout </a>
+                            <a href="#"> <i class="menu-icon fa fa-sign-out"></i>Logout </a>
                         </li>
 
                     </ul>
@@ -131,17 +132,17 @@ Seq[Any](format.raw/*2.1*/("""
             <header id="header" class="header">
                 <div class="top-left">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*103.70*/routes/*103.76*/.Assets.versioned("images/logo.png")),format.raw/*103.112*/("""" alt="Logo"></a>
-                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*104.77*/routes/*104.83*/.Assets.versioned("images/logo2.png")),format.raw/*104.120*/("""" alt="Logo"></a>
+                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*104.70*/routes/*104.76*/.Assets.versioned("images/logo.png")),format.raw/*104.112*/("""" alt="Logo"></a>
+                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*105.77*/routes/*105.83*/.Assets.versioned("images/logo2.png")),format.raw/*105.120*/("""" alt="Logo"></a>
                         <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                     </div>
                 </div>
                 <div class="top-right">
                     <div class="header-menu">
                         <div class="header-left">
-                            """),format.raw/*119.31*/("""
+                            """),format.raw/*120.31*/("""
 
-                            """),format.raw/*121.29*/("""<div class="dropdown for-notification">
+                            """),format.raw/*122.29*/("""<div class="dropdown for-notification">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-bell"></i>
                                     <span class="count bg-danger">3</span>
@@ -166,7 +167,7 @@ Seq[Any](format.raw/*2.1*/("""
 
                         <div class="user-area dropdown float-right">
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="user-avatar rounded-circle" src=""""),_display_(/*146.79*/routes/*146.85*/.Assets.versioned("images/admin.jpg")),format.raw/*146.122*/("""" alt="User Avatar">
+                                <img class="user-avatar rounded-circle" src=""""),_display_(/*147.79*/routes/*147.85*/.Assets.versioned("images/admin.jpg")),format.raw/*147.122*/("""" alt="User Avatar">
                             </a>
 
                             <div class="user-menu dropdown-menu">
@@ -188,9 +189,9 @@ Seq[Any](format.raw/*2.1*/("""
 
             <div class="content pb-0">
 
-            """),_display_(/*168.14*/content),format.raw/*168.21*/("""
+            """),_display_(/*169.14*/content),format.raw/*169.21*/("""
 
-            """),format.raw/*170.13*/("""</div> <!-- .content -->
+            """),format.raw/*171.13*/("""</div> <!-- .content -->
 
 
             <div class="clearfix"></div>
@@ -211,31 +212,31 @@ Seq[Any](format.raw/*2.1*/("""
         </div><!-- /#right-panel -->
 
 
-        <script src=""""),_display_(/*191.23*/routes/*191.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*191.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*192.23*/routes/*192.29*/.Assets.versioned("js/popper.min.js")),format.raw/*192.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*193.23*/routes/*193.29*/.Assets.versioned("js/plugins.js")),format.raw/*193.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*194.23*/routes/*194.29*/.Assets.versioned("js/main.js")),format.raw/*194.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*192.23*/routes/*192.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*192.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*193.23*/routes/*193.29*/.Assets.versioned("js/popper.min.js")),format.raw/*193.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*194.23*/routes/*194.29*/.Assets.versioned("js/plugins.js")),format.raw/*194.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*195.23*/routes/*195.29*/.Assets.versioned("js/main.js")),format.raw/*195.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
-        <script src=""""),_display_(/*196.23*/routes/*196.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*196.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*197.23*/routes/*197.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*197.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
             <!--Chartist Chart-->
-        <script src=""""),_display_(/*200.23*/routes/*200.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*200.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*201.23*/routes/*201.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*201.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*201.23*/routes/*201.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*201.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*202.23*/routes/*202.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*202.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*204.23*/routes/*204.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*204.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*205.23*/routes/*205.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*205.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*206.23*/routes/*206.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*206.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*205.23*/routes/*205.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*205.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*206.23*/routes/*206.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*206.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*207.23*/routes/*207.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*207.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*209.23*/routes/*209.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*209.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*210.23*/routes/*210.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*210.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*210.23*/routes/*210.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*210.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*211.23*/routes/*211.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*211.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*213.23*/routes/*213.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*213.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*214.23*/routes/*214.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*214.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*215.23*/routes/*215.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*215.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*214.23*/routes/*214.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*214.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*215.23*/routes/*215.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*215.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*216.23*/routes/*216.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*216.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
         <div id="container">
@@ -243,8 +244,8 @@ Seq[Any](format.raw/*2.1*/("""
 
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff61747dd8d7db758f2acf61-|49" defer=""></script>
 
-        """),_display_(/*223.10*/footerScript),format.raw/*223.22*/("""
-    """),format.raw/*224.5*/("""</body>
+        """),_display_(/*224.10*/footerScript),format.raw/*224.22*/("""
+    """),format.raw/*225.5*/("""</body>
 </html>
 """))
       }
@@ -262,11 +263,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon May 13 22:34:33 WAT 2019
+                  DATE: Tue May 14 07:44:00 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html
-                  HASH: cb94f82ea4266fbb4cab39300ed516b129f50670
-                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|6935->4988|6951->4994|7010->5030|7132->5124|7148->5130|7208->5167|7562->6056|7621->6086|9373->7810|9389->7816|9449->7853|10315->8691|10344->8698|10387->8712|11059->9356|11075->9362|11147->9412|11257->9494|11273->9500|11332->9537|11442->9619|11458->9625|11514->9659|11624->9741|11640->9747|11693->9778|11804->9861|11820->9867|11894->9919|12040->10037|12056->10043|12130->10095|12240->10177|12256->10183|12340->10245|12452->10329|12468->10335|12543->10388|12653->10470|12669->10476|12748->10533|12858->10615|12874->10621|12956->10681|13068->10765|13084->10771|13165->10830|13275->10912|13291->10918|13360->10965|13472->11049|13488->11055|13554->11099|13664->11181|13680->11187|13751->11236|13861->11318|13877->11324|13949->11374|14275->11672|14309->11684|14342->11689
-                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|134->103|134->103|134->103|135->104|135->104|135->104|142->119|144->121|169->146|169->146|169->146|191->168|191->168|193->170|214->191|214->191|214->191|215->192|215->192|215->192|216->193|216->193|216->193|217->194|217->194|217->194|219->196|219->196|219->196|223->200|223->200|223->200|224->201|224->201|224->201|227->204|227->204|227->204|228->205|228->205|228->205|229->206|229->206|229->206|232->209|232->209|232->209|233->210|233->210|233->210|236->213|236->213|236->213|237->214|237->214|237->214|238->215|238->215|238->215|246->223|246->223|247->224
+                  HASH: ea3bc7f06d0a77d9e0ef141914454f391d61227a
+                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|3928->1982|3943->1988|3995->2019|5927->3924|5942->3930|5998->3965|7171->5110|7187->5116|7246->5152|7368->5246|7384->5252|7444->5289|7798->6178|7857->6208|9609->7932|9625->7938|9685->7975|10551->8813|10580->8820|10623->8834|11295->9478|11311->9484|11383->9534|11493->9616|11509->9622|11568->9659|11678->9741|11694->9747|11750->9781|11860->9863|11876->9869|11929->9900|12040->9983|12056->9989|12130->10041|12276->10159|12292->10165|12366->10217|12476->10299|12492->10305|12576->10367|12688->10451|12704->10457|12779->10510|12889->10592|12905->10598|12984->10655|13094->10737|13110->10743|13192->10803|13304->10887|13320->10893|13401->10952|13511->11034|13527->11040|13596->11087|13708->11171|13724->11177|13790->11221|13900->11303|13916->11309|13987->11358|14097->11440|14113->11446|14185->11496|14511->11794|14545->11806|14578->11811
+                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|72->41|72->41|72->41|106->75|106->75|106->75|135->104|135->104|135->104|136->105|136->105|136->105|143->120|145->122|170->147|170->147|170->147|192->169|192->169|194->171|215->192|215->192|215->192|216->193|216->193|216->193|217->194|217->194|217->194|218->195|218->195|218->195|220->197|220->197|220->197|224->201|224->201|224->201|225->202|225->202|225->202|228->205|228->205|228->205|229->206|229->206|229->206|230->207|230->207|230->207|233->210|233->210|233->210|234->211|234->211|234->211|237->214|237->214|237->214|238->215|238->215|238->215|239->216|239->216|239->216|247->224|247->224|248->225
                   -- GENERATED --
               */
           

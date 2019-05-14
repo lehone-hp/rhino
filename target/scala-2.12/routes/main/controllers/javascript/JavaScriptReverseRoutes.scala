@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Mon May 13 14:45:30 WAT 2019
+// @DATE:Tue May 14 07:43:13 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -10,6 +10,26 @@ import _root_.play.libs.F
 
 // @LINE:6
 package controllers.javascript {
+
+  // @LINE:15
+  class ReverseAmenitiesController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:15
+    def getAmenities: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.AmenitiesController.getAmenities",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/amenities"})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:6
   class ReverseHomeController(_prefix: => String) {
@@ -31,7 +51,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:21
+  // @LINE:22
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -39,7 +59,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:21
+    // @LINE:22
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -51,7 +71,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:12
+  // @LINE:11
   class ReverseAdminController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -59,7 +79,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:12
+    // @LINE:11
     def getDashboard: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AdminController.getDashboard",
       """

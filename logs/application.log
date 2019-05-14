@@ -1,815 +1,89 @@
-2019-05-13 14:04:14,318 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:04:14,342 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2019-05-13 14:04:15,085 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:39:38,944 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:39:38,973 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2019-05-14 07:39:40,430 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:04:15,181 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
-2019-05-13 14:05:34,077 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 14:05:43,743 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-10 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:05:43,744 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
-2019-05-13 14:05:43,868 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-10 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:39:40,652 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2019-05-14 07:43:19,888 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-05-14 07:43:28,798 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-31 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:43:28,798 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-31 - Creating Pool for datasource 'default'
+2019-05-14 07:43:28,896 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-31 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:05:43,890 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-10 - Application started (Dev) (no global state)
-2019-05-13 14:07:54,891 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 14:08:02,577 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-8 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:08:02,577 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
-2019-05-13 14:08:02,666 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-8 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:43:28,919 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-31 - Application started (Dev) (no global state)
+2019-05-14 07:44:03,744 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-05-14 07:44:07,426 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-29 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:44:07,426 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-29 - Creating Pool for datasource 'default'
+2019-05-14 07:44:07,511 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-29 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:08:02,688 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-8 - Application started (Dev) (no global state)
-2019-05-13 14:09:09,760 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 14:09:11,249 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-15 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:09:11,249 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-15 - Creating Pool for datasource 'default'
-2019-05-13 14:09:11,344 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-15 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:44:07,525 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-29 - Application started (Dev) (no global state)
+2019-05-14 07:46:00,288 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
+2019-05-14 07:46:06,119 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-35 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:46:06,119 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Creating Pool for datasource 'default'
+2019-05-14 07:46:06,199 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-35 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:09:11,362 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-15 - Application started (Dev) (no global state)
-2019-05-13 14:34:06,461 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 14:34:10,538 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-27 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:34:10,538 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-27 - Creating Pool for datasource 'default'
-2019-05-13 14:34:10,675 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-27 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:46:06,210 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev) (no global state)
+2019-05-14 07:49:04,672 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2019-05-14 07:49:14,760 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-55 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:49:14,760 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-55 - Creating Pool for datasource 'default'
+2019-05-14 07:49:14,837 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-55 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:34:10,700 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-27 - Application started (Dev) (no global state)
-2019-05-13 14:34:34,087 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 14:34:39,165 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-24 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:34:39,165 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-24 - Creating Pool for datasource 'default'
-2019-05-13 14:34:39,236 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-24 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:49:14,846 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-55 - Application started (Dev) (no global state)
+2019-05-14 07:49:47,604 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2019-05-14 07:49:53,347 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-53 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:49:53,347 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-53 - Creating Pool for datasource 'default'
+2019-05-14 07:49:53,421 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-53 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:34:39,246 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-24 - Application started (Dev) (no global state)
-2019-05-13 14:35:56,180 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-31 - 
-
-! @7bogo84ik - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value at is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:41:28,682 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-26 - 
-
-! @7bogp132h - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : controllers.Assets.Asset
- required: String]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:41:53,449 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-35 - 
-
-! @7bogp2dj7 - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : controllers.Assets.Asset
- required: String]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:42:01,522 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-33 - 
-
-! @7bogp2phj - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value at is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:42:23,553 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 14:42:27,903 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-35 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:42:27,903 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Creating Pool for datasource 'default'
-2019-05-13 14:42:27,980 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-35 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:49:53,429 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-53 - Application started (Dev) (no global state)
+2019-05-14 07:50:12,194 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2019-05-14 07:50:21,958 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-55 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:50:21,959 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-55 - Creating Pool for datasource 'default'
+2019-05-14 07:50:22,040 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-55 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:42:27,990 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev) (no global state)
-2019-05-13 14:44:21,300 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-44 - 
-
-! @7bogpaoam - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value versioned is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:44:24,704 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-44 - 
-
-! @7bogpb3cj - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value versioned is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:44:29,714 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-44 - 
-
-! @7bogpbanb - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value versioned is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:45:31,624 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-43 - 
-
-! @7bogpeocg - Internal server error, for (GET) [/admin/] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[value at is not a member of controllers.ReverseAssets]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:37)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:41)
-	at scala.Option.map(Option.scala:146)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:36)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:29)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:64)
-	at scala.util.Either$LeftProjection.map(Either.scala:569)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:64)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:501)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
-	at play.runsupport.Reloader.reload(Reloader.scala:501)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:143)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1262)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:599)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:480)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:574)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
-	at akka.actor.Actor.aroundReceive(Actor.scala:539)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:664)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:610)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:579)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
-	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
-	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
-	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
-	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
-2019-05-13 14:45:44,731 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 14:45:46,645 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-44 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:45:46,645 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-44 - Creating Pool for datasource 'default'
-2019-05-13 14:45:46,718 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-44 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:50:22,047 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-55 - Application started (Dev) (no global state)
+2019-05-14 07:54:05,903 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-05-14 07:54:10,592 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-63 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:54:10,592 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-63 - Creating Pool for datasource 'default'
+2019-05-14 07:54:10,669 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-63 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:45:46,771 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-44 - Application started (Dev) (no global state)
-2019-05-13 14:46:18,717 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 14:46:25,256 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-35 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:46:25,256 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-35 - Creating Pool for datasource 'default'
-2019-05-13 14:46:25,342 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-35 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2019-05-14 07:54:10,676 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-63 - Application started (Dev) (no global state)
+2019-05-14 07:55:13,772 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-05-14 07:55:19,147 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-66 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-05-14 07:55:19,147 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-66 - Creating Pool for datasource 'default'
+2019-05-14 07:55:19,231 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-66 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2019-05-13 14:46:25,350 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-35 - Application started (Dev) (no global state)
-2019-05-13 14:46:43,564 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 14:46:44,232 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-46 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:46:44,232 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-46 - Creating Pool for datasource 'default'
-2019-05-13 14:46:44,293 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-46 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 14:46:44,298 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-46 - Application started (Dev) (no global state)
-2019-05-13 14:58:58,638 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 14:59:02,991 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-61 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 14:59:02,992 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-61 - Creating Pool for datasource 'default'
-2019-05-13 14:59:03,050 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-61 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 14:59:03,056 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-61 - Application started (Dev) (no global state)
-2019-05-13 15:39:38,215 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 15:39:42,295 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-92 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 15:39:42,295 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-92 - Creating Pool for datasource 'default'
-2019-05-13 15:39:42,400 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-92 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 15:39:42,419 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-92 - Application started (Dev) (no global state)
-2019-05-13 16:19:00,231 [INFO] from application in application-akka.actor.default-dispatcher-30 - Shutting down connection pool.
-2019-05-13 16:19:01,866 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-243 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:19:01,866 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-243 - Creating Pool for datasource 'default'
-2019-05-13 16:19:01,936 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-243 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:19:01,940 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-243 - Application started (Dev) (no global state)
-2019-05-13 16:36:49,110 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2019-05-13 16:36:50,683 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-271 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:36:50,683 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-271 - Creating Pool for datasource 'default'
-2019-05-13 16:36:50,742 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-271 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:36:50,748 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-271 - Application started (Dev) (no global state)
-2019-05-13 16:53:24,076 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
-2019-05-13 16:53:29,522 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-295 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:53:29,523 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-295 - Creating Pool for datasource 'default'
-2019-05-13 16:53:29,632 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-295 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:53:29,638 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-295 - Application started (Dev) (no global state)
-2019-05-13 16:54:10,824 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 16:54:18,070 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-298 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:54:18,071 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-298 - Creating Pool for datasource 'default'
-2019-05-13 16:54:18,140 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-298 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:54:18,146 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-298 - Application started (Dev) (no global state)
-2019-05-13 16:54:33,329 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 16:54:37,000 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-266 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:54:37,001 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-266 - Creating Pool for datasource 'default'
-2019-05-13 16:54:37,056 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-266 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:54:37,060 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-266 - Application started (Dev) (no global state)
-2019-05-13 16:54:57,826 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2019-05-13 16:55:05,511 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-297 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:55:05,511 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-297 - Creating Pool for datasource 'default'
-2019-05-13 16:55:05,567 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-297 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:55:05,570 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-297 - Application started (Dev) (no global state)
-2019-05-13 16:55:27,258 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 16:55:34,030 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-297 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:55:34,030 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-297 - Creating Pool for datasource 'default'
-2019-05-13 16:55:34,079 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-297 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:55:34,084 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-297 - Application started (Dev) (no global state)
-2019-05-13 16:57:55,529 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 16:58:02,603 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-337 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:58:02,603 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-337 - Creating Pool for datasource 'default'
-2019-05-13 16:58:02,656 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-337 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:58:02,660 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-337 - Application started (Dev) (no global state)
-2019-05-13 16:59:27,760 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 16:59:31,151 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-335 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 16:59:31,152 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-335 - Creating Pool for datasource 'default'
-2019-05-13 16:59:31,198 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-335 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 16:59:31,202 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-335 - Application started (Dev) (no global state)
-2019-05-13 17:01:24,970 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 17:01:29,684 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-342 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 17:01:29,684 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-342 - Creating Pool for datasource 'default'
-2019-05-13 17:01:29,722 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-342 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 17:01:29,726 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-342 - Application started (Dev) (no global state)
-2019-05-13 17:03:38,968 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2019-05-13 17:03:48,711 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-348 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 17:03:48,712 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-348 - Creating Pool for datasource 'default'
-2019-05-13 17:03:48,764 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-348 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 17:03:48,769 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-348 - Application started (Dev) (no global state)
-2019-05-13 17:05:41,666 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 17:05:47,249 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-354 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 17:05:47,249 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-354 - Creating Pool for datasource 'default'
-2019-05-13 17:05:47,300 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-354 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 17:05:47,305 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-354 - Application started (Dev) (no global state)
-2019-05-13 21:51:26,709 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 21:51:29,890 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-373 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 21:51:29,890 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-373 - Creating Pool for datasource 'default'
-2019-05-13 21:51:29,944 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-373 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 21:51:29,961 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-373 - Application started (Dev) (no global state)
-2019-05-13 21:52:32,934 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 21:52:38,439 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-376 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 21:52:38,439 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-376 - Creating Pool for datasource 'default'
-2019-05-13 21:52:38,490 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-376 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 21:52:38,494 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-376 - Application started (Dev) (no global state)
-2019-05-13 22:07:48,341 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:07:57,166 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-373 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:07:57,167 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-373 - Creating Pool for datasource 'default'
-2019-05-13 22:07:57,215 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-373 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:07:57,217 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-373 - Application started (Dev) (no global state)
-2019-05-13 22:08:23,335 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 22:08:25,697 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-409 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:08:25,697 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-409 - Creating Pool for datasource 'default'
-2019-05-13 22:08:25,740 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-409 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:08:25,744 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-409 - Application started (Dev) (no global state)
-2019-05-13 22:09:44,899 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:09:54,436 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-404 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:09:54,436 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-404 - Creating Pool for datasource 'default'
-2019-05-13 22:09:54,472 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-404 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:09:54,476 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-404 - Application started (Dev) (no global state)
-2019-05-13 22:10:33,935 [INFO] from application in application-akka.actor.default-dispatcher-9 - Shutting down connection pool.
-2019-05-13 22:10:43,029 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-408 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:10:43,029 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-408 - Creating Pool for datasource 'default'
-2019-05-13 22:10:43,127 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-408 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:10:43,131 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-408 - Application started (Dev) (no global state)
-2019-05-13 22:11:32,960 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
-2019-05-13 22:11:41,559 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-410 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:11:41,560 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-410 - Creating Pool for datasource 'default'
-2019-05-13 22:11:41,601 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-410 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:11:41,604 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-410 - Application started (Dev) (no global state)
-2019-05-13 22:12:45,263 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:12:50,087 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-409 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:12:50,087 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-409 - Creating Pool for datasource 'default'
-2019-05-13 22:12:50,126 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-409 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:12:50,129 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-409 - Application started (Dev) (no global state)
-2019-05-13 22:15:07,275 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 22:15:08,656 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-430 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:15:08,656 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-430 - Creating Pool for datasource 'default'
-2019-05-13 22:15:08,706 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-430 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:15:08,711 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-430 - Application started (Dev) (no global state)
-2019-05-13 22:16:19,766 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 22:16:27,178 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-432 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:16:27,178 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-432 - Creating Pool for datasource 'default'
-2019-05-13 22:16:27,215 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-432 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:16:27,218 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-432 - Application started (Dev) (no global state)
-2019-05-13 22:16:38,835 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
-2019-05-13 22:16:39,691 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-431 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:16:39,691 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-431 - Creating Pool for datasource 'default'
-2019-05-13 22:16:39,731 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-431 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:16:39,735 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-431 - Application started (Dev) (no global state)
-2019-05-13 22:17:10,551 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
-2019-05-13 22:17:18,220 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-429 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:17:18,221 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-429 - Creating Pool for datasource 'default'
-2019-05-13 22:17:18,260 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-429 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:17:18,263 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-429 - Application started (Dev) (no global state)
-2019-05-13 22:17:40,465 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 22:17:46,751 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-428 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:17:46,751 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-428 - Creating Pool for datasource 'default'
-2019-05-13 22:17:46,791 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-428 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:17:46,794 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-428 - Application started (Dev) (no global state)
-2019-05-13 22:21:19,574 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 22:21:25,313 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-467 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:21:25,313 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-467 - Creating Pool for datasource 'default'
-2019-05-13 22:21:25,354 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-467 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:21:25,356 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-467 - Application started (Dev) (no global state)
-2019-05-13 22:23:47,931 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
-2019-05-13 22:23:54,101 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-474 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:23:54,101 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-474 - Creating Pool for datasource 'default'
-2019-05-13 22:23:54,492 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-474 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:23:54,496 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-474 - Application started (Dev) (no global state)
-2019-05-13 22:25:08,966 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 22:25:12,621 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-472 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:25:12,621 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-472 - Creating Pool for datasource 'default'
-2019-05-13 22:25:12,678 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-472 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:25:12,683 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-472 - Application started (Dev) (no global state)
-2019-05-13 22:28:19,746 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:28:21,455 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-482 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:28:21,455 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-482 - Creating Pool for datasource 'default'
-2019-05-13 22:28:21,536 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-482 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:28:21,553 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-482 - Application started (Dev) (no global state)
-2019-05-13 22:29:08,662 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2019-05-13 22:29:10,110 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-485 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:29:10,111 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-485 - Creating Pool for datasource 'default'
-2019-05-13 22:29:10,183 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-485 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:29:10,199 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-485 - Application started (Dev) (no global state)
-2019-05-13 22:29:35,719 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 22:29:38,717 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-485 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:29:38,718 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-485 - Creating Pool for datasource 'default'
-2019-05-13 22:29:38,789 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-485 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:29:38,799 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-485 - Application started (Dev) (no global state)
-2019-05-13 22:29:46,284 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:29:46,992 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-480 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:29:46,992 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-480 - Creating Pool for datasource 'default'
-2019-05-13 22:29:47,032 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-480 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:29:47,035 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-480 - Application started (Dev) (no global state)
-2019-05-13 22:30:02,510 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2019-05-13 22:30:05,931 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-479 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:30:05,931 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-479 - Creating Pool for datasource 'default'
-2019-05-13 22:30:05,977 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-479 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:30:05,980 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-479 - Application started (Dev) (no global state)
-2019-05-13 22:31:26,486 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2019-05-13 22:31:34,923 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-479 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
-2019-05-13 22:31:34,923 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-479 - Creating Pool for datasource 'default'
-2019-05-13 22:31:34,988 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-479 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2019-05-13 22:31:35,004 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-479 - Application started (Dev) (no global state)
+2019-05-14 07:55:19,237 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-66 - Application started (Dev) (no global state)
