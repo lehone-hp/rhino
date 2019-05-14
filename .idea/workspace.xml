@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cbf5626f-8743-43fb-b0b6-5a231bbdf3fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/views/admin/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/main.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rhino.svg" beforeDir="false" afterPath="$PROJECT_DIR$/rhino.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -25,10 +27,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+            <state relative-caret-position="311">
+              <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
               <folding>
-                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="e#46622#46628#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -46,6 +47,7 @@
       <find>?</find>
       <find>avatar</find>
       <find>logo</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557763394986" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557783259640" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v10.6.0/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
@@ -314,15 +316,16 @@
       <option name="presentableId" value="Default" />
       <updated>1557752223299</updated>
       <workItem from="1557752225379" duration="3295000" />
-      <workItem from="1557756304521" duration="5096000" />
+      <workItem from="1557756304521" duration="9328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8391000" />
+    <option name="totallyTimeSpent" value="12623000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19090909" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -341,7 +344,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="SBT Console" order="8" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3615635" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35993487" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -493,10 +496,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        <state relative-caret-position="311">
+          <caret line="79" column="74" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
           <folding>
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
             <element signature="e#46622#46628#0#HTML" expanded="true" />
           </folding>
         </state>

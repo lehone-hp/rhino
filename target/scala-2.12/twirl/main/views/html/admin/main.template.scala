@@ -61,61 +61,62 @@ Seq[Any](format.raw/*2.1*/("""
     """),format.raw/*30.5*/("""</head>
     <body>
             <!-- Left Panel -->
-        <aside id="left-panel" class="left-panel">
+        	<aside id="left-panel" class="left-panel">
             <nav class="navbar navbar-expand-sm navbar-default">
                 <div id="main-menu" class="main-menu collapse navbar-collapse">
                     <ul class="nav navbar-nav">
+
+
+                        <li class="menu-title">Dashboard</li><!-- /.menu-title -->
                         <li class="active">
-                            <a href="#"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
-                        </li>
-                        <li class="menu-title">UI elements</li><!-- /.menu-title -->
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>
-                                Components</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-puzzle-piece"></i><a href="#">Buttons</a></li>
-                                <li><i class="fa fa-id-badge"></i><a href="#">Badges</a></li>
-                                <li><i class="fa fa-bars"></i><a href="#">Tabs</a></li>
-
-                                <li><i class="fa fa-id-card-o"></i><a href="#">Cards</a></li>
-                                <li><i class="fa fa-exclamation-triangle"></i><a href="#">Alerts</a></li>
-                                <li><i class="fa fa-spinner"></i><a href="#">Progress Bars</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>
-                                Tables</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="fa fa-table"></i><a href="#">Basic Table</a></li>
-                                <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>
-                                Forms</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-th"></i><a href="#">Basic Form</a></li>
-                                <li><i class="menu-icon fa fa-th"></i><a href="#">Advanced Form</a></li>
-                            </ul>
+                            <a href="#"><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
                         </li>
 
-                        <li class="menu-title">Icons</li><!-- /.menu-title -->
-
-
+                        <li class="menu-title">Properties</li><!-- /.menu-title -->
                         <li>
-                            <a href="#"> <i class="menu-icon ti-email"></i>Widgets </a>
+                            <a href="#"> <i class="menu-icon fa fa-home"></i>All Properties </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-upload"></i>Upload New </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-envelope"></i>Contacts </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-cogs"></i>Property Type </a>
                         </li>
 
-                        <li class="menu-title">Extras</li><!-- /.menu-title -->
+
+                        <li class="menu-title">Manage</li><!-- /.menu-title -->
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-users"></i>Users </a>
+                        </li>
                         <li class="menu-item-has-children dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>
-                                Pages</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="menu-icon fa fa-map-marker"></i>
+                                Location</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-sign-in"></i><a href="page-login.html">Login</a></li>
-                                <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register</a></li>
-                                <li><i class="menu-icon fa fa-paper-plane"></i><a href="pages-forget.html">Forget Pass</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">Region</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">City</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">Quarter/Locality</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-th-list"></i>Features </a>
+                        </li>
+
+                        <li class="menu-title">Authorization</li><!-- /.menu-title -->
+                        <li>
+                            <a href="#"> <i class="menu-icon fa fa-user-tag"></i>Roles </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon ti-email"></i>Permissions </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="menu-icon ti-email"></i>Logout </a>
+                        </li>
+
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav>
@@ -130,23 +131,17 @@ Seq[Any](format.raw/*2.1*/("""
             <header id="header" class="header">
                 <div class="top-left">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*102.70*/routes/*102.76*/.Assets.versioned("images/logo.png")),format.raw/*102.112*/("""" alt="Logo"></a>
-                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*103.77*/routes/*103.83*/.Assets.versioned("images/logo2.png")),format.raw/*103.120*/("""" alt="Logo"></a>
+                        <a class="navbar-brand" href="./"><img src=""""),_display_(/*103.70*/routes/*103.76*/.Assets.versioned("images/logo.png")),format.raw/*103.112*/("""" alt="Logo"></a>
+                        <a class="navbar-brand hidden" href="./"><img src=""""),_display_(/*104.77*/routes/*104.83*/.Assets.versioned("images/logo2.png")),format.raw/*104.120*/("""" alt="Logo"></a>
                         <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
                     </div>
                 </div>
                 <div class="top-right">
                     <div class="header-menu">
                         <div class="header-left">
-                            <button class="search-trigger"><i class="fa fa-search"></i></button>
-                            <div class="form-inline">
-                                <form class="search-form">
-                                    <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
-                                    <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
-                                </form>
-                            </div>
+                            """),format.raw/*119.31*/("""
 
-                            <div class="dropdown for-notification">
+                            """),format.raw/*121.29*/("""<div class="dropdown for-notification">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-bell"></i>
                                     <span class="count bg-danger">3</span>
@@ -171,7 +166,7 @@ Seq[Any](format.raw/*2.1*/("""
 
                         <div class="user-area dropdown float-right">
                             <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="user-avatar rounded-circle" src=""""),_display_(/*143.79*/routes/*143.85*/.Assets.versioned("images/admin.jpg")),format.raw/*143.122*/("""" alt="User Avatar">
+                                <img class="user-avatar rounded-circle" src=""""),_display_(/*146.79*/routes/*146.85*/.Assets.versioned("images/admin.jpg")),format.raw/*146.122*/("""" alt="User Avatar">
                             </a>
 
                             <div class="user-menu dropdown-menu">
@@ -193,9 +188,9 @@ Seq[Any](format.raw/*2.1*/("""
 
             <div class="content pb-0">
 
-            """),_display_(/*165.14*/content),format.raw/*165.21*/("""
+            """),_display_(/*168.14*/content),format.raw/*168.21*/("""
 
-            """),format.raw/*167.13*/("""</div> <!-- .content -->
+            """),format.raw/*170.13*/("""</div> <!-- .content -->
 
 
             <div class="clearfix"></div>
@@ -216,31 +211,31 @@ Seq[Any](format.raw/*2.1*/("""
         </div><!-- /#right-panel -->
 
 
-        <script src=""""),_display_(/*188.23*/routes/*188.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*188.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*189.23*/routes/*189.29*/.Assets.versioned("js/popper.min.js")),format.raw/*189.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*190.23*/routes/*190.29*/.Assets.versioned("js/plugins.js")),format.raw/*190.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*191.23*/routes/*191.29*/.Assets.versioned("js/main.js")),format.raw/*191.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*191.23*/routes/*191.29*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*191.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*192.23*/routes/*192.29*/.Assets.versioned("js/popper.min.js")),format.raw/*192.66*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*193.23*/routes/*193.29*/.Assets.versioned("js/plugins.js")),format.raw/*193.63*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*194.23*/routes/*194.29*/.Assets.versioned("js/main.js")),format.raw/*194.60*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
-        <script src=""""),_display_(/*193.23*/routes/*193.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*193.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*196.23*/routes/*196.29*/.Assets.versioned("js/lib/chart-js/Chart.bundle.js")),format.raw/*196.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
             <!--Chartist Chart-->
-        <script src=""""),_display_(/*197.23*/routes/*197.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*197.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*198.23*/routes/*198.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*198.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*200.23*/routes/*200.29*/.Assets.versioned("js/lib/chartist/chartist.min.js")),format.raw/*200.81*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*201.23*/routes/*201.29*/.Assets.versioned("js/lib/chartist/chartist-plugin-legend.js")),format.raw/*201.91*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*201.23*/routes/*201.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*201.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*202.23*/routes/*202.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*202.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*203.23*/routes/*203.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*203.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*204.23*/routes/*204.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.js")),format.raw/*204.82*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*205.23*/routes/*205.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.pie.js")),format.raw/*205.86*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*206.23*/routes/*206.29*/.Assets.versioned("js/lib/flot-chart/jquery.flot.spline.js")),format.raw/*206.89*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*206.23*/routes/*206.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*206.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*207.23*/routes/*207.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*207.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*209.23*/routes/*209.29*/.Assets.versioned("weather/js/jquery.simpleWeather.min.js")),format.raw/*209.88*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*210.23*/routes/*210.29*/.Assets.versioned("weather/js/weather-init.js")),format.raw/*210.76*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
-        <script src=""""),_display_(/*210.23*/routes/*210.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*210.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*211.23*/routes/*211.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*211.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
-        <script src=""""),_display_(/*212.23*/routes/*212.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*212.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*213.23*/routes/*213.29*/.Assets.versioned("js/lib/moment/moment.js")),format.raw/*213.73*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*214.23*/routes/*214.29*/.Assets.versioned("calendar/fullcalendar.min.js")),format.raw/*214.78*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
+        <script src=""""),_display_(/*215.23*/routes/*215.29*/.Assets.versioned("calendar/fullcalendar-init.js")),format.raw/*215.79*/("""" type="ff61747dd8d7db758f2acf61-text/javascript"></script>
 
 
         <div id="container">
@@ -248,8 +243,8 @@ Seq[Any](format.raw/*2.1*/("""
 
         <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="ff61747dd8d7db758f2acf61-|49" defer=""></script>
 
-        """),_display_(/*220.10*/footerScript),format.raw/*220.22*/("""
-    """),format.raw/*221.5*/("""</body>
+        """),_display_(/*223.10*/footerScript),format.raw/*223.22*/("""
+    """),format.raw/*224.5*/("""</body>
 </html>
 """))
       }
@@ -267,11 +262,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon May 13 17:03:36 WAT 2019
+                  DATE: Mon May 13 22:34:33 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html
-                  HASH: ee61a66dd9290a3350fc4b47476cb3da73d90286
-                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|7832->5885|7848->5891|7907->5927|8029->6021|8045->6027|8105->6064|10714->8645|10730->8651|10790->8688|11656->9526|11685->9533|11728->9547|12400->10191|12416->10197|12488->10247|12598->10329|12614->10335|12673->10372|12783->10454|12799->10460|12855->10494|12965->10576|12981->10582|13034->10613|13145->10696|13161->10702|13235->10754|13381->10872|13397->10878|13471->10930|13581->11012|13597->11018|13681->11080|13793->11164|13809->11170|13884->11223|13994->11305|14010->11311|14089->11368|14199->11450|14215->11456|14297->11516|14409->11600|14425->11606|14506->11665|14616->11747|14632->11753|14701->11800|14813->11884|14829->11890|14895->11934|15005->12016|15021->12022|15092->12071|15202->12153|15218->12159|15290->12209|15616->12507|15650->12519|15683->12524
-                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|133->102|133->102|133->102|134->103|134->103|134->103|174->143|174->143|174->143|196->165|196->165|198->167|219->188|219->188|219->188|220->189|220->189|220->189|221->190|221->190|221->190|222->191|222->191|222->191|224->193|224->193|224->193|228->197|228->197|228->197|229->198|229->198|229->198|232->201|232->201|232->201|233->202|233->202|233->202|234->203|234->203|234->203|237->206|237->206|237->206|238->207|238->207|238->207|241->210|241->210|241->210|242->211|242->211|242->211|243->212|243->212|243->212|251->220|251->220|252->221
+                  HASH: cb94f82ea4266fbb4cab39300ed516b129f50670
+                  MATRIX: 968->1|1131->71|1158->72|1329->217|1354->222|1382->223|1602->416|1617->422|1677->461|1765->522|1780->528|1841->567|1910->609|1925->615|1984->653|2052->694|2067->700|2130->742|2198->783|2213->789|2279->834|2347->875|2362->881|2425->923|2493->964|2508->970|2574->1015|2627->1041|2642->1047|2713->1097|2783->1140|2798->1146|2865->1192|2953->1253|2968->1259|3023->1293|3074->1317|3089->1323|3158->1371|3226->1412|3241->1418|3316->1472|3373->1502|3405->1513|3438->1519|6935->4988|6951->4994|7010->5030|7132->5124|7148->5130|7208->5167|7562->6056|7621->6086|9373->7810|9389->7816|9449->7853|10315->8691|10344->8698|10387->8712|11059->9356|11075->9362|11147->9412|11257->9494|11273->9500|11332->9537|11442->9619|11458->9625|11514->9659|11624->9741|11640->9747|11693->9778|11804->9861|11820->9867|11894->9919|12040->10037|12056->10043|12130->10095|12240->10177|12256->10183|12340->10245|12452->10329|12468->10335|12543->10388|12653->10470|12669->10476|12748->10533|12858->10615|12874->10621|12956->10681|13068->10765|13084->10771|13165->10830|13275->10912|13291->10918|13360->10965|13472->11049|13488->11055|13554->11099|13664->11181|13680->11187|13751->11236|13861->11318|13877->11324|13949->11374|14275->11672|14309->11684|14342->11689
+                  LINES: 28->1|33->2|34->3|38->7|38->7|38->7|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|45->14|46->15|46->15|46->15|47->16|47->16|47->16|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|55->24|55->24|55->24|56->25|56->25|56->25|57->26|57->26|57->26|59->28|59->28|61->30|134->103|134->103|134->103|135->104|135->104|135->104|142->119|144->121|169->146|169->146|169->146|191->168|191->168|193->170|214->191|214->191|214->191|215->192|215->192|215->192|216->193|216->193|216->193|217->194|217->194|217->194|219->196|219->196|219->196|223->200|223->200|223->200|224->201|224->201|224->201|227->204|227->204|227->204|228->205|228->205|228->205|229->206|229->206|229->206|232->209|232->209|232->209|233->210|233->210|233->210|236->213|236->213|236->213|237->214|237->214|237->214|238->215|238->215|238->215|246->223|246->223|247->224
                   -- GENERATED --
               */
           
