@@ -31,7 +31,7 @@ object blank extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 
 Seq[Any](format.raw/*2.1*/("""
-"""),_display_(/*3.2*/admin/*3.7*/.main("Page Title")/*3.26*/{_display_(Seq[Any](format.raw/*3.27*/("""
+"""),_display_(/*3.2*/views/*3.7*/.html.admin.main("Page Title")/*3.37*/{_display_(Seq[Any](format.raw/*3.38*/("""
     """),format.raw/*4.37*/("""
 
 """)))}/*6.2*/{_display_(Seq[Any](format.raw/*6.3*/("""
@@ -57,10 +57,10 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Mon May 13 16:53:21 WAT 2019
+                  DATE: Tue May 14 07:09:26 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/blank.scala.html
-                  HASH: 73cb9ba251fccfd353aeebc14ddde6f85f5041f0
-                  MATRIX: 947->1|1043->4|1070->6|1082->11|1109->30|1147->31|1179->68|1199->71|1236->72|1268->109|1288->112|1325->113|1358->150|1391->153
+                  HASH: cfde4fa036f10c9ea9a2f7055caa84679cb9d030
+                  MATRIX: 947->1|1043->4|1070->6|1082->11|1120->41|1158->42|1190->79|1210->82|1247->83|1279->120|1299->123|1336->124|1369->161|1402->164
                   LINES: 28->1|33->2|34->3|34->3|34->3|34->3|35->4|37->6|37->6|38->7|40->9|40->9|41->10|43->12
                   -- GENERATED --
               */

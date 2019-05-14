@@ -38,7 +38,7 @@
 
                         <li class="menu-title">Dashboard</li><!-- /.menu-title -->
                         <li class="active">
-                            <a href="#"><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
+                            <a href="@routes.AdminController.getDashboard()"><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
                         </li>
 
                         <li class="menu-title">Properties</li><!-- /.menu-title -->
@@ -72,18 +72,19 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-th-list"></i>Features </a>
+                            <a href="@routes.AmenitiesController.getAmenities()">
+                                <i class="menu-icon fa fa-th-list"></i>Amenities/Features </a>
                         </li>
 
                         <li class="menu-title">Authorization</li><!-- /.menu-title -->
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-user-tag"></i>Roles </a>
+                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Roles </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon ti-email"></i>Permissions </a>
+                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Permissions </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon ti-email"></i>Logout </a>
+                            <a href="#"> <i class="menu-icon fa fa-sign-out"></i>Logout </a>
                         </li>
 
                     </ul>

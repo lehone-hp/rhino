@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Mon May 13 14:45:30 WAT 2019
+// @DATE:Tue May 14 07:43:13 WAT 2019
 
 package router
 
@@ -15,10 +15,12 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  HomeController_2: controllers.HomeController,
-  // @LINE:12
+  HomeController_3: controllers.HomeController,
+  // @LINE:11
   AdminController_1: controllers.AdminController,
-  // @LINE:21
+  // @LINE:15
+  AmenitiesController_2: controllers.AmenitiesController,
+  // @LINE:22
   Assets_0: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,17 +28,19 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    HomeController_2: controllers.HomeController,
-    // @LINE:12
+    HomeController_3: controllers.HomeController,
+    // @LINE:11
     AdminController_1: controllers.AdminController,
-    // @LINE:21
+    // @LINE:15
+    AmenitiesController_2: controllers.AmenitiesController,
+    // @LINE:22
     Assets_0: controllers.Assets
-  ) = this(errorHandler, HomeController_2, AdminController_1, Assets_0, "/")
+  ) = this(errorHandler, HomeController_3, AdminController_1, AmenitiesController_2, Assets_0, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, AdminController_1, Assets_0, prefix)
+    new Routes(errorHandler, HomeController_3, AdminController_1, AmenitiesController_2, Assets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -47,6 +51,7 @@ class Routes(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/""", """controllers.AdminController.getDashboard"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/dashboard""", """controllers.AdminController.getDashboard"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/amenities""", """controllers.AmenitiesController.getAmenities"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -60,7 +65,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_2.index,
+    HomeController_3.index,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -73,7 +78,7 @@ class Routes(
     )
   )
 
-  // @LINE:12
+  // @LINE:11
   private[this] lazy val controllers_AdminController_getDashboard1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/")))
   )
@@ -91,7 +96,7 @@ class Routes(
     )
   )
 
-  // @LINE:13
+  // @LINE:12
   private[this] lazy val controllers_AdminController_getDashboard2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/dashboard")))
   )
@@ -109,11 +114,29 @@ class Routes(
     )
   )
 
-  // @LINE:21
-  private[this] lazy val controllers_Assets_versioned3_route = Route("GET",
+  // @LINE:15
+  private[this] lazy val controllers_AmenitiesController_getAmenities3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/amenities")))
+  )
+  private[this] lazy val controllers_AmenitiesController_getAmenities3_invoker = createInvoker(
+    AmenitiesController_2.getAmenities,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AmenitiesController",
+      "getAmenities",
+      Nil,
+      "GET",
+      this.prefix + """admin/amenities""",
+      """ Amenities""",
+      Seq()
+    )
+  )
+
+  // @LINE:22
+  private[this] lazy val controllers_Assets_versioned4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned4_invoker = createInvoker(
     Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -133,25 +156,31 @@ class Routes(
     // @LINE:6
     case controllers_HomeController_index0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_2.index)
+        controllers_HomeController_index0_invoker.call(HomeController_3.index)
       }
   
-    // @LINE:12
+    // @LINE:11
     case controllers_AdminController_getDashboard1_route(params@_) =>
       call { 
         controllers_AdminController_getDashboard1_invoker.call(AdminController_1.getDashboard)
       }
   
-    // @LINE:13
+    // @LINE:12
     case controllers_AdminController_getDashboard2_route(params@_) =>
       call { 
         controllers_AdminController_getDashboard2_invoker.call(AdminController_1.getDashboard)
       }
   
-    // @LINE:21
-    case controllers_Assets_versioned3_route(params@_) =>
+    // @LINE:15
+    case controllers_AmenitiesController_getAmenities3_route(params@_) =>
+      call { 
+        controllers_AmenitiesController_getAmenities3_invoker.call(AmenitiesController_2.getAmenities)
+      }
+  
+    // @LINE:22
+    case controllers_Assets_versioned4_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned4_invoker.call(Assets_0.versioned(path, file))
       }
   }
 }
