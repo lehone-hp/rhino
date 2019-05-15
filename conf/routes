@@ -24,6 +24,7 @@ GET     /admin/cities           controllers.LocationController.getCities
 GET     /admin/localities       controllers.LocationController.getLocalities
 
 # Properties
+GET     /admin/properties       controllers.PropertyController.getAllProperties
 GET     /admin/propert-types    controllers.PropertyController.getPropertyTypes
 
 # Property Contacts

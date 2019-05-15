@@ -42,8 +42,8 @@
                         </li>
 
                         <li class="menu-title">Properties</li><!-- /.menu-title -->
-                        <li>
-                            <a href="#"> <i class="menu-icon fa fa-home"></i>All Properties </a>
+                        <li @if(requestHeader.uri == routes.PropertyController.getAllProperties().toString) {class="active"}>
+                            <a href="@routes.PropertyController.getAllProperties()"> <i class="menu-icon fa fa-home"></i>All Properties </a>
                         </li>
                         <li>
                             <a href="#"> <i class="menu-icon fa fa-upload"></i>Upload New </a>

@@ -44,7 +44,7 @@ Seq[Any](format.raw/*2.1*/("""
                     </div>
                     <div class="card-body card-block">
                         <div class="table-responsive">
-                        <table class="table table-striped">
+                        <table class="table table-sm">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -109,10 +109,10 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Wed May 15 08:28:05 WAT 2019
+                  DATE: Wed May 15 09:09:52 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/amenities/amenities.scala.html
-                  HASH: 184c14e4b10d3652e78a1f6b201be60956ed5518
-                  MATRIX: 961->1|1057->4|1084->6|1096->11|1133->40|1172->42|1192->45|1230->47|1262->53|3552->2325|3591->2327|3625->2331
+                  HASH: 447a3cdfa9c275369d4c1cb8454fcfda1ffa44e0
+                  MATRIX: 961->1|1057->4|1084->6|1096->11|1133->40|1172->42|1192->45|1230->47|1262->53|3547->2320|3586->2322|3620->2326
                   LINES: 28->1|33->2|34->3|34->3|34->3|34->3|36->5|36->5|38->7|92->61|92->61|95->64
                   -- GENERATED --
               */

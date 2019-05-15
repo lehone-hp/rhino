@@ -1,6 +1,9 @@
 [0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html:40:33: method requestHeader in object PlayMagicForJava is deprecated (since 2.7.0): See https://www.playframework.com/documentation/latest/JavaHttpContextMigration27[0m
 [0m[[0m[33mwarn[0m] [0m[0m                        <li @if(requestHeader.uri == routes.AdminController.getDashboard().toString) {class="active"}>[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html:45:33: method requestHeader in object PlayMagicForJava is deprecated (since 2.7.0): See https://www.playframework.com/documentation/latest/JavaHttpContextMigration27[0m
+[0m[[0m[33mwarn[0m] [0m[0m                        <li @if(requestHeader.uri == routes.PropertyController.getAllProperties().toString) {class="active"}>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
 [0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html:51:33: method requestHeader in object PlayMagicForJava is deprecated (since 2.7.0): See https://www.playframework.com/documentation/latest/JavaHttpContextMigration27[0m
 [0m[[0m[33mwarn[0m] [0m[0m                        <li @if(requestHeader.uri == routes.PropertyContactController.getPropertyContacts().toString) {class="active"}>[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
@@ -22,4 +25,4 @@
 [0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/main.scala.html:79:33: method requestHeader in object PlayMagicForJava is deprecated (since 2.7.0): See https://www.playframework.com/documentation/latest/JavaHttpContextMigration27[0m
 [0m[[0m[33mwarn[0m] [0m[0m                        <li @if(requestHeader.uri == routes.AmenitiesController.getAmenities().toString) {class="active"}>[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m8 warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m9 warnings found[0m

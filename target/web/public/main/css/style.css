@@ -2518,3 +2518,12 @@ footer.site-footer {
 .bg-unread {
   background-color: #fffc5d;
 }
+
+.property-img {
+  width: 100%;
+  height: auto;
+}
+
+.form-control {
+  border-radius: 0px !important;
+}
