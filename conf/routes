@@ -4,6 +4,7 @@
 
 # An example controller showing a sample home page
 GET     /                       controllers.HomeController.index
+
 # =====================================================================================================================
 # Admin Routes
 # =====================================================================================================================
@@ -13,6 +14,21 @@ GET     /admin/dashboard        controllers.AdminController.getDashboard
 
 # Amenities
 GET     /admin/amenities        controllers.AmenitiesController.getAmenities
+
+# Owners / Landlords
+GET     /admin/landlords        controllers.UserController.getOwners
+
+# Location
+GET     /admin/regions          controllers.LocationController.getRegions
+GET     /admin/cities           controllers.LocationController.getCities
+GET     /admin/localities       controllers.LocationController.getLocalities
+
+# Properties
+GET     /admin/properties       controllers.PropertyController.getAllProperties
+GET     /admin/propert-types    controllers.PropertyController.getPropertyTypes
+
+# Property Contacts
+GET     /admin/property-contacts    controllers.PropertyContactController.getPropertyContacts
 
 # =====================================================================================================================
 # End Admin Routes

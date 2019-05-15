@@ -2090,7 +2090,10 @@ header .form-inline {
 
 /* Footer */
 footer.site-footer {
-  padding: 0 1.875em; }
+  padding: 0 1.875em;
+  position: relative;
+  bottom: 0;
+}
   footer.site-footer .footer-inner {
     color: #78909c;
     font-family: 'Open Sans';
@@ -2103,6 +2106,7 @@ footer.site-footer {
 .calender-cont {
   position: relative;
   padding-top: 20px; }
+
   .calender-cont .fc-title {
     color: #fff; }
   .calender-cont .fc-center {
@@ -2504,3 +2508,22 @@ footer.site-footer {
     right: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.help-block {
+  color: #838383;
+  font-size: 13px;
+}
+
+.bg-unread {
+  background-color: #fffc5d;
+}
+
+.property-img {
+  width: 100%;
+  height: auto;
+}
+
+.form-control {
+  border-radius: 0px !important;
+}
