@@ -40,9 +40,10 @@ Seq[Any](format.raw/*2.1*/("""
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
-                        <strong class="card-title">Custom Table</strong>
+                        <strong class="card-title">House Amenities</strong>
                     </div>
-                    <div class="table-responsive">
+                    <div class="card-body card-block">
+                        <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -62,6 +63,7 @@ Seq[Any](format.raw/*2.1*/("""
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -87,10 +89,10 @@ Seq[Any](format.raw/*2.1*/("""
         </div>
     </div>
 
-""")))}/*59.2*/ {_display_(Seq[Any](format.raw/*59.4*/("""
+""")))}/*61.2*/ {_display_(Seq[Any](format.raw/*61.4*/("""
 
 
-""")))}),format.raw/*62.2*/("""
+""")))}),format.raw/*64.2*/("""
 """))
       }
     }
@@ -107,11 +109,11 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue May 14 07:55:11 WAT 2019
+                  DATE: Wed May 15 08:28:05 WAT 2019
                   SOURCE: /home/lehone/repo/github/play/rhino/app/views/admin/amenities/amenities.scala.html
-                  HASH: f6399a054fa141eb6e6de8b606a3b72c0ddc0a17
-                  MATRIX: 961->1|1057->4|1084->6|1096->11|1133->40|1172->42|1192->45|1230->47|1262->53|3463->2236|3502->2238|3536->2242
-                  LINES: 28->1|33->2|34->3|34->3|34->3|34->3|36->5|36->5|38->7|90->59|90->59|93->62
+                  HASH: 184c14e4b10d3652e78a1f6b201be60956ed5518
+                  MATRIX: 961->1|1057->4|1084->6|1096->11|1133->40|1172->42|1192->45|1230->47|1262->53|3552->2325|3591->2327|3625->2331
+                  LINES: 28->1|33->2|34->3|34->3|34->3|34->3|36->5|36->5|38->7|92->61|92->61|95->64
                   -- GENERATED --
               */
           

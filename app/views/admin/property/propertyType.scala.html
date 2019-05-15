@@ -1,19 +1,19 @@
 @()
 
-@views.html.admin.main("Amenities") {
+@views.html.admin.main("Property Types"){
+    @*======Header Style==========*@
 
-} {
-
-    <div class="animated fadeIn">
+}{
+    @*======Content===============*@
         <div class="row">
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
-                        <strong class="card-title">House Amenities</strong>
+                        <strong class="card-title">Property Types</strong>
                     </div>
                     <div class="card-body card-block">
                         <div class="table-responsive">
-                        <table class="table table-striped">
+                        <table class="table">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -24,7 +24,23 @@
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Fence</td>
+                                    <td>Store</td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Land</td>
+                                    <td>
+                                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Studio</td>
                                     <td>
                                         <a href="#" class="btn btn-primary btn-sm">Edit</a>
                                         <a href="#" class="btn btn-danger btn-sm">Delete</a>
@@ -39,13 +55,13 @@
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-header">
-                        <strong class="card-title">Add New House Amenity</strong>
+                        <strong class="card-title">Add New Property Type</strong>
                     </div>
                     <div class="card-body card-block">
                         <div class="form-group">
-                            <label for="amenity" class=" form-control-label">Amenity</label>
+                            <label for="amenity" class=" form-control-label">Property Type</label>
                             <input type="text"
-                                id="amenity" placeholder="Enter name of amenity"
+                                id="amenity" placeholder="Enter type of property"
                                 class="form-control">
                         </div>
 
@@ -56,9 +72,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-} {
-
+}{
+    @*======Footer Script=========*@
 
 }

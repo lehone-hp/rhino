@@ -1,0 +1,91 @@
+@()
+
+@views.html.admin.main("Locality / Quarter") {
+    @*======Header Style==========*@
+} {
+    @*======Content===============*@
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Add New Locality/Quarter</strong>
+                </div>
+                <div class="card-body card-block">
+                    <form action="#" method="post" class="">
+                        <div class="form-group">
+                            <label for="nf-regions" class="form-control-label">Quarters</label>
+                            <textarea id="nf-regions" name="quarters"
+                                placeholder="Enter a comma separated list of localities/quarters e.g. Sandpit, Bonduma, Dirty South"
+                                class="form-control"></textarea>
+                            <span class="help-block">Enter a comma separated list of localities/quarters e.g. <strong>
+                                Sandpit, Bonduma, Dirty South</strong></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="nf-country" class="form-control-label">City</label>
+                            <select class="form-control" id="nf-country" name="city">
+                                <option>--select city--</option>
+                            </select>
+                            <span class="help-block">Select city where the region(s) belong to</span>
+                        </div>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Localities/Quarters</strong>
+                </div>
+                <div class="card-body table-responsive">
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">City</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Sandpit</td>
+                                <td>Buea</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm">View</a>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Dirty South</td>
+                                <td>Buea</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm">View</a>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mile 4</td>
+                                <td>Limbe</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm">View</a>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+} {
+    @*======Footer Script=========*@
+}

@@ -37,7 +37,7 @@
 
 
                         <li class="menu-title">Dashboard</li><!-- /.menu-title -->
-                        <li class="active">
+                        <li @if(requestHeader.uri == routes.AdminController.getDashboard().toString) {class="active"}>
                             <a href="@routes.AdminController.getDashboard()"><i class="menu-icon fa fa-tachometer"></i>Dashboard </a>
                         </li>
 
@@ -48,30 +48,35 @@
                         <li>
                             <a href="#"> <i class="menu-icon fa fa-upload"></i>Upload New </a>
                         </li>
-                        <li>
-                            <a href="#"> <i class="menu-icon fa fa-envelope"></i>Contacts </a>
+                        <li @if(requestHeader.uri == routes.PropertyContactController.getPropertyContacts().toString) {class="active"}>
+                            <a href="@routes.PropertyContactController.getPropertyContacts()">
+                                <i class="menu-icon fa fa-envelope"></i>Contacts <span class="badge badge-danger">1</span></a>
                         </li>
-                        <li>
-                            <a href="#"> <i class="menu-icon fa fa-cogs"></i>Property Type </a>
+                        <li @if(requestHeader.uri == routes.PropertyController.getPropertyTypes().toString) {class="active"}>
+                            <a href="@routes.PropertyController.getPropertyTypes()"> <i class="menu-icon fa fa-cogs"></i>Property Type </a>
                         </li>
 
 
                         <li class="menu-title">Manage</li><!-- /.menu-title -->
-                        <li>
-                            <a href="#"> <i class="menu-icon fa fa-users"></i>Users </a>
+                        <li @if(requestHeader.uri == routes.UserController.getOwners().toString) {class="active"}>
+                            <a href="@routes.UserController.getOwners()">
+                                <i class="menu-icon fa fa-users"></i>Landlords / Owners </a>
                         </li>
-                        <li class="menu-item-has-children dropdown">
+                        <li class="menu-item-has-children dropdown
+                                    @if(requestHeader.uri == routes.LocationController.getRegions().toString) {active}
+                                    @if(requestHeader.uri == routes.LocationController.getCities().toString) {active}
+                                    @if(requestHeader.uri == routes.LocationController.getLocalities().toString) {active}">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <i class="menu-icon fa fa-map-marker"></i>
                                 Location</a>
                             <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">Region</a></li>
-                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">City</a></li>
-                                <li><i class="menu-icon fa fa-map-marker"></i><a href="#">Quarter/Locality</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="@routes.LocationController.getRegions()">Region</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="@routes.LocationController.getCities()">City</a></li>
+                                <li><i class="menu-icon fa fa-map-marker"></i><a href="@routes.LocationController.getLocalities()">Quarter/Locality</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li @if(requestHeader.uri == routes.AmenitiesController.getAmenities().toString) {class="active"}>
                             <a href="@routes.AmenitiesController.getAmenities()">
                                 <i class="menu-icon fa fa-th-list"></i>Amenities/Features </a>
                         </li>
@@ -173,7 +178,7 @@
 
             <div class="clearfix"></div>
 
-            <footer class="site-footer">
+            @*<footer class="site-footer">
                 <div class="footer-inner bg-white">
                     <div class="row">
                         <div class="col-sm-6">
@@ -184,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer>*@
 
         </div><!-- /#right-panel -->
 

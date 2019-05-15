@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Tue May 14 07:43:13 WAT 2019
+// @DATE:Wed May 15 08:28:05 WAT 2019
 
 import play.api.mvc.Call
 
@@ -11,17 +11,112 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:15
+  // @LINE:37
+  class ReverseAssets(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:37
+    def versioned(file:Asset): Call = {
+      implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
+      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
+    }
+  
+  }
+
+  // @LINE:12
+  class ReverseAdminController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:12
+    def getDashboard(): Call = {
+    
+      () match {
+      
+        // @LINE:12
+        case ()  =>
+          
+          Call("GET", _prefix + { _defaultPrefix } + "admin/")
+      
+      }
+    
+    }
+  
+  }
+
+  // @LINE:27
+  class ReversePropertyController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:27
+    def getPropertyTypes(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "admin/propert-types")
+    }
+  
+  }
+
+  // @LINE:22
+  class ReverseLocationController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:22
+    def getRegions(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "admin/regions")
+    }
+  
+    // @LINE:23
+    def getCities(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "admin/cities")
+    }
+  
+    // @LINE:24
+    def getLocalities(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "admin/localities")
+    }
+  
+  }
+
+  // @LINE:16
   class ReverseAmenitiesController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:15
+    // @LINE:16
     def getAmenities(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/amenities")
+    }
+  
+  }
+
+  // @LINE:19
+  class ReverseUserController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:19
+    def getOwners(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "admin/landlords")
     }
   
   }
@@ -41,40 +136,17 @@ package controllers {
   
   }
 
-  // @LINE:22
-  class ReverseAssets(_prefix: => String) {
+  // @LINE:30
+  class ReversePropertyContactController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:22
-    def versioned(file:Asset): Call = {
-      implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
-      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:11
-  class ReverseAdminController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:11
-    def getDashboard(): Call = {
-    
-      () match {
+    // @LINE:30
+    def getPropertyContacts(): Call = {
       
-        // @LINE:11
-        case ()  =>
-          
-          Call("GET", _prefix + { _defaultPrefix } + "admin/")
-      
-      }
-    
+      Call("GET", _prefix + { _defaultPrefix } + "admin/property-contacts")
     }
   
   }
