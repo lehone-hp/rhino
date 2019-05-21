@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Fri May 17 09:53:58 WAT 2019
+// @DATE:Tue May 21 09:01:20 WAT 2019
 
 
 package router {

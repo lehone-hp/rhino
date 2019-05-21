@@ -13,7 +13,10 @@ GET     /admin/                 controllers.AdminController.getDashboard
 GET     /admin/dashboard        controllers.AdminController.getDashboard
 
 # Amenities
-GET     /admin/amenities        controllers.AmenitiesController.getAmenities
+GET     /admin/amenities                    controllers.AmenitiesController.getAmenities
++ nocsrf
+POST    /admin/amenities                    controllers.AmenitiesController.create
+GET     /admin/amenities/delete/:id         controllers.AmenitiesController.delete(id: Long)
 
 # Owners / Landlords
 GET     /admin/landlords        controllers.UserController.getOwners
