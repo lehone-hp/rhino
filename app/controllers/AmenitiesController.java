@@ -30,7 +30,7 @@ public class AmenitiesController extends Controller {
 	public Result create() {
 		Form<Feature> createAmenityForm = formFactory.form(Feature.class).bindFromRequest();
 		if (createAmenityForm.hasErrors()) {
-			return badRequest(amenities.render(createAmenityForm, new ArrayList<>()));
+			return badRequest(amenities.render(createAmenityForm, Feature.find.all()));
 		} else {
 			Feature amenity = createAmenityForm.get();
 

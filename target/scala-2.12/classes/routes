@@ -22,7 +22,11 @@ GET     /admin/amenities/delete/:id         controllers.AmenitiesController.dele
 GET     /admin/landlords        controllers.UserController.getOwners
 
 # Location
-GET     /admin/regions          controllers.LocationController.getRegions
+GET     /admin/regions                      controllers.LocationController.getRegions
++ nocsrf
+POST    /admin/regions                      controllers.LocationController.createRegion
+GET     /admin/regions/delete/:id           controllers.LocationController.deleteRegion(id: Long)
+
 GET     /admin/cities           controllers.LocationController.getCities
 GET     /admin/localities       controllers.LocationController.getLocalities
 
