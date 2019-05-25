@@ -27,7 +27,11 @@ GET     /admin/regions                      controllers.LocationController.getRe
 POST    /admin/regions                      controllers.LocationController.createRegion
 GET     /admin/regions/delete/:id           controllers.LocationController.deleteRegion(id: Long)
 
-GET     /admin/cities           controllers.LocationController.getCities
+GET     /admin/cities                       controllers.LocationController.getCities
++ nocsrf
+POST    /admin/cities                       controllers.LocationController.createCity
+GET     /admin/cities/delete/:id            controllers.LocationController.deleteCity(id: Long)
+
 GET     /admin/localities       controllers.LocationController.getLocalities
 
 # Properties

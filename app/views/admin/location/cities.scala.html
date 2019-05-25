@@ -1,4 +1,6 @@
-@()
+@(createForm: Form[location.LocationTemplateForm], cities: List[location.City], regions: List[location.Region])
+
+    @import helper._
 
 @views.html.admin.main("Cities") {
     @*======Header Style==========*@
@@ -11,27 +13,43 @@
                     <strong>Add New Cities</strong>
                 </div>
                 <div class="card-body card-block">
-                    <form action="#" method="post" class="">
-                        <div class="form-group">
-                            <label for="nf-regions" class="form-control-label">Cities</label>
-                            <textarea id="nf-regions" name="cities"
-                                placeholder="Enter a comma separated list of cities e.g. Buea, Tiko, Limbe"
-                                class="form-control"></textarea>
-                            <span class="help-block">Enter a comma separated list of cities e.g. <strong>
-                                Buea, Tiko, Limbe</strong></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="nf-country" class="form-control-label">Region</label>
-                            <select class="form-control" id="nf-country" name="region">
-                                <option>--select region--</option>
-                            </select>
-                            <span class="help-block">Select region where the cities belong to</span>
-                        </div>
+                        @form(routes.LocationController.createCity()) {
+                            <div class="form-group">
+                                <label for="nf-regions" class="form-control-label">Cities</label>
+                                <textarea id="nf-regions" name="children"
+                                    placeholder="Enter a comma separated list of cities e.g. Buea, Tiko, Limbe"
+                                    class="form-control">@createForm("children").value</textarea>
 
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-primary">Save</button>
-                        </div>
-                    </form>
+                                @if(createForm("children").errors.size > 0){
+                                    @for(error <- createForm("children").errors){
+                                        <span class="text-danger">@Messages(error.message())</span>
+                                    }
+                                } else {
+                                    <span class="help-block">Enter a comma separated list of cities e.g. <strong>
+                                        Buea, Tiko, Limbe</strong></span>
+                                }
+                            </div>
+                            <div class="form-group">
+                                <label for="nf-country" class="form-control-label">Region</label>
+                                <select class="form-control" id="nf-country" name="parentId">
+                                    <option>--select region--</option>
+                                    @for(region <- regions) {
+                                        <option value="@region.id">@region.name</option>
+                                    }
+                                </select>
+                                @if(createForm("parentId").errors.size > 0) {
+                                    @for(error <- createForm("parentId").errors) {
+                                        <span class="text-danger">@Messages(error.message())</span>
+                                    }
+                                } else {
+                                    <span class="help-block">Select region where the cities belong to</span>
+                                }
+                            </div>
+
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        }
                 </div>
             </div>
         </div>
@@ -51,33 +69,23 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if(cities.isEmpty()) {
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Buea</td>
-                                <td>South West</td>
-                                <td>
-                                    <a href="#" class="btn btn-primary btn-sm">View</a>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
+                                <td colspan="4" class="text-center">No Cities Added</td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Limbe</td>
-                                <td>South West</td>
-                                <td>
-                                    <a href="#" class="btn btn-primary btn-sm">View</a>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Douala</td>
-                                <td>Littoral</td>
-                                <td>
-                                    <a href="#" class="btn btn-primary btn-sm">View</a>
-                                    <button class="btn btn-danger btn-sm">Delete</button>
-                                </td>
-                            </tr>
+                            } else {
+                                @for(city <- cities) {
+                                    <tr>
+                                        <th scope="row">@{cities.indexOf(city) + 1}</th>
+                                        <td>@city.name</td>
+                                        <td>@city.region.name</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm">View</a>
+                                            <a href="@routes.LocationController.deleteCity(city.id)" class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
                         </tbody>
                     </table>
                 </div>

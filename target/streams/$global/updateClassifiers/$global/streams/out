@@ -706,17 +706,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] sbt-chain: Checking cache for: dependency: tyrex#tyrex;1.0.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain: module revision found in cache: tyrex#tyrex;1.0.1
-[debug] 	found tyrex#tyrex;1.0.1 in sbt-chain
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: com.fasterxml.jackson.core#jackson-databind;2.8.11.3 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], docs=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.8.11.3
@@ -942,17 +931,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] sbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;1.3.9 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], docs=[compile, runtime(*), master(compile), runtime, compile(*), master]}
-[debug] sbt-chain: module revision found in cache: com.google.code.findbugs#jsr305;1.3.9
-[debug] 	found com.google.code.findbugs#jsr305;1.3.9 in sbt-chain
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], docs=[compile, runtime(*), master(compile), runtime, compile(*), master]}
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7
@@ -1595,14 +1573,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
@@ -1767,14 +1737,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
@@ -2379,14 +2341,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
@@ -2551,14 +2505,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
@@ -3175,14 +3121,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
@@ -3347,12 +3285,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
@@ -3957,14 +3889,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
@@ -4129,12 +4053,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
@@ -4983,14 +4901,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->compile]
@@ -5989,14 +5899,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
@@ -6161,14 +6063,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
@@ -6775,14 +6669,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile-internal->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile-internal->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile-internal->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile-internal->compile]
@@ -6947,14 +6833,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile-internal->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile-internal->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile-internal->compile]
@@ -7563,14 +7441,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
@@ -7735,14 +7605,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
@@ -8347,14 +8209,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
@@ -8519,14 +8373,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
@@ -9132,14 +8978,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime-internal->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime-internal->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime-internal->compile]
@@ -9304,14 +9142,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime-internal->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime-internal->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime-internal->compile]
@@ -9921,14 +9751,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [compile->compile]
@@ -10093,20 +9915,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [compile->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [compile->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [compile->compile]
@@ -10711,14 +10519,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [runtime->compile]
@@ -10883,20 +10683,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.typesafe.play#filters-helpers_2.12;2.6.21 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [runtime->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;3.0.2 [runtime->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [runtime->compile]
@@ -11681,14 +11467,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test->compile]
@@ -12783,14 +12561,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test-internal->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.slf4j#jcl-over-slf4j;1.7.25 [test-internal->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->tyrex#tyrex;1.0.1 [test-internal->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test-internal->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test-internal->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.fasterxml.jackson.core#jackson-databind;2.8.11.3 [test-internal->compile]
@@ -13660,14 +13430,6 @@
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->commons-io#commons-io;2.6 [docs->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->commons-io#commons-io;2.6 [docs->compile(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->commons-io#commons-io;2.6 [docs->master]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->runtime(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->master(compile)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->runtime]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->compile]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->compile(*)]
-[debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->com.google.code.findbugs#jsr305;1.3.9 [docs->master]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [docs->compile]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [docs->runtime(*)]
 [debug] == resolving dependencies org.rhino#rhino$sources;1.0-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7 [docs->compile]
@@ -13756,255 +13518,64 @@
 [debug] circular dependency found: org.seleniumhq.selenium#htmlunit-driver;2.27->net.sourceforge.htmlunit#htmlunit;2.27->...
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-jdbc-evolutions_2.12/2.6.21/srcs/play-jdbc-evolutions_2.12-sources.jar
-[debug] 		tried /home/lehone/.ivy2/local/com.fasterxml.jackson.core/jackson-core/2.9.0/srcs/jackson-core-sources.jar
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-jdbc-evolutions_2.12;2.6.21!play-jdbc-evolutions_2.12.jar(src)
 [debug] 	[NOT REQUIRED] javax.activation#javax.activation-api;1.2.0!javax.activation-api.jar(src)
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 		tried /home/lehone/.ivy2/local/io.ebean/ebean-migration/11.2.1/srcs/ebean-migration-sources.jar
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] 		tried /home/lehone/.ivy2/local/org.reflections/reflections/0.9.11/srcs/reflections-sources.jar
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] 		tried /home/lehone/.ivy2/local/org.hibernate/hibernate-validator/5.4.2.Final/srcs/hibernate-validator-sources.jar
-[debug] no default ivy user dir defined: set to /home/lehone/.ivy2
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (33ms)
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] settings loaded (38ms)
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.9.0!jackson-core.jar(src)
+[debug] 	[NOT REQUIRED] org.hibernate#hibernate-validator;5.4.2.Final!hibernate-validator.jar(src)
+[debug] 	[NOT REQUIRED] io.ebean#ebean-migration;11.2.1!ebean-migration.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.26!slf4j-api.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-core_2.12;10.0.15!akka-http-core_2.12.jar(src)
-[debug] no default cache defined: set to /home/lehone/.ivy2/cache
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] 	[NOT REQUIRED] com.google.j2objc#j2objc-annotations;1.1!j2objc-annotations.jar(src)
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] 	[NOT REQUIRED] io.jsonwebtoken#jjwt;0.7.0!jjwt.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar(src)
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] 		tried /home/lehone/.ivy2/local/org.springframework/spring-beans/4.3.21.RELEASE/srcs/spring-beans-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE-sources.jar
-[debug] settings loaded (68ms)
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/io/ebean/ebean-migration/11.2.1/ebean-migration-11.2.1-sources.jar
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] settings loaded (72ms)
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] settings loaded (41ms)
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	shared [file]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.2.Final/hibernate-validator-5.4.2.Final-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.21/play-jdbc-evolutions_2.12-2.6.21-sources.jar
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/home/lehone/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (73ms)
-[debug] 	default cache: /home/lehone/.ivy2/cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 		tried https://repo1.maven.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.2.Final/hibernate-validator-5.4.2.Final-sources.jar ...
-[info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.2.Final/hibernate-validator-5.4.2.Final-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar
-[info] downloading https://repo1.maven.org/maven2/io/ebean/ebean-migration/11.2.1/ebean-migration-11.2.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-migration/11.2.1/ebean-migration-11.2.1-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.21/play-jdbc-evolutions_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.21/play-jdbc-evolutions_2.12-2.6.21-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-migration/11.2.1/ebean-migration-11.2.1-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.21/play-jdbc-evolutions_2.12-2.6.21-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/io/ebean/ebean-migration/11.2.1/ebean-migration-11.2.1-sources.jar
-[info] 	[SUCCESSFUL ] io.ebean#ebean-migration;11.2.1!ebean-migration.jar(src) (10090ms)
 [debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.12;0.3.6!ssl-config-core_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.springframework#spring-beans;4.3.21.RELEASE!spring-beans.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#jul-to-slf4j;1.7.25!jul-to-slf4j.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-netty-utils;2.6.21!play-netty-utils.jar(src)
 [debug] 	[NOT REQUIRED] org.antlr#antlr4-runtime;4.6!antlr4-runtime.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/io.ebean/ebean-annotation/3.5/srcs/ebean-annotation-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/io/ebean/ebean-annotation/3.5/ebean-annotation-3.5-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar
-[info] 	[SUCCESSFUL ] org.reflections#reflections;0.9.11!reflections.jar(src) (10284ms)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-guice_2.12;2.6.21!play-guice_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.6!commons-lang3.jar(src)
 [debug] 	[NOT REQUIRED] com.googlecode.usc#jdbcdslog;1.0.6.2!jdbcdslog.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-java_2.12/2.6.21/srcs/play-java_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.21/play-java_2.12-2.6.21-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-evolutions_2.12/2.6.21/play-jdbc-evolutions_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-jdbc-evolutions_2.12;2.6.21!play-jdbc-evolutions_2.12.jar(src) (10386ms)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-jdbc_2.12/2.6.21/srcs/play-jdbc_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.21/play-jdbc_2.12-2.6.21-sources.jar
-[info] downloading https://repo1.maven.org/maven2/io/ebean/ebean-annotation/3.5/ebean-annotation-3.5-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-annotation/3.5/ebean-annotation-3.5-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.21/play-java_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.21/play-java_2.12-2.6.21-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.21/play-jdbc_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.21/play-jdbc_2.12-2.6.21-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.2.Final/hibernate-validator-5.4.2.Final-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.21/play-java_2.12-2.6.21-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0-sources.jar
-[info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.9.0!jackson-core.jar(src) (13572ms)
-[debug] 		tried /home/lehone/.ivy2/local/com.zaxxer/HikariCP/2.7.9/srcs/HikariCP-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.21/play-jdbc_2.12-2.6.21-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-annotation/3.5/ebean-annotation-3.5-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.4.2.Final/hibernate-validator-5.4.2.Final-sources.jar
-[info] 	[SUCCESSFUL ] org.hibernate#hibernate-validator;5.4.2.Final!hibernate-validator.jar(src) (13994ms)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-java_2.12;2.6.21!play-java_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.ebean#ebean-annotation;3.5!ebean-annotation.jar(src)
+[debug] 	[NOT REQUIRED] com.zaxxer#HikariCP;2.7.9!HikariCP.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.codehaus.mojo#animal-sniffer-annotations;1.14!animal-sniffer-annotations.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/io.ebean/ebean/11.7.1/srcs/ebean-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/io/ebean/ebean/11.7.1/ebean-11.7.1-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-java_2.12/2.6.21/play-java_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-java_2.12;2.6.21!play-java_2.12.jar(src) (3714ms)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-jdbc_2.12;2.6.21!play-jdbc_2.12.jar(src)
+[debug] 	[NOT REQUIRED] io.ebean#ebean;11.7.1!ebean.jar(src)
 [debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.2!reactive-streams.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-ebean_2.12/4.1.0/srcs/play-ebean_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-ebean_2.12/4.1.0/play-ebean_2.12-4.1.0-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.12/2.6.21/play-jdbc_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-jdbc_2.12;2.6.21!play-jdbc_2.12.jar(src) (3986ms)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-java-jdbc_2.12/2.6.21/srcs/play-java-jdbc_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.12/2.6.21/play-java-jdbc_2.12-2.6.21-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/io/ebean/ebean-annotation/3.5/ebean-annotation-3.5-sources.jar
-[info] 	[SUCCESSFUL ] io.ebean#ebean-annotation;3.5!ebean-annotation.jar(src) (4308ms)
-[debug] 	[NOT REQUIRED] com.google.errorprone#error_prone_annotations;2.1.3!error_prone_annotations.jar(src)
-[debug] 	[NOT REQUIRED] net.jodah#typetools;0.5.0!typetools.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.play#build-link;2.6.21!build-link.jar(src)
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ebean_2.12/4.1.0/play-ebean_2.12-4.1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ebean_2.12/4.1.0/play-ebean_2.12-4.1.0-sources.jar
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.12;2.6.21!play-java-jdbc_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-ebean_2.12;4.1.0!play-ebean_2.12.jar(src)
 [debug] 	[NOT REQUIRED] io.ebean#persistence-api;2.2.1!persistence-api.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/org.avaje/avaje-datasource/2.1.2/srcs/avaje-datasource-sources.jar
-[info] downloading https://repo1.maven.org/maven2/io/ebean/ebean/11.7.1/ebean-11.7.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean/11.7.1/ebean-11.7.1-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-beans/4.3.21.RELEASE/spring-beans-4.3.21.RELEASE-sources.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-beans;4.3.21.RELEASE!spring-beans.jar(src) (14634ms)
+[debug] 	[NOT REQUIRED] net.jodah#typetools;0.5.0!typetools.jar(src)
+[debug] 	[NOT REQUIRED] org.avaje#avaje-datasource;2.1.2!avaje-datasource.jar(src)
+[debug] 	[NOT REQUIRED] com.google.errorprone#error_prone_annotations;2.1.3!error_prone_annotations.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#build-link;2.6.21!build-link.jar(src)
+[debug] 	[NOT REQUIRED] org.avaje#avaje-classpath-scanner;2.2.4!avaje-classpath-scanner.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-json_2.12;2.6.12!play-json_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-java-forms_2.12/2.6.21/srcs/play-java-forms_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.21/play-java-forms_2.12-2.6.21-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.12/2.6.21/play-java-jdbc_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.12/2.6.21/play-java-jdbc_2.12-2.6.21-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-ebean_2.12/4.1.0/play-ebean_2.12-4.1.0-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.21/play-java-forms_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.21/play-java-forms_2.12-2.6.21-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9-sources.jar
-[info] 	[SUCCESSFUL ] com.zaxxer#HikariCP;2.7.9!HikariCP.jar(src) (2469ms)
-[debug] 	[NOT REQUIRED] com.typesafe.play#twirl-api_2.12;1.3.15!twirl-api_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/org.avaje/avaje-classpath-scanner/2.2.4/srcs/avaje-classpath-scanner-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/avaje/avaje-classpath-scanner/2.2.4/avaje-classpath-scanner-2.2.4-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.12/2.6.21/play-java-jdbc_2.12-2.6.21-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/org/avaje/avaje-classpath-scanner/2.2.4/avaje-classpath-scanner-2.2.4-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/avaje-classpath-scanner/2.2.4/avaje-classpath-scanner-2.2.4-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-ebean_2.12/4.1.0/play-ebean_2.12-4.1.0-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-ebean_2.12;4.1.0!play-ebean_2.12.jar(src) (3313ms)
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar(src)
-[debug] 	[NOT REQUIRED] com.google.guava#guava;23.6.1-jre!guava.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#twirl-api_2.12;1.3.15!twirl-api_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.8.11!jackson-datatype-jsr310.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-java-forms_2.12;2.6.21!play-java-forms_2.12.jar(src)
 [debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
+[debug] 	[NOT REQUIRED] com.google.guava#guava;23.6.1-jre!guava.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-akka-http-server_2.12;2.6.21!play-akka-http-server_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-stream_2.12;2.5.19!akka-stream_2.12.jar(src)
 [debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.11!commons-codec.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.play#play-akka-http-server_2.12;2.6.21!play-akka-http-server_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.javassist#javassist;3.21.0-GA!javassist.jar(src)
-[debug] 	[NOT REQUIRED] org.avaje#avaje-datasource-api;1.1!avaje-datasource-api.jar(src)
 [debug] 	[NOT REQUIRED] org.avaje#avaje-classpath-scanner-api;2.2!avaje-classpath-scanner-api.jar(src)
+[debug] 	[NOT REQUIRED] org.avaje#avaje-datasource-api;1.1!avaje-datasource-api.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-logback_2.12;2.6.21!play-logback_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/io.ebean/ebean-agent/11.5.1/srcs/ebean-agent-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/io/ebean/ebean-agent/11.5.1/ebean-agent-11.5.1-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.21/play-java-forms_2.12-2.6.21-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2-sources.jar.sha1
-[info] downloading https://repo1.maven.org/maven2/io/ebean/ebean-agent/11.5.1/ebean-agent-11.5.1-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-agent/11.5.1/ebean-agent-11.5.1-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-java-jdbc_2.12/2.6.21/play-java-jdbc_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-java-jdbc_2.12;2.6.21!play-java-jdbc_2.12.jar(src) (4468ms)
-[debug] 	[NOT REQUIRED] com.fasterxml#classmate;1.3.1!classmate.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-parsing_2.12;10.0.15!akka-parsing_2.12.jar(src)
-[debug] 	[NOT REQUIRED] com.google.inject#guice;4.1.0!guice.jar(src)
+[debug] 	[NOT REQUIRED] io.ebean#ebean-agent;11.5.1!ebean-agent.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml#classmate;1.3.1!classmate.jar(src)
 [debug] 	[NOT REQUIRED] org.typelevel#macro-compat_2.12;1.1.1!macro-compat_2.12.jar(src)
-[debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.3.1!jaxb-api.jar(src)
+[debug] 	[NOT REQUIRED] com.google.inject#guice;4.1.0!guice.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play_2.12;2.6.21!play_2.12.jar(src)
+[debug] 	[NOT REQUIRED] javax.xml.bind#jaxb-api;2.3.1!jaxb-api.jar(src)
 [debug] 	[NOT REQUIRED] org.slf4j#jcl-over-slf4j;1.7.25!jcl-over-slf4j.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/tyrex/tyrex/1.0.1/srcs/tyrex-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/avaje-classpath-scanner/2.2.4/avaje-classpath-scanner-2.2.4-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-java-forms_2.12/2.6.21/play-java-forms_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-java-forms_2.12;2.6.21!play-java-forms_2.12.jar(src) (4647ms)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.8.11.3!jackson-databind.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.12;2.5.19!akka-slf4j_2.12.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-databind;2.8.11.3!jackson-databind.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.12;2.5.19!akka-actor_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-exceptions;2.6.21!play-exceptions.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-streams_2.12;2.6.21!play-streams_2.12.jar(src)
@@ -14012,71 +13583,38 @@
 [debug] 	[NOT REQUIRED] com.jolbox#bonecp;0.8.0.RELEASE!bonecp.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.3!config.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-server_2.12;2.6.21!play-server_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.2.2!play-enhancer.jar(src)
 [debug] 	[NOT REQUIRED] javax.transaction#jta;1.1!jta.jar(src)
 [debug] 	[NOT REQUIRED] javax.validation#validation-api;1.1.0.Final!validation-api.jar(src)
 [debug] 	[NOT REQUIRED] com.fasterxml.jackson.datatype#jackson-datatype-jdk8;2.8.11!jackson-datatype-jdk8.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] mysql#mysql-connector-java;5.1.41!mysql-connector-java.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] aopalliance#aopalliance;1.0!aopalliance.jar(src)
 [debug] 	[NOT REQUIRED] com.google.inject.extensions#guice-assistedinject;4.1.0!guice-assistedinject.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#filters-helpers_2.12;2.6.21!filters-helpers_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/com.google.code.findbugs/jsr305/1.3.9/srcs/jsr305-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/tyrex/tyrex/1.0.1/tyrex-1.0.1-sources.jar
-[debug] 		tried /home/lehone/.sbt/preloaded/tyrex/tyrex/1.0.1/srcs/tyrex-sources.jar
-[debug] 		tried file:////home/lehone/.sbt/preloaded/tyrex/tyrex/1.0.1/tyrex-1.0.1-sources.jar
-[warn] 	Detected merged artifact: [FAILED     ] tyrex#tyrex;1.0.1!tyrex.jar(src):  (0ms).
-[warn] ==== local: tried
-[warn] ==== public: tried
-[warn] ==== local-preloaded-ivy: tried
-[warn]   /home/lehone/.sbt/preloaded/tyrex/tyrex/1.0.1/srcs/tyrex-sources.jar
-[warn] ==== local-preloaded: tried
-[warn]   file:////home/lehone/.sbt/preloaded/tyrex/tyrex/1.0.1/tyrex-1.0.1-sources.jar
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.12;1.0.7!scala-parser-combinators_2.12.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-functional_2.12;2.6.12!play-functional_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/com.typesafe.play/play-jdbc-api_2.12/2.6.21/srcs/play-jdbc-api_2.12-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.21/play-jdbc-api_2.12-2.6.21-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/avaje/avaje-datasource/2.1.2/avaje-datasource-2.1.2-sources.jar
-[info] 	[SUCCESSFUL ] org.avaje#avaje-datasource;2.1.2!avaje-datasource.jar(src) (5656ms)
-[debug] 	[NOT REQUIRED] org.checkerframework#checker-compat-qual;2.0.0!checker-compat-qual.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-protobuf_2.12;2.5.19!akka-protobuf_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.checkerframework#checker-compat-qual;2.0.0!checker-compat-qual.jar(src)
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-core;1.2.3!logback-core.jar(src)
 [debug] 	[NOT REQUIRED] javax.inject#javax.inject;1!javax.inject.jar(src)
-[debug] 	[NOT REQUIRED] org.jboss.logging#jboss-logging;3.3.0.Final!jboss-logging.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/org.springframework/spring-core/4.3.21.RELEASE/srcs/spring-core-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.21.RELEASE/spring-core-4.3.21.RELEASE-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar
-[debug] 		tried /home/lehone/.sbt/preloaded/com.google.code.findbugs/jsr305/1.3.9/srcs/jsr305-sources.jar
-[debug] 		tried file:////home/lehone/.sbt/preloaded/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar
-[warn] 	Detected merged artifact: [FAILED     ] com.google.code.findbugs#jsr305;1.3.9!jsr305.jar(src):  (0ms).
-[warn] ==== local: tried
-[warn] ==== public: tried
-[warn] ==== local-preloaded-ivy: tried
-[warn]   /home/lehone/.sbt/preloaded/com.google.code.findbugs/jsr305/1.3.9/srcs/jsr305-sources.jar
-[warn] ==== local-preloaded: tried
-[warn]   file:////home/lehone/.sbt/preloaded/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9-sources.jar
+[debug] 	[NOT REQUIRED] com.typesafe.play#play-jdbc-api_2.12;2.6.21!play-jdbc-api_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.springframework#spring-core;4.3.21.RELEASE!spring-core.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-java8-compat_2.12;0.8.0!scala-java8-compat_2.12.jar(src)
-[debug] 		tried /home/lehone/.ivy2/local/org.springframework/spring-context/4.3.21.RELEASE/srcs/spring-context-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE-sources.jar
-[info] downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.21/play-jdbc-api_2.12-2.6.21-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.21/play-jdbc-api_2.12-2.6.21-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.21.RELEASE/spring-core-4.3.21.RELEASE-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.21.RELEASE/spring-core-4.3.21.RELEASE-sources.jar
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/avaje/avaje-classpath-scanner/2.2.4/avaje-classpath-scanner-2.2.4-sources.jar
-[info] 	[SUCCESSFUL ] org.avaje#avaje-classpath-scanner;2.2.4!avaje-classpath-scanner.jar(src) (5012ms)
-[debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar(src)
 [debug] 	[NOT REQUIRED] org.seleniumhq.selenium#selenium-support;3.5.3!selenium-support.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-api;9.4.5.v20170502!websocket-api.jar(src)
+[debug] 	[NOT REQUIRED] org.springframework#spring-context;4.3.21.RELEASE!spring-context.jar(src)
 [debug] 	[NOT REQUIRED] org.fluentlenium#fluentlenium-core;3.3.0!fluentlenium-core.jar(src)
+[debug] 	[NOT REQUIRED] org.jboss.logging#jboss-logging;3.3.0.Final!jboss-logging.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-exec;1.3!commons-exec.jar(src)
+[debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar(src)
 [debug] 	[NOT REQUIRED] xerces#xercesImpl;2.11.0!xercesImpl.jar(src)
 [debug] 	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit;2.27!htmlunit.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-client;9.4.5.v20170502!websocket-client.jar(src)
-[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
-[debug] 	[NOT REQUIRED] net.sourceforge.cssparser#cssparser;0.9.23!cssparser.jar(src)
 [debug] 	[NOT REQUIRED] org.seleniumhq.selenium#htmlunit-driver;2.27!htmlunit-driver.jar(src)
 [debug] 	[NOT REQUIRED] org.seleniumhq.selenium#selenium-firefox-driver;3.5.3!selenium-firefox-driver.jar(src)
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar(src)
+[debug] 	[NOT REQUIRED] net.sourceforge.cssparser#cssparser;0.9.23!cssparser.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-util;9.4.5.v20170502!jetty-util.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.5.3!httpclient.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-io;9.4.5.v20170502!jetty-io.jar(src)
@@ -14084,66 +13622,43 @@
 [debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-client;9.4.5.v20170502!jetty-client.jar(src)
 [debug] 	[NOT REQUIRED] org.eclipse.jetty.websocket#websocket-common;9.4.5.v20170502!websocket-common.jar(src)
 [debug] 	[NOT REQUIRED] commons-io#commons-io;2.5!commons-io.jar(src)
-[debug] 	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar(src)
 [debug] 	[NOT REQUIRED] cglib#cglib-nodep;3.2.4!cglib-nodep.jar(src)
+[debug] 	[NOT REQUIRED] net.java.dev.jna#jna;4.1.0!jna.jar(src)
 [debug] 	[NOT REQUIRED] org.atteo.classindex#classindex;3.4!classindex.jar(src)
+[debug] 	[NOT REQUIRED] xalan#serializer;2.7.2!serializer.jar(src)
+[debug] 	[NOT REQUIRED] junit#junit;4.12!junit.jar(src)
 [debug] 	[NOT REQUIRED] org.w3c.css#sac;1.3!sac.jar(src)
 [debug] 	[NOT REQUIRED] net.sourceforge.htmlunit#neko-htmlunit;2.27!neko-htmlunit.jar(src)
 [debug] 	[NOT REQUIRED] net.sourceforge.htmlunit#htmlunit-core-js;2.27!htmlunit-core-js.jar(src)
-[debug] 	[NOT REQUIRED] junit#junit;4.12!junit.jar(src)
-[debug] 	[NOT REQUIRED] xalan#serializer;2.7.2!serializer.jar(src)
-[debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar(src)
 [debug] 	[NOT REQUIRED] xml-apis#xml-apis;1.4.01!xml-apis.jar(src)
 [debug] 	[NOT REQUIRED] xalan#xalan;2.7.2!xalan.jar(src)
 [debug] 	[NOT REQUIRED] org.seleniumhq.selenium#selenium-api;3.5.3!selenium-api.jar(src)
-[debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.8.0!gson.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
+[debug] 	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.3!hamcrest-core.jar(src)
 [debug] 	[NOT REQUIRED] net.java.dev.jna#jna-platform;4.1.0!jna-platform.jar(src)
-[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;9.4.5.v20170502!jetty-http.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar(src)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpmime;4.5.3!httpmime.jar(src)
 [debug] 	[NOT REQUIRED] com.novocode#junit-interface;0.11!junit-interface.jar(src)
 [debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4.6!httpcore.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpmime;4.5.3!httpmime.jar(src)
+[debug] 	[NOT REQUIRED] com.google.code.gson#gson;2.8.0!gson.jar(src)
+[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.8.11!jackson-core.jar(src)
+[debug] 	[NOT REQUIRED] org.eclipse.jetty#jetty-http;9.4.5.v20170502!jetty-http.jar(src)
 [debug] 	[NOT REQUIRED] org.seleniumhq.selenium#selenium-remote-driver;3.5.3!selenium-remote-driver.jar(src)
+[debug] 	[NOT REQUIRED] org.reflections#reflections;0.9.11!reflections.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 	[NOT REQUIRED] com.fasterxml.jackson.core#jackson-core;2.8.11!jackson-core.jar(src)
 [debug] 	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.7!parboiled-core.jar(src)
 [debug] 	[NOT REQUIRED] org.ow2.asm#asm-analysis;5.0.3!asm-analysis.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-docs_2.12;2.6.21!play-docs_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
+[debug] 	[NOT REQUIRED] commons-io#commons-io;2.6!commons-io.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-doc_2.12;1.8.2!play-doc_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.ow2.asm#asm;5.0.3!asm.jar(src)
-[debug] 	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.25!slf4j-api.jar(src)
 [debug] 	[NOT REQUIRED] org.pegdown#pegdown;1.6.0!pegdown.jar(src)
-[debug] 	[NOT REQUIRED] org.ow2.asm#asm-tree;5.0.3!asm-tree.jar(src)
-[debug] 	[NOT REQUIRED] commons-io#commons-io;2.6!commons-io.jar(src)
 [debug] 	[NOT REQUIRED] org.ow2.asm#asm-util;5.0.3!asm-util.jar(src)
 [debug] 	[NOT REQUIRED] org.parboiled#parboiled-java;1.1.7!parboiled-java.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-omnidoc_2.12;2.6.21!play-omnidoc_2.12.jar(src)
-[info] downloading https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean/11.7.1/ebean-11.7.1-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.21/play-jdbc-api_2.12-2.6.21-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/io/ebean/ebean/11.7.1/ebean-11.7.1-sources.jar
-[info] 	[SUCCESSFUL ] io.ebean#ebean;11.7.1!ebean.jar(src) (10861ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.12/2.6.21/play-jdbc-api_2.12-2.6.21-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.play#play-jdbc-api_2.12;2.6.21!play-jdbc-api_2.12.jar(src) (5427ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/io/ebean/ebean-agent/11.5.1/ebean-agent-11.5.1-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/io/ebean/ebean-agent/11.5.1/ebean-agent-11.5.1-sources.jar
-[info] 	[SUCCESSFUL ] io.ebean#ebean-agent;11.5.1!ebean-agent.jar(src) (12405ms)
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE-sources.jar.sha1
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.21.RELEASE/spring-core-4.3.21.RELEASE-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-context/4.3.21.RELEASE/spring-context-4.3.21.RELEASE-sources.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-context;4.3.21.RELEASE!spring-context.jar(src) (10254ms)
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/springframework/spring-core/4.3.21.RELEASE/spring-core-4.3.21.RELEASE-sources.jar
-[info] 	[SUCCESSFUL ] org.springframework#spring-core;4.3.21.RELEASE!spring-core.jar(src) (10741ms)
-[debug] :: resolution report :: resolve 7672ms :: artifacts dl 30917ms
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
-[warn] 	::              FAILED DOWNLOADS            ::
-[warn] 	:: ^ see resolution messages for details  ^ ::
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
-[warn] 	:: tyrex#tyrex;1.0.1!tyrex.jar(src)
-[warn] 	:: com.google.code.findbugs#jsr305;1.3.9!jsr305.jar(src)
-[warn] 	::::::::::::::::::::::::::::::::::::::::::::::
+[debug] 	[NOT REQUIRED] org.ow2.asm#asm-tree;5.0.3!asm-tree.jar(src)
+[debug] :: resolution report :: resolve 3189ms :: artifacts dl 1595ms
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT compile produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-compile.xml
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT runtime produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-runtime.xml
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT test produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-test.xml
@@ -14167,4 +13682,4 @@
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT pom produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-pom.xml
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT scala-tool produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-scala-tool.xml
 [debug] 	report for org.rhino#rhino$sources;1.0-SNAPSHOT docs produced in /home/lehone/repo/github/play/rhino/target/scala-2.12/resolution-cache/reports/org.rhino-rhino$sources-docs.xml
-[debug] 	resolve done (7672ms resolve - 30917ms download)
+[debug] 	resolve done (3189ms resolve - 1595ms download)
