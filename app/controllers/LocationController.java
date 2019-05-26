@@ -3,6 +3,7 @@ package controllers;
 import com.google.inject.Inject;
 import models.location.City;
 import models.location.Country;
+import models.location.Locality;
 import models.location.LocationTemplateForm;
 import models.location.Region;
 import play.data.Form;
@@ -124,6 +125,49 @@ public class LocationController extends Controller {
 	 * LOCALITY
 	 *=============================================*/
 	public Result getLocalities() {
-		return ok(views.html.admin.location.locality.render());
+		List<City> cities = City.find.all();
+		List<Locality> localities = Locality.find.all();
+		return ok(views.html.admin.location.locality.render(formFactory.form(LocationTemplateForm.class), localities, cities));
 	}
+
+	public Result createLocality() {
+		Form<LocationTemplateForm> createForm = formFactory.form(LocationTemplateForm.class).bindFromRequest();
+		if (createForm.hasErrors()) {
+			return badRequest(views.html.admin.location.locality.render(createForm, Locality.find.all(), City.find.all()));
+		} else {
+			LocationTemplateForm templateForm = createForm.get();
+
+			City city = City.find.byId(templateForm.parentId);
+
+			Locality locality;
+			for(String name: StringUtils.locationSplit(templateForm.children)) {
+				if (Locality.find.query().where()
+					.like("name", name)
+					.findList().size() == 0) {
+
+					locality = new Locality();
+					locality.city = city;
+					locality.name = name;
+					locality.save();
+				}
+			}
+
+			flash("success", "New Localities Successfully created");
+			return redirect(routes.LocationController.getLocalities());
+		}
+	}
+
+	public Result deleteLocality(Long id) {
+		Locality locality = Locality.find.byId(id);
+
+		if (locality != null) {
+			locality.delete();
+			flash("success", "Locality successfully deleted");
+		} else {
+			flash("info", "Locality does not exist");
+		}
+
+		return redirect(routes.LocationController.getLocalities());
+	}
+
 }

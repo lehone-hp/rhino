@@ -1,4 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/location/cities.scala.html:21:82: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                    class="form-control">@createForm("children").value</textarea>[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/location/locality.scala.html:21:74: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            class="form-control">@createForm("children").value</textarea>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                         ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

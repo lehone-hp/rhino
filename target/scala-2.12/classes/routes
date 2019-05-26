@@ -32,7 +32,10 @@ GET     /admin/cities                       controllers.LocationController.getCi
 POST    /admin/cities                       controllers.LocationController.createCity
 GET     /admin/cities/delete/:id            controllers.LocationController.deleteCity(id: Long)
 
-GET     /admin/localities       controllers.LocationController.getLocalities
+GET     /admin/localities                       controllers.LocationController.getLocalities
++ nocsrf
+POST    /admin/localities                       controllers.LocationController.createLocality
+GET     /admin/localities/delete/:id            controllers.LocationController.deleteLocality(id: Long)
 
 # Properties
 GET     /admin/properties       controllers.PropertyController.getAllProperties
