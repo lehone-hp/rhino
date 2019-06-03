@@ -2,9 +2,8 @@ package module;
 
 import io.ebean.Ebean;
 import models.PriceType;
-import models.PropertyType;
+import models.PriceType;
 import models.location.Country;
-import utils.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,10 +18,9 @@ public class InitialData {
 		if (Ebean.find(PriceType.class).findCount() == 0) {
 			String[] types = { "per hour", "per day", "per week", "per month", "per year" };
 			for (String type : types) {
-				PropertyType propertyType = new PropertyType();
-				propertyType.name = type;
-				propertyType.slug = StringUtils.slug(type);
-				propertyType.save();
+				PriceType pT = new PriceType();
+				pT.name = type;
+				pT.save();
 			}
 		}
 

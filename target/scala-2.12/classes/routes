@@ -39,7 +39,11 @@ GET     /admin/localities/delete/:id            controllers.LocationController.d
 
 # Properties
 GET     /admin/properties       controllers.PropertyController.getAllProperties
-GET     /admin/propert-types    controllers.PropertyController.getPropertyTypes
+
+GET     /admin/propert-types                        controllers.PropertyController.getPropertyTypes
++ nocsrf
+POST    /admin/propert-types                        controllers.PropertyController.createPropertyType
+GET     /admin/propert-types/delete/:id             controllers.PropertyController.deletePropertyType(id: Long)
 
 # Property Contacts
 GET     /admin/property-contacts    controllers.PropertyContactController.getPropertyContacts

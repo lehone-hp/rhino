@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Sun May 26 07:39:13 WAT 2019
+// @DATE:Mon Jun 03 07:38:59 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:52
+  // @LINE:56
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:52
+    // @LINE:56
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -63,6 +63,16 @@ package controllers.javascript {
     }
 
   
+    // @LINE:45
+    def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.createPropertyType",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types"})
+        }
+      """
+    )
+  
     // @LINE:41
     def getAllProperties: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getAllProperties",
@@ -73,12 +83,22 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:42
+    // @LINE:43
     def getPropertyTypes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getPropertyTypes",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types"})
+        }
+      """
+    )
+  
+    // @LINE:46
+    def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.deletePropertyType",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
@@ -265,7 +285,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:45
+  // @LINE:49
   class ReversePropertyContactController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -273,7 +293,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:45
+    // @LINE:49
     def getPropertyContacts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyContactController.getPropertyContacts",
       """

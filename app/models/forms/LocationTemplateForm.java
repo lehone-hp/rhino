@@ -1,4 +1,4 @@
-package models.location;
+package models.forms;
 
 import io.ebean.Model;
 import play.data.validation.Constraints;

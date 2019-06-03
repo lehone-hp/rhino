@@ -4,15 +4,13 @@ import com.google.inject.Inject;
 import models.location.City;
 import models.location.Country;
 import models.location.Locality;
-import models.location.LocationTemplateForm;
+import models.forms.LocationTemplateForm;
 import models.location.Region;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.*;
 import utils.StringUtils;
-import views.html.admin.location.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LocationController extends Controller {

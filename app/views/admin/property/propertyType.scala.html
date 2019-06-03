@@ -1,4 +1,8 @@
-@()
+@import models.forms.StringForm
+
+@import helper._
+
+@(createForm: Form[StringForm], propertyTypes: List[PropertyType])
 
 @views.html.admin.main("Property Types"){
     @*======Header Style==========*@
@@ -22,30 +26,22 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @if(propertyTypes.isEmpty()) {
                                 <tr>
-                                    <td>1</td>
-                                    <td>Store</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                    </td>
+                                    <td colspan="3" class="text-center">No Property Types Added</td>
                                 </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Land</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Studio</td>
-                                    <td>
-                                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                                        <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                    </td>
-                                </tr>
+                            } else {
+                                @for(pT <- propertyTypes) {
+                                    <tr>
+                                        <td>@{propertyTypes.indexOf(pT) + 1}</td>
+                                        <td>@pT.name</td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                                            <a href="@routes.PropertyController.deletePropertyType(pT.id)" class="btn btn-danger btn-sm">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
                             </tbody>
                         </table>
                     </div>
@@ -58,16 +54,27 @@
                         <strong class="card-title">Add New Property Type</strong>
                     </div>
                     <div class="card-body card-block">
+                    @form(routes.PropertyController.createPropertyType()) {
+
                         <div class="form-group">
                             <label for="amenity" class=" form-control-label">Property Type</label>
                             <input type="text"
+                                name="name"
+                                value="@createForm("name").value"
                                 id="amenity" placeholder="Enter type of property"
                                 class="form-control">
+
+                            @if(createForm("name").errors.size > 0) {
+                                @for(error <- createForm("name").errors) {
+                                    <span class="text-danger">@Messages(error.message())</span>
+                                }
+                            }
                         </div>
 
                         <div class="text-right">
                             <button class="btn btn-primary">Save</button>
                         </div>
+                    }
                     </div>
                 </div>
             </div>
