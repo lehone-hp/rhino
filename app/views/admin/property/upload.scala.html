@@ -1,0 +1,210 @@
+@()
+
+@views.html.admin.main("Upload New Property"){
+    @*======Header Style==========*@
+
+}{
+    @*======Content===============*@
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Upload a New Property</strong>
+                </div>
+                <div class="card-body card-block">
+
+                    <!-- PROPERTY INFORMATION -->
+                    <div class="upload-section">
+                        <h3 class="header">Property Information</h3>
+                        <hr>
+
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control"
+                                name="" value="">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-4">
+                                <label>Property Type</label>
+                                <select class="form-control" name="">
+                                    <option>-- select property type --</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>Status</label>
+                                <select class="form-control" name="">
+                                    <option>-- select status --</option>
+                                    <option value="sale">For Sale</option>
+                                    <option value="rent">For Rent</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>Area (sq m)</label>
+                                <input type="number" class="form-control" name="">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-section">
+                        <h3 class="header">Pricing</h3>
+                        <hr>
+
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label>Price</label>
+                                    <input type="number" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Payment Interval</label>
+                                    <select class="form-control" name="">
+                                        <option>-- select interval --</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Caution</label>
+                                    <input type="number" class="form-control" name="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Initial Deposit</label>
+                                    <input type="number" class="form-control" name="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @*
+                    <div class="upload-section">
+                        <h3 class="header">Photo Gallery</h3>
+                    </div>*@
+
+                    <div class="upload-section">
+                        <h3 class="header">Location</h3>
+                        <hr>
+
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <select class="form-control" name="">
+                                        <option>-- select country --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Region</label>
+                                    <select class="form-control" name="">
+                                        <option>-- select region --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <select class="form-control" name="">
+                                        <option>-- select city --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Locality/Quarter</label>
+                                    <select class="form-control" name="">
+                                        <option>-- select quarter --</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="upload-section">
+                        <h3 class="header">Detailed Information</h3>
+                        <hr>
+
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" name="" rows="7"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Beds</label>
+                                    <input type="number" class="form-control"
+                                        name=""
+                                        placeholder="Number of beds">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Bathrooms</label>
+                                    <input type="number" class="form-control"
+                                        name=""
+                                        placeholder="Number of bathrooms">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Kitchens</label>
+                                    <input type="number" class="form-control"
+                                        name=""
+                                        placeholder="Number of kitchens">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Living Rooms</label>
+                                    <input type="number" class="form-control"
+                                        name=""
+                                        placeholder="Number of living rooms">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upload-section">
+                        <h3 class="header">Amenities</h3>
+                        <hr>
+
+                        <div class="form-row">
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox"
+                                        value="" id="am1">
+                                    <label class="form-check-label" for="am1">
+                                        Tiled Floors
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center upload-section">
+                        <button class="btn btn-primary btn-block btn-lg">Upload Property</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+}{
+    @*======Footer Script=========*@
+
+}

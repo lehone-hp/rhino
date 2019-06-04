@@ -38,7 +38,8 @@ POST    /admin/localities                       controllers.LocationController.c
 GET     /admin/localities/delete/:id            controllers.LocationController.deleteLocality(id: Long)
 
 # Properties
-GET     /admin/properties       controllers.PropertyController.getAllProperties
+GET     /admin/properties                           controllers.PropertyController.getAllProperties
+GET     /admin/properties/upload                    controllers.PropertyController.getUpload
 
 GET     /admin/propert-types                        controllers.PropertyController.getPropertyTypes
 + nocsrf

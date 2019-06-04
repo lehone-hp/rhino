@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Mon Jun 03 07:38:59 WAT 2019
+// @DATE:Tue Jun 04 07:11:13 WAT 2019
 
 package router
 
@@ -26,9 +26,9 @@ class Routes(
   LocationController_6: controllers.LocationController,
   // @LINE:41
   PropertyController_2: controllers.PropertyController,
-  // @LINE:49
+  // @LINE:50
   PropertyContactController_7: controllers.PropertyContactController,
-  // @LINE:56
+  // @LINE:57
   Assets_5: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -47,9 +47,9 @@ class Routes(
     LocationController_6: controllers.LocationController,
     // @LINE:41
     PropertyController_2: controllers.PropertyController,
-    // @LINE:49
+    // @LINE:50
     PropertyContactController_7: controllers.PropertyContactController,
-    // @LINE:56
+    // @LINE:57
     Assets_5: controllers.Assets
   ) = this(errorHandler, HomeController_1, AdminController_0, AmenitiesController_4, UserController_3, LocationController_6, PropertyController_2, PropertyContactController_7, Assets_5, "/")
 
@@ -80,6 +80,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/localities""", """controllers.LocationController.createLocality"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/localities/delete/""" + "$" + """id<[^/]+>""", """controllers.LocationController.deleteLocality(id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/properties""", """controllers.PropertyController.getAllProperties"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/properties/upload""", """controllers.PropertyController.getUpload"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/propert-types""", """controllers.PropertyController.getPropertyTypes"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/propert-types""", """controllers.PropertyController.createPropertyType"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/propert-types/delete/""" + "$" + """id<[^/]+>""", """controllers.PropertyController.deletePropertyType(id:Long)"""),
@@ -398,11 +399,29 @@ class Routes(
     )
   )
 
-  // @LINE:43
-  private[this] lazy val controllers_PropertyController_getPropertyTypes17_route = Route("GET",
+  // @LINE:42
+  private[this] lazy val controllers_PropertyController_getUpload17_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/upload")))
+  )
+  private[this] lazy val controllers_PropertyController_getUpload17_invoker = createInvoker(
+    PropertyController_2.getUpload,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.PropertyController",
+      "getUpload",
+      Nil,
+      "GET",
+      this.prefix + """admin/properties/upload""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:44
+  private[this] lazy val controllers_PropertyController_getPropertyTypes18_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_getPropertyTypes17_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_getPropertyTypes18_invoker = createInvoker(
     PropertyController_2.getPropertyTypes,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -416,11 +435,11 @@ class Routes(
     )
   )
 
-  // @LINE:45
-  private[this] lazy val controllers_PropertyController_createPropertyType18_route = Route("POST",
+  // @LINE:46
+  private[this] lazy val controllers_PropertyController_createPropertyType19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_createPropertyType18_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_createPropertyType19_invoker = createInvoker(
     PropertyController_2.createPropertyType,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -434,11 +453,11 @@ class Routes(
     )
   )
 
-  // @LINE:46
-  private[this] lazy val controllers_PropertyController_deletePropertyType19_route = Route("GET",
+  // @LINE:47
+  private[this] lazy val controllers_PropertyController_deletePropertyType20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PropertyController_deletePropertyType19_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_deletePropertyType20_invoker = createInvoker(
     PropertyController_2.deletePropertyType(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -452,11 +471,11 @@ class Routes(
     )
   )
 
-  // @LINE:49
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts20_route = Route("GET",
+  // @LINE:50
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/property-contacts")))
   )
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts20_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts21_invoker = createInvoker(
     PropertyContactController_7.getPropertyContacts,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -470,11 +489,11 @@ class Routes(
     )
   )
 
-  // @LINE:56
-  private[this] lazy val controllers_Assets_versioned21_route = Route("GET",
+  // @LINE:57
+  private[this] lazy val controllers_Assets_versioned22_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned21_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned22_invoker = createInvoker(
     Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -593,34 +612,40 @@ class Routes(
         controllers_PropertyController_getAllProperties16_invoker.call(PropertyController_2.getAllProperties)
       }
   
-    // @LINE:43
-    case controllers_PropertyController_getPropertyTypes17_route(params@_) =>
+    // @LINE:42
+    case controllers_PropertyController_getUpload17_route(params@_) =>
       call { 
-        controllers_PropertyController_getPropertyTypes17_invoker.call(PropertyController_2.getPropertyTypes)
+        controllers_PropertyController_getUpload17_invoker.call(PropertyController_2.getUpload)
       }
   
-    // @LINE:45
-    case controllers_PropertyController_createPropertyType18_route(params@_) =>
+    // @LINE:44
+    case controllers_PropertyController_getPropertyTypes18_route(params@_) =>
       call { 
-        controllers_PropertyController_createPropertyType18_invoker.call(PropertyController_2.createPropertyType)
+        controllers_PropertyController_getPropertyTypes18_invoker.call(PropertyController_2.getPropertyTypes)
       }
   
     // @LINE:46
-    case controllers_PropertyController_deletePropertyType19_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PropertyController_deletePropertyType19_invoker.call(PropertyController_2.deletePropertyType(id))
-      }
-  
-    // @LINE:49
-    case controllers_PropertyContactController_getPropertyContacts20_route(params@_) =>
+    case controllers_PropertyController_createPropertyType19_route(params@_) =>
       call { 
-        controllers_PropertyContactController_getPropertyContacts20_invoker.call(PropertyContactController_7.getPropertyContacts)
+        controllers_PropertyController_createPropertyType19_invoker.call(PropertyController_2.createPropertyType)
       }
   
-    // @LINE:56
-    case controllers_Assets_versioned21_route(params@_) =>
+    // @LINE:47
+    case controllers_PropertyController_deletePropertyType20_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_PropertyController_deletePropertyType20_invoker.call(PropertyController_2.deletePropertyType(id))
+      }
+  
+    // @LINE:50
+    case controllers_PropertyContactController_getPropertyContacts21_route(params@_) =>
+      call { 
+        controllers_PropertyContactController_getPropertyContacts21_invoker.call(PropertyContactController_7.getPropertyContacts)
+      }
+  
+    // @LINE:57
+    case controllers_Assets_versioned22_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned21_invoker.call(Assets_5.versioned(path, file))
+        controllers_Assets_versioned22_invoker.call(Assets_5.versioned(path, file))
       }
   }
 }

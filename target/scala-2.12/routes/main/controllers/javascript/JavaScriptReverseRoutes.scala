@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Mon Jun 03 07:38:59 WAT 2019
+// @DATE:Tue Jun 04 07:11:13 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:56
+  // @LINE:57
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:56
+    // @LINE:57
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -63,12 +63,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:45
-    def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.PropertyController.createPropertyType",
+    // @LINE:47
+    def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.deletePropertyType",
       """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types"})
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )
@@ -83,7 +83,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:43
+    // @LINE:46
+    def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.createPropertyType",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types"})
+        }
+      """
+    )
+  
+    // @LINE:44
     def getPropertyTypes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getPropertyTypes",
       """
@@ -93,12 +103,12 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:46
-    def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.PropertyController.deletePropertyType",
+    // @LINE:42
+    def getUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.getUpload",
       """
-        function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/propert-types/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/properties/upload"})
         }
       """
     )
@@ -285,7 +295,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:49
+  // @LINE:50
   class ReversePropertyContactController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -293,7 +303,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:49
+    // @LINE:50
     def getPropertyContacts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyContactController.getPropertyContacts",
       """

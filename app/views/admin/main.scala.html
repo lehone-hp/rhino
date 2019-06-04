@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Red Rhino Admin | @title </title>
+        <title>Red Rhino Admin - @title </title>
         <meta name="description" content="Red Rhino - Admin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,8 +50,10 @@
                             <a href="@routes.PropertyController.getAllProperties()"> <i class="menu-icon fa fa-home"></i>
                                 All Properties </a>
                         </li>
-                        <li>
-                            <a href="#"> <i class="menu-icon fa fa-upload"></i>Upload New </a>
+                        <li @if(requestHeader.uri == routes.PropertyController.getUpload().toString) {
+                            class="active"}>
+                            <a href="@routes.PropertyController.getUpload()">
+                                <i class="menu-icon fa fa-upload"></i>Upload New </a>
                         </li>
                         <li @if(requestHeader.uri == routes.PropertyContactController.getPropertyContacts().toString) {
                             class="active"}>

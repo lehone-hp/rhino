@@ -18,10 +18,21 @@ public class PropertyController extends Controller {
 	public PropertyController(FormFactory formFactory) {
 		this.formFactory = formFactory;
 	}
+
 	public Result getAllProperties() {
 		return ok(views.html.admin.property.allProperties.render());
 	}
 
+	/*-----------------------------------------------
+	 | Upload Property Actions
+	 ------------------------------------------------*/
+	public Result getUpload() {
+		return ok(views.html.admin.property.upload.render());
+	}
+
+	/*-----------------------------------------------
+	 | Property Type Actions
+	 ------------------------------------------------*/
 	public Result getPropertyTypes() {
 		List<PropertyType> propTypes = PropertyType.find.all();
 		return ok(views.html.admin.property.propertyType.render(formFactory.form(StringForm.class), propTypes));

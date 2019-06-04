@@ -68,7 +68,7 @@ create table property (
   locality_id                   bigint,
   contact_info_id               bigint,
   user_id                       bigint,
-  constraint ck_property_status check ( status in (0,1,2)),
+  constraint ck_property_status check ( status in (0,1,2,3)),
   constraint pk_property primary key (id)
 );
 

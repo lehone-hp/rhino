@@ -99,6 +99,7 @@ public class Property extends Model {
 
 	enum Status {
 		ACTIVE,
+		SOLD,
 		PENDING,
 		VOIDED
 	}
