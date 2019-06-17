@@ -1,9 +1,13 @@
-@()
+@import models.forms.UploadPropertyForm
+@import models.location.Country
+@import models.location.Region
+@import helper._
 
-@views.html.admin.main("Upload New Property"){
+@(createForm: Form[UploadPropertyForm])
+
+@views.html.admin.main("Upload New Property") {
     @*======Header Style==========*@
-
-}{
+} {
     @*======Content===============*@
     <div class="row">
         <div class="col-sm-12">
@@ -13,7 +17,8 @@
                 </div>
                 <div class="card-body card-block">
 
-                    <!-- PROPERTY INFORMATION -->
+                @form(routes.PropertyController.postUpload()) {
+                        <!-- PROPERTY INFORMATION -->
                     <div class="upload-section">
                         <h3 class="header">Property Information</h3>
                         <hr>
@@ -21,29 +26,52 @@
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control"
-                                name="" value="">
+                            name="title"
+                            value="@createForm("title").value()">
+
+                            @if(createForm("title").errors.size > 0) {
+                                <span class="text-danger">@Messages(createForm("title").errors.get(0).message())</span>
+                            }
                         </div>
 
                         <div class="form-row">
                             <div class="col-md-4">
                                 <label>Property Type</label>
-                                <select class="form-control" name="">
-                                    <option>-- select property type --</option>
+                                <select class="form-control" name="propertyType">
+                                    <option value="">-- select property type --</option>
+                                    @for(pType <- PropertyType.find.all()) {
+                                        <option value="@pType.id"
+                                            @if(pType.id.toString.equals(createForm("propertyType").value())) { selected }>
+                                        @pType.name </option>
+                                    }
                                 </select>
+
+                                @if(createForm("propertyType").errors.size > 0) {
+                                    <span class="text-danger">@Messages(createForm("propertyType").errors.get(0).message())</span>
+                                }
                             </div>
 
                             <div class="col-md-4">
                                 <label>Status</label>
-                                <select class="form-control" name="">
-                                    <option>-- select status --</option>
+                                <select class="form-control" name="status">
+                                    <option value="">-- select status --</option>
                                     <option value="sale">For Sale</option>
                                     <option value="rent">For Rent</option>
                                 </select>
+
+                                @if(createForm("status").errors.size > 0) {
+                                    <span class="text-danger">@Messages(createForm("status").errors.get(0).message())</span>
+                                }
                             </div>
 
                             <div class="col-md-4">
                                 <label>Area (sq m)</label>
-                                <input type="number" class="form-control" name="">
+                                <input type="number" class="form-control"
+                                value="@createForm("area").value()" name="area">
+
+                                @if(createForm("area").errors.size > 0) {
+                                    <span class="text-danger">@Messages(createForm("area").errors.get(0).message())</span>
+                                }
                             </div>
 
                         </div>
@@ -58,15 +86,28 @@
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <label>Price</label>
-                                    <input type="number" class="form-control" name="">
+                                    <input type="number" class="form-control"
+                                    value="@createForm("price").value()" name="price">
+
+                                    @if(createForm("price").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("price").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Payment Interval</label>
-                                    <select class="form-control" name="">
-                                        <option>-- select interval --</option>
+                                    <select class="form-control" name="interval">
+                                        <option value="">-- select interval --</option>
+                                        @for(prType <- PriceType.find.all()) {
+                                            <option value="@prType.id"
+                                            @if(prType.id.toString.equals(createForm("interval").value())) { selected }>@prType.name</option>
+                                        }
                                     </select>
+
+                                    @if(createForm("interval").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("interval").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -75,23 +116,30 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Caution</label>
-                                    <input type="number" class="form-control" name="">
+                                    <input type="number" class="form-control" value="@createForm("caution").value()" name="caution">
+
+                                    @if(createForm("caution").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("caution").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Initial Deposit</label>
-                                    <input type="number" class="form-control" name="">
+                                    <input type="number" class="form-control"
+                                    value="@createForm("initialDeposit").value()" name="initialDeposit">
+
+                                    @if(createForm("initialDeposit").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("initialDeposit").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     @*
                     <div class="upload-section">
-                        <h3 class="header">Photo Gallery</h3>
+                    <h3 class="header">Photo Gallery</h3>
                     </div>*@
-
                     <div class="upload-section">
                         <h3 class="header">Location</h3>
                         <hr>
@@ -100,33 +148,57 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Country</label>
-                                    <select class="form-control" name="">
-                                        <option>-- select country --</option>
+                                    <select class="form-control" name="country">
+                                        <option value="">-- select country --</option>
+                                        @for(country <- Country.find.all()) {
+                                            <option value="@country.id"
+                                            @if(country.id.toString.equals(createForm("country").value())) { selected }>@country.name</option>
+                                        }
                                     </select>
+
+                                    @if(createForm("country").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("country").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Region</label>
-                                    <select class="form-control" name="">
-                                        <option>-- select region --</option>
+                                    <select class="form-control" name="region">
+                                        <option value="">-- select region --</option>
+                                        @for(region <- Region.find.all()) {
+                                            <option value="@region.id"
+                                            @if(region.id.toString.equals(createForm("region").value())) { selected }>@region.name</option>
+                                        }
                                     </select>
+
+                                    @if(createForm("region").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("region").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>City</label>
-                                    <select class="form-control" name="">
-                                        <option>-- select city --</option>
+                                    <select class="form-control" name="city">
+                                        <option value="">-- select city --</option>
                                     </select>
+
+                                    @if(createForm("city").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("city").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Locality/Quarter</label>
-                                    <select class="form-control" name="">
-                                        <option>-- select quarter --</option>
+                                    <select class="form-control" name="locality">
+                                        <option value="">-- select quarter --</option>
                                     </select>
+
+                                    @if(createForm("locality").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("locality").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -139,7 +211,12 @@
 
                         <div class="form-group">
                             <label>Description</label>
-                            <textarea class="form-control" name="" rows="7"></textarea>
+                            <textarea class="form-control" name="description"
+                            rows="7">@createForm("description").value()</textarea>
+
+                            @if(createForm("description").errors.size > 0) {
+                                <span class="text-danger">@Messages(createForm("description").errors.get(0).message())</span>
+                            }
                         </div>
 
                         <div class="form-row">
@@ -147,32 +224,48 @@
                                 <div class="form-group">
                                     <label>Beds</label>
                                     <input type="number" class="form-control"
-                                        name=""
-                                        placeholder="Number of beds">
+                                    value="@createForm("bedRooms").value()" name="bedRooms"
+                                    placeholder="Number of beds">
+
+                                    @if(createForm("bedRooms").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("bedRooms").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Bathrooms</label>
                                     <input type="number" class="form-control"
-                                        name=""
-                                        placeholder="Number of bathrooms">
+                                    value="@createForm("bathRooms").value()" name="bathRooms"
+                                    placeholder="Number of bathrooms">
+
+                                    @if(createForm("bathRooms").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("bathRooms").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Kitchens</label>
                                     <input type="number" class="form-control"
-                                        name=""
-                                        placeholder="Number of kitchens">
+                                    value="@createForm("kitchens").value()" name="kitchens"
+                                    placeholder="Number of kitchens">
+
+                                    @if(createForm("kitchens").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("kitchens").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Living Rooms</label>
                                     <input type="number" class="form-control"
-                                        name=""
-                                        placeholder="Number of living rooms">
+                                    value="@createForm("parlors").value()" name="parlors"
+                                    placeholder="Number of living rooms">
+
+                                    @if(createForm("parlors").errors.size > 0) {
+                                        <span class="text-danger">@Messages(createForm("parlors").errors.get(0).message())</span>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -183,28 +276,31 @@
                         <hr>
 
                         <div class="form-row">
+                        @for(feature <- Feature.find.all()) {
                             <div class="col-md-3">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox"
-                                        value="" id="am1">
-                                    <label class="form-check-label" for="am1">
-                                        Tiled Floors
+                                    value="@feature.id" id="@("am" + feature.id)"
+                                    name="features[]">
+                                    <label class="form-check-label" for="@("am" + feature.id)">
+                                    @feature.name
                                     </label>
                                 </div>
                             </div>
+                        }
                         </div>
                     </div>
 
                     <div class="text-center upload-section">
-                        <button class="btn btn-primary btn-block btn-lg">Upload Property</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Upload Property</button>
                     </div>
-
+                }
                 </div>
             </div>
         </div>
     </div>
 
-}{
+} {
     @*======Footer Script=========*@
-
 }
+

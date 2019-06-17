@@ -40,6 +40,8 @@ GET     /admin/localities/delete/:id            controllers.LocationController.d
 # Properties
 GET     /admin/properties                           controllers.PropertyController.getAllProperties
 GET     /admin/properties/upload                    controllers.PropertyController.getUpload
++ nocsrf
+POST    /admin/properties/upload                    controllers.PropertyController.postUpload
 
 GET     /admin/propert-types                        controllers.PropertyController.getPropertyTypes
 + nocsrf

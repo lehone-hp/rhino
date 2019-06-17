@@ -29,4 +29,8 @@ public class StringUtils {
 		return ret2;
 	}
 
+	public static boolean equals(Integer i, String s) {
+		return s.equals(i.toString());
+	}
+
 }

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Tue Jun 04 07:11:13 WAT 2019
+// @DATE:Mon Jun 17 09:06:24 WAT 2019
 
 import play.api.mvc.Call
 
@@ -11,14 +11,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:57
+  // @LINE:59
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:57
+    // @LINE:59
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -56,7 +56,7 @@ package controllers {
     }
 
   
-    // @LINE:47
+    // @LINE:49
     def deletePropertyType(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/propert-types/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
@@ -68,13 +68,19 @@ package controllers {
       Call("GET", _prefix + { _defaultPrefix } + "admin/properties")
     }
   
-    // @LINE:46
+    // @LINE:48
     def createPropertyType(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/propert-types")
     }
   
     // @LINE:44
+    def postUpload(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "admin/properties/upload")
+    }
+  
+    // @LINE:46
     def getPropertyTypes(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/propert-types")
@@ -208,14 +214,14 @@ package controllers {
   
   }
 
-  // @LINE:50
+  // @LINE:52
   class ReversePropertyContactController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:50
+    // @LINE:52
     def getPropertyContacts(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/property-contacts")

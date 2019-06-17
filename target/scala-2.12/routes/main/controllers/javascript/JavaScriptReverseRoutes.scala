@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Tue Jun 04 07:11:13 WAT 2019
+// @DATE:Mon Jun 17 09:06:24 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:57
+  // @LINE:59
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:57
+    // @LINE:59
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -63,7 +63,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:47
+    // @LINE:49
     def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.deletePropertyType",
       """
@@ -83,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:46
+    // @LINE:48
     def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.createPropertyType",
       """
@@ -94,6 +94,16 @@ package controllers.javascript {
     )
   
     // @LINE:44
+    def postUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PropertyController.postUpload",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/properties/upload"})
+        }
+      """
+    )
+  
+    // @LINE:46
     def getPropertyTypes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getPropertyTypes",
       """
@@ -295,7 +305,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:50
+  // @LINE:52
   class ReversePropertyContactController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -303,7 +313,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:50
+    // @LINE:52
     def getPropertyContacts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyContactController.getPropertyContacts",
       """

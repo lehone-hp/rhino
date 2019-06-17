@@ -1,4 +1,43 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/propertyType.scala.html:63:60: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@createForm("name").value"[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:30:57: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            value="@createForm("title").value()">[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:44:101: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            @if(pType.id.toString.equals(createForm("propertyType").value())) { selected }>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:70:60: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                value="@createForm("area").value()" name="area">[0m
 [0m[[0m[33mwarn[0m] [0m[0m                                                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:90:65: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("price").value()" name="price">[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:104:98: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            @if(prType.id.toString.equals(createForm("interval").value())) { selected }>@prType.name</option>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:119:109: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    <input type="number" class="form-control" value="@createForm("caution").value()" name="caution">[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:130:74: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("initialDeposit").value()" name="initialDeposit">[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:155:98: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            @if(country.id.toString.equals(createForm("country").value())) { selected }>@country.name</option>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:171:96: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                            @if(region.id.toString.equals(createForm("region").value())) { selected }>@region.name</option>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:215:65: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                            rows="7">@createForm("description").value()</textarea>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:227:68: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("bedRooms").value()" name="bedRooms"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:239:69: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("bathRooms").value()" name="bathRooms"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:251:68: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("kitchens").value()" name="kitchens"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/admin/property/upload.scala.html:263:67: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@createForm("parlors").value()" name="parlors"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m14 warnings found[0m

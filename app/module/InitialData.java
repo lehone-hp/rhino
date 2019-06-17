@@ -1,9 +1,12 @@
 package module;
 
 import io.ebean.Ebean;
+import models.Feature;
 import models.PriceType;
-import models.PriceType;
+import models.PropertyType;
 import models.location.Country;
+import scala.sys.Prop;
+import utils.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,6 +23,30 @@ public class InitialData {
 			for (String type : types) {
 				PriceType pT = new PriceType();
 				pT.name = type;
+				pT.save();
+			}
+		}
+
+		// Price Types
+		if (Ebean.find(PropertyType.class).findCount() == 0) {
+			String[] types = { "Apartment", "Single Room", "Studio", "Store", "Guest House", "Land" };
+			for (String type : types) {
+				PropertyType pT = new PropertyType();
+				pT.name = type;
+				pT.slug = StringUtils.slug(type);
+				pT.save();
+			}
+		}
+
+		// Price Types
+		if (Ebean.find(Feature.class).findCount() == 0) {
+			String[] types =
+					{"Parking Garage", "Tiled Floors", "Balcony", "Gate", "Fence", "Shower", "Pool",
+					 "Borehole", "Painted Wall" };
+			for (String type : types) {
+				Feature pT = new Feature();
+				pT.name = type;
+				pT.slug = StringUtils.slug(type);
 				pT.save();
 			}
 		}

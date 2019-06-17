@@ -1,7 +1,15 @@
 package controllers;
 
+import models.Feature;
+import models.PriceType;
+import models.Property;
 import models.PropertyType;
 import models.forms.StringForm;
+import models.forms.UploadPropertyForm;
+import models.location.City;
+import models.location.Country;
+import models.location.Locality;
+import models.location.Region;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.Controller;
@@ -27,7 +35,48 @@ public class PropertyController extends Controller {
 	 | Upload Property Actions
 	 ------------------------------------------------*/
 	public Result getUpload() {
-		return ok(views.html.admin.property.upload.render());
+		return ok(views.html.admin.property.upload.render(formFactory.form(UploadPropertyForm.class)));
+	}
+
+	public Result postUpload() {
+		Form<UploadPropertyForm> uploadForm = formFactory.form(UploadPropertyForm.class).bindFromRequest();
+		if (uploadForm.hasErrors()) {
+			return badRequest(views.html.admin.property.upload.render(uploadForm));
+		} else {
+			UploadPropertyForm form = uploadForm.get();
+
+			Property property = new Property();
+			property.name = form.title;
+			property.propertyType = PropertyType.find.byId(form.propertyType);
+			property.forSale = "sale".equals(form.status);
+			property.area = form.area;
+			property.price = form.price;
+			property.priceType = PriceType.find.byId(form.interval);
+			property.caution = form.caution;
+			property.initialDeposit = form.initialDeposit;
+			property.country = Country.find.byId(form.country);
+			property.region = Region.find.byId(form.region);
+			if (form.city != null)
+				property.city = City.find.byId(form.city);
+			if (form.locality != null)
+			property.locality = Locality.find.byId(form.locality);
+			property.description = form.description;
+			property.bedRooms = form.bedRooms;
+			property.bathRooms = form.bathRooms;
+			property.parlors = form.parlors;
+			property.kitchens = form.kitchens;
+
+			if (form.features != null) {
+				for (Long i : form.features) {
+					property.features.add(Feature.find.byId(i));
+				}
+			}
+
+			property.save();
+
+			flash("success", "New Property Type Successfully created");
+			return redirect(routes.PropertyController.getUpload());
+		}
 	}
 
 	/*-----------------------------------------------

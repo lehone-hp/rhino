@@ -1,7 +1,7 @@
 @import models.forms.LocationTemplateForm
-@(createForm: Form[LocationTemplateForm], cities: List[location.City], regions: List[location.Region])
+@import helper._
 
-    @import helper._
+@(createForm: Form[LocationTemplateForm], cities: List[location.City], regions: List[location.Region])
 
 @views.html.admin.main("Cities") {
     @*======Header Style==========*@
@@ -39,9 +39,9 @@
                                     }
                                 </select>
                                 @if(createForm("parentId").errors.size > 0) {
-                                    @for(error <- createForm("parentId").errors) {
-                                        <span class="text-danger">@Messages(error.message())</span>
-                                    }
+                                    @*for(error <- createForm("parentId").errors) {*@
+                                        <span class="text-danger">@Messages(createForm("parentId").errors.get(0).message())</span>
+                                    @*}*@
                                 } else {
                                     <span class="help-block">Select region where the cities belong to</span>
                                 }
