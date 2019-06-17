@@ -1,6 +1,5 @@
 @import models.forms.UploadPropertyForm
-@import models.location.Country
-@import models.location.Region
+@import models.location._
 @import helper._
 
 @(createForm: Form[UploadPropertyForm])
@@ -17,7 +16,7 @@
                 </div>
                 <div class="card-body card-block">
 
-                @form(routes.PropertyController.postUpload()) {
+                @form(routes.PropertyController.postUpload(), 'enctype -> "multipart/form-data") {
                         <!-- PROPERTY INFORMATION -->
                     <div class="upload-section">
                         <h3 class="header">Property Information</h3>
@@ -41,7 +40,7 @@
                                     <option value="">-- select property type --</option>
                                     @for(pType <- PropertyType.find.all()) {
                                         <option value="@pType.id"
-                                            @if(pType.id.toString.equals(createForm("propertyType").value())) { selected }>
+                                        @if(pType.id.toString.equals(createForm("propertyType").value())) { selected }>
                                         @pType.name </option>
                                     }
                                 </select>
@@ -101,7 +100,8 @@
                                         <option value="">-- select interval --</option>
                                         @for(prType <- PriceType.find.all()) {
                                             <option value="@prType.id"
-                                            @if(prType.id.toString.equals(createForm("interval").value())) { selected }>@prType.name</option>
+                                            @if(prType.id.toString.equals(createForm("interval").value())) {
+                                                selected }>@prType.name </option>
                                         }
                                     </select>
 
@@ -136,10 +136,23 @@
                             </div>
                         </div>
                     </div>
-                    @*
+
                     <div class="upload-section">
-                    <h3 class="header">Photo Gallery</h3>
-                    </div>*@
+                        <h3 class="header">Photo Gallery</h3>
+                        <hr>
+
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" name="pictures[]" value="" multiple accept="image/*"
+                                class="custom-file-input" id="property_images">
+                                <label class="custom-file-label" for="property_images">Uploads images for this property</label>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center" id="property_images_preview">
+                        </div>
+                    </div>
+
                     <div class="upload-section">
                         <h3 class="header">Location</h3>
                         <hr>
@@ -152,7 +165,8 @@
                                         <option value="">-- select country --</option>
                                         @for(country <- Country.find.all()) {
                                             <option value="@country.id"
-                                            @if(country.id.toString.equals(createForm("country").value())) { selected }>@country.name</option>
+                                            @if(country.id.toString.equals(createForm("country").value())) {
+                                                selected }>@country.name </option>
                                         }
                                     </select>
 
@@ -168,7 +182,8 @@
                                         <option value="">-- select region --</option>
                                         @for(region <- Region.find.all()) {
                                             <option value="@region.id"
-                                            @if(region.id.toString.equals(createForm("region").value())) { selected }>@region.name</option>
+                                            @if(region.id.toString.equals(createForm("region").value())) {
+                                                selected }>@region.name </option>
                                         }
                                     </select>
 
@@ -182,6 +197,11 @@
                                     <label>City</label>
                                     <select class="form-control" name="city">
                                         <option value="">-- select city --</option>
+                                        @for(region <- City.find.all()) {
+                                            <option value="@region.id"
+                                            @if(region.id.toString.equals(createForm("city").value())) {
+                                                selected }>@region.name </option>
+                                        }
                                     </select>
 
                                     @if(createForm("city").errors.size > 0) {
@@ -194,6 +214,11 @@
                                     <label>Locality/Quarter</label>
                                     <select class="form-control" name="locality">
                                         <option value="">-- select quarter --</option>
+                                        @for(region <- Locality.find.all()) {
+                                            <option value="@region.id"
+                                            @if(region.id.toString.equals(createForm("locality").value())) {
+                                                selected }>@region.name </option>
+                                        }
                                     </select>
 
                                     @if(createForm("locality").errors.size > 0) {
@@ -295,6 +320,7 @@
                         <button type="submit" class="btn btn-primary btn-block btn-lg">Upload Property</button>
                     </div>
                 }
+
                 </div>
             </div>
         </div>
@@ -302,5 +328,7 @@
 
 } {
     @*======Footer Script=========*@
+    <script>
+    </script>
 }
 

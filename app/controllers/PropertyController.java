@@ -3,6 +3,7 @@ package controllers;
 import models.Feature;
 import models.PriceType;
 import models.Property;
+import models.PropertyPhoto;
 import models.PropertyType;
 import models.forms.StringForm;
 import models.forms.UploadPropertyForm;
@@ -13,10 +14,17 @@ import models.location.Region;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.Controller;
+import play.mvc.Http;
 import play.mvc.Result;
 
 import javax.inject.Inject;
+import java.io.File;
+import java.io.FileInputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 public class PropertyController extends Controller {
 
@@ -28,7 +36,8 @@ public class PropertyController extends Controller {
 	}
 
 	public Result getAllProperties() {
-		return ok(views.html.admin.property.allProperties.render());
+		List<Property> properties = Property.find.all();
+		return ok(views.html.admin.property.allProperties.render(properties));
 	}
 
 	/*-----------------------------------------------
@@ -59,7 +68,7 @@ public class PropertyController extends Controller {
 			if (form.city != null)
 				property.city = City.find.byId(form.city);
 			if (form.locality != null)
-			property.locality = Locality.find.byId(form.locality);
+				property.locality = Locality.find.byId(form.locality);
 			property.description = form.description;
 			property.bedRooms = form.bedRooms;
 			property.bathRooms = form.bathRooms;
@@ -71,12 +80,52 @@ public class PropertyController extends Controller {
 					property.features.add(Feature.find.byId(i));
 				}
 			}
+			property.save();
+
+			Http.MultipartFormData body = request().body().asMultipartFormData();
+			List<Http.MultipartFormData.FilePart> fileParts = body.getFiles();
+			for (Http.MultipartFormData.FilePart filePart : fileParts) {
+				File file = (File) filePart.getFile();
+				if (file.length() > 0) {
+					try {
+						String filename = UUID.randomUUID() + (Long.toString(new Date().getTime()));
+						Files.write(Paths.get("public/uploads/properties/" + filename + ".png"),
+								readContentIntoByteArray((File) filePart.getFile()));
+
+						PropertyPhoto photo = new PropertyPhoto();
+						photo.photo = filename;
+						photo.property = property;
+						photo.save();
+						property.photos.add(photo);
+					}
+					catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
 
 			property.save();
 
-			flash("success", "New Property Type Successfully created");
-			return redirect(routes.PropertyController.getUpload());
 		}
+
+		flash("success", "New Property Type Successfully created");
+		return redirect(routes.PropertyController.getUpload());
+	}
+
+	private static byte[] readContentIntoByteArray(File file) {
+		FileInputStream fileInputStream = null;
+		byte[] bFile = new byte[(int) file.length()];
+		try {
+			//convert file into array of bytes
+			fileInputStream = new FileInputStream(file);
+			fileInputStream.read(bFile);
+			fileInputStream.close();
+
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return bFile;
 	}
 
 	/*-----------------------------------------------

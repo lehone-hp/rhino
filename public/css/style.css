@@ -2546,3 +2546,8 @@ footer.site-footer {
   margin-top: 0;
   margin-bottom: 2rem;
 }
+
+.img-100 {
+  height: 100%;
+  width: 100%;
+}

@@ -1,6 +1,25 @@
-$.noConflict();
 
 jQuery(document).ready(function($) {
+
+
+	$('#property_images').on('change', function () {
+		var images = this.files;
+
+		$('#property_images_preview').html('');
+		for (var i = 0; i < images.length; i++) {
+			var file = images[i];
+			var reader = new FileReader();
+			reader.addEventListener("load", function (event) {
+				var img = '' +
+					'<div class="col-sm-2 col-xs-3">' +
+					'	<img class="img-100 img-thumbnail" id="img' + i + '" src="' + event.target.result + '">' +
+					'</div>';
+				$('#property_images_preview').append(img);
+			});
+			reader.readAsDataURL(file);
+		}
+	});
+
 
 	"use strict";
 
