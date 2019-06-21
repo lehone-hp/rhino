@@ -3,57 +3,58 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                       controllers.HomeController.index
+GET         /                                      controllers.HomeController.index
 
 # =====================================================================================================================
 # Admin Routes
 # =====================================================================================================================
 
-GET     /admin/                 controllers.AdminController.getDashboard
-GET     /admin/dashboard        controllers.AdminController.getDashboard
+GET         /admin/                                controllers.AdminController.getDashboard
+GET         /admin/dashboard                       controllers.AdminController.getDashboard
 
 # Amenities
-GET     /admin/amenities                    controllers.AmenitiesController.getAmenities
+GET         /admin/amenities                       controllers.AmenitiesController.getAmenities
 + nocsrf
-POST    /admin/amenities                    controllers.AmenitiesController.create
-GET     /admin/amenities/delete/:id         controllers.AmenitiesController.delete(id: Long)
+POST        /admin/amenities                       controllers.AmenitiesController.create
+GET         /admin/amenities/delete/:id            controllers.AmenitiesController.delete(id: Long)
 
 # Owners / Landlords
-GET     /admin/landlords        controllers.UserController.getOwners
+GET         /admin/landlords                       controllers.UserController.getOwners
 
 # Location
-GET     /admin/regions                      controllers.LocationController.getRegions
+GET         /admin/regions                         controllers.LocationController.getRegions
 + nocsrf
-POST    /admin/regions                      controllers.LocationController.createRegion
-GET     /admin/regions/delete/:id           controllers.LocationController.deleteRegion(id: Long)
+POST        /admin/regions                         controllers.LocationController.createRegion
+GET         /admin/regions/delete/:id              controllers.LocationController.deleteRegion(id: Long)
 
-GET     /admin/cities                       controllers.LocationController.getCities
+GET         /admin/cities                          controllers.LocationController.getCities
 + nocsrf
-POST    /admin/cities                       controllers.LocationController.createCity
-GET     /admin/cities/delete/:id            controllers.LocationController.deleteCity(id: Long)
+POST        /admin/cities                          controllers.LocationController.createCity
+GET         /admin/cities/delete/:id               controllers.LocationController.deleteCity(id: Long)
 
-GET     /admin/localities                       controllers.LocationController.getLocalities
+GET         /admin/localities                      controllers.LocationController.getLocalities
 + nocsrf
-POST    /admin/localities                       controllers.LocationController.createLocality
-GET     /admin/localities/delete/:id            controllers.LocationController.deleteLocality(id: Long)
+POST        /admin/localities                      controllers.LocationController.createLocality
+GET         /admin/localities/delete/:id           controllers.LocationController.deleteLocality(id: Long)
 
 # Properties
-GET     /admin/properties                           controllers.PropertyController.getAllProperties
-GET     /admin/properties/upload                    controllers.PropertyController.getUpload
+GET         /admin/properties                      controllers.PropertyController.getAllProperties
+GET         /admin/properties/upload               controllers.PropertyController.getUpload
+GET         /admin/properties/:id                  controllers.PropertyController.getProperty(id: Long)
 + nocsrf
-POST    /admin/properties/upload                    controllers.PropertyController.postUpload
+POST        /admin/properties/upload               controllers.PropertyController.postUpload
 
-GET     /admin/propert-types                        controllers.PropertyController.getPropertyTypes
+GET         /admin/propert-types                   controllers.PropertyController.getPropertyTypes
 + nocsrf
-POST    /admin/propert-types                        controllers.PropertyController.createPropertyType
-GET     /admin/propert-types/delete/:id             controllers.PropertyController.deletePropertyType(id: Long)
+POST        /admin/propert-types                   controllers.PropertyController.createPropertyType
+GET         /admin/propert-types/delete/:id        controllers.PropertyController.deletePropertyType(id: Long)
 
 # Property Contacts
-GET     /admin/property-contacts    controllers.PropertyContactController.getPropertyContacts
+GET         /admin/property-contacts               controllers.PropertyContactController.getPropertyContacts
 
 # =====================================================================================================================
 # End Admin Routes
 # =====================================================================================================================
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file           controllers.Assets.versioned(path="/public", file: Asset)
+GET         /assets/*file                          controllers.Assets.versioned(path="/public", file: Asset)

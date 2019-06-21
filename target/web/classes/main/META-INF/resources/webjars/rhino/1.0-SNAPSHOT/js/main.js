@@ -1,6 +1,22 @@
 
 jQuery(document).ready(function($) {
 
+	//Owl Slider
+	$("#property-image-slider").owlCarousel({
+		navigation: false,
+		nav: true,
+		slideSpeed: 500,
+		paginationSpeed: 900,
+		items: 4,
+		singleItem: true,
+		autoplay: true,
+		autoplayTimeout: 3500,
+		autoplaySpeed: 1500,
+		autoplayHoverPause: true
+	});
+
+
+
 
 	$('#property_images').on('change', function () {
 		var images = this.files;

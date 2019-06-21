@@ -1,0 +1,147 @@
+@import models.forms.UploadPropertyForm
+@import models.location._
+@import helper._
+
+@(property: Property)
+
+@views.html.admin.main("Single Property") {
+    @*======Header Style==========*@
+} {
+    @*======Content===============*@
+    @if(property != null) {
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Uploaded pictures of Property</h5>
+                    </div>
+                    <div class="card-body">
+                    @if(property.photos.size() > 0) {
+                        <div id="property-image-slider" class="owl-carousel owl-theme">
+
+                        @for(photo <- property.photos) {
+                            <div class="photo-carousel">
+                                <img src="@routes.Assets.versioned("uploads/properties/" + photo.photo)" class="img-thumbnail">
+                            </div>
+                        }
+
+                        </div>
+                    } else {
+                        <h4 class="mt-0">No photos have been uploaded for this vehicle</h4>
+                    }
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Property Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="nav nav-tabs">
+                            <li>
+                                <a data-toggle="tab" class="active show" href="#description">Description</a></li>
+                            <li>
+                                <a data-toggle="tab" href="#specs">Specifications</a></li>
+                            <li>
+                                <a data-toggle="tab" href="#features">Amenities</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="description" class="tab-pane fade active show">
+                                <p>@property.description</p>
+                            </div>
+                            <div id="specs" class="tab-pane fade">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered">
+                                        <tbody>
+                                            @if(property.caution != null) {
+                                                <tr>
+                                                    <td><strong>Caution</strong></td>
+                                                    <td>XAF @property.caution</td>
+                                                </tr>
+                                            }
+                                            @if(property.initialDeposit != null) {
+                                                <tr>
+                                                    <td><strong>Initial Deposit</strong></td>
+                                                    <td>XAF @property.initialDeposit</td>
+                                                </tr>
+                                            }
+                                            @if(property.area != null) {
+                                                <tr>
+                                                    <td><strong>Surface Area</strong></td>
+                                                    <td>@property.area meters sq</td>
+                                                </tr>
+                                            }
+                                            @if(property.bedRooms != null) {
+                                                <tr>
+                                                    <td><strong>Bedrooms</strong></td>
+                                                    <td>@property.bedRooms</td>
+                                                </tr>
+                                            }
+                                            @if(property.bathRooms != null) {
+                                                <tr>
+                                                    <td><strong>Bathrooms</strong></td>
+                                                    <td>@property.bathRooms</td>
+                                                </tr>
+                                            }
+                                            @if(property.parlors != null) {
+                                                <tr>
+                                                    <td><strong>Parlors</strong></td>
+                                                    <td>@property.parlors</td>
+                                                </tr>
+                                            }
+                                            @if(property.kitchens != null) {
+                                                <tr>
+                                                    <td><strong>Kitchens</strong></td>
+                                                    <td>@property.kitchens</td>
+                                                </tr>
+                                            }
+                                        </tbody></table>
+                                </div>
+
+                            </div>
+                            <div id="features" class="tab-pane fade">
+                                <div class="row">
+                                @for(feature <- property.features) {
+                                    <div class="col-md-4 mb-2">
+                                        <h5><span class="fa fa-check-circle"></span>
+                                            @feature.name </h5>
+                                    </div>
+                                }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card property-show">
+                    <div class="card-header">
+                        <h5>Basic Property Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="property-name">@property.name</h4>
+                        <h5 class="property-price"><span>Price:</span> XAF @property.price </h5>
+                        <a href="#" class="btn btn-primary btn-sm">Edit</a>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                        <hr>
+
+                        <p class="mb-1">
+                            @property.propertyType.name
+                            for @if(property.forSale) {sale} else {rent}</p>
+                        <p><span class="fa fa-map-marker"></span> Buea, South West, Cameroon</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    } else {
+        <h3 class="mb-3">Property Not Found</h3>
+    }
+} {
+    @*======Footer Script=========*@
+    <script>
+    </script>
+}
+

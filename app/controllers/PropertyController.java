@@ -47,6 +47,11 @@ public class PropertyController extends Controller {
 		return ok(views.html.admin.property.upload.render(formFactory.form(UploadPropertyForm.class)));
 	}
 
+	public Result getProperty(Long id) {
+		Property property = Property.find.byId(id);
+		return ok(views.html.admin.property.property.render(property));
+	}
+
 	public Result postUpload() {
 		Form<UploadPropertyForm> uploadForm = formFactory.form(UploadPropertyForm.class).bindFromRequest();
 		if (uploadForm.hasErrors()) {
@@ -88,8 +93,8 @@ public class PropertyController extends Controller {
 				File file = (File) filePart.getFile();
 				if (file.length() > 0) {
 					try {
-						String filename = UUID.randomUUID() + (Long.toString(new Date().getTime()));
-						Files.write(Paths.get("public/uploads/properties/" + filename + ".png"),
+						String filename = UUID.randomUUID() + (Long.toString(new Date().getTime())) + ".png";
+						Files.write(Paths.get("public/uploads/properties/" + filename ),
 								readContentIntoByteArray((File) filePart.getFile()));
 
 						PropertyPhoto photo = new PropertyPhoto();

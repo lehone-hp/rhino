@@ -2,23 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c06eecc3-6b0b-4f4a-8eb4-4c9169ac6eaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/admin/property/property.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/PropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PropertyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/main.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Property.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/admin/main$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/views/html/admin/main$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/admin/dashboard.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/admin/dashboard.template.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/admin/main.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/twirl/main/views/html/admin/main.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAmenitiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAmenitiesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAmenitiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAmenitiesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/Routes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/router/RoutesPrefix.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/$global/$global/streams/sync-exported-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/playRoutes/$global/streams/op-cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets/assets/$global/streams/sync-assets-web-assets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/rhino/1.0-SNAPSHOT/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/rhino/1.0-SNAPSHOT/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/rhino/1.0-SNAPSHOT/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/classes/main/META-INF/resources/webjars/rhino/1.0-SNAPSHOT/js/main.js" afterDir="false" />
@@ -62,30 +74,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/property/upload.scala.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="450">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
               <folding>
-                <element signature="e#1#39#0#Scala" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="method#postUpload#0;class#PropertyController#0" />
+                <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
+                <element signature="method#deletePropertyType#0;class#PropertyController#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/property/property.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+            <state relative-caret-position="172">
+              <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Property.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1404">
+              <caret line="95" column="33" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="33" />
               <folding>
-                <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
-                <element signature="method#deletePropertyType#0;class#PropertyController#0" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,6 +133,11 @@
       <find>security</find>
       <find>Content-Security-Policy</find>
       <find>chart</find>
+      <find>lnr lnr-checkmark-circle</find>
+      <find>.nav-tabs</find>
+      <find>.card .nav</find>
+      <find>body {</find>
+      <find>h4&gt;&lt;span</find>
     </findStrings>
     <replaceStrings>
       <replace>type=&quot;text/javascript&quot;</replace>
@@ -125,6 +148,8 @@
       <replace>city</replace>
       <replace>PriceType</replace>
       <replace>&lt;option value=&quot;&quot;&gt;</replace>
+      <replace>fa fa-check-circle</replace>
+      <replace>h5&gt;&lt;span</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -161,20 +186,21 @@
         <option value="$PROJECT_DIR$/app/models/forms/StringForm.java" />
         <option value="$PROJECT_DIR$/app/views/admin/property/propertyType.scala.html" />
         <option value="$PROJECT_DIR$/app/module/InitialData.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/views/admin/location/cities.scala.html" />
         <option value="$PROJECT_DIR$/app/utils/StringUtils.java" />
         <option value="$PROJECT_DIR$/app/models/forms/UploadPropertyForm.java" />
-        <option value="$PROJECT_DIR$/app/models/Property.java" />
-        <option value="$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html" />
         <option value="$PROJECT_DIR$/app/views/admin/dashboard.scala.html" />
-        <option value="$PROJECT_DIR$/conf/application.conf" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/scriptFile.scala" />
         <option value="$PROJECT_DIR$/app/views/admin/main.scala.html" />
-        <option value="$PROJECT_DIR$/public/js/main.js" />
-        <option value="$PROJECT_DIR$/app/controllers/PropertyController.java" />
         <option value="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" />
+        <option value="$PROJECT_DIR$/conf/application.conf" />
+        <option value="$PROJECT_DIR$/app/models/Property.java" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/app/controllers/PropertyController.java" />
+        <option value="$PROJECT_DIR$/public/js/main.js" />
+        <option value="$PROJECT_DIR$/app/views/admin/property/property.scala.html" />
       </list>
     </option>
   </component>
@@ -207,9 +233,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="25" />
-    <option name="width" value="821" />
-    <option name="height" value="743" />
+    <option name="x" value="236" />
+    <option name="y" value="27" />
+    <option name="width" value="811" />
+    <option name="height" value="448" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -230,7 +257,50 @@
             <path>
               <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -243,7 +313,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560781930914" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560782114894" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -443,12 +513,14 @@
       <workItem from="1559574702292" duration="639000" />
       <workItem from="1559627385955" duration="7495000" />
       <workItem from="1559648729018" duration="604000" />
-      <workItem from="1560754550774" duration="20311000" />
+      <workItem from="1560754550774" duration="20462000" />
+      <workItem from="1561134057307" duration="7842000" />
+      <workItem from="1561142771288" duration="1259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57463000" />
+    <option name="totallyTimeSpent" value="66715000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,10 +532,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21969697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14393939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -480,7 +551,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="SBT Console" order="8" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.66775244" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4576547" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5030303" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -506,13 +577,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/admin/amenities/amenities.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Workspace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -565,13 +629,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="43" column="93" selection-start-line="43" selection-start-column="83" selection-end-line="43" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -628,32 +685,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/forms/UploadPropertyForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="55" column="78" selection-start-line="55" selection-start-column="78" selection-end-line="55" selection-end-column="78" />
-          <folding>
-            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -684,23 +721,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="2551" column="13" selection-start-line="2551" selection-start-column="13" selection-end-line="2551" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/scriptFile.scala">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/scriptFile.scala" />
     <entry file="file://$PROJECT_DIR$/public/owlcarousel/owl.theme.default.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -711,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -725,51 +739,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2009-201.png.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-white.png.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/20151114_113047-1.jpg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/Mon Jun 17 15:12:29 WAT 2019cbb23adc-2427-4d24-8e93-56e9b99ab531.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/dc507114-d77f-41c3-ba1c-65acdd4fa6f31560780861394.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/b1db0dc5-ed79-4ccd-bfcf-b528225e91dc1560780861395.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/7dc31a70-4e40-418b-af26-84257ce45e531560780861389.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/1edc4871-8765-4104-b5ce-a3d84ee0accb1560780861391.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/d96c807d-7081-4129-8a59-95a35e3cbf361560780861394.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/f5cb0bc8-8aa4-4a99-bb8a-18ba330e4d531560780861391.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/706bf585-da13-41d0-87fe-d4cf944184621560780861393.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/516df398-29df-4119-bf8d-0c82fc4f9dbb1560780949903.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/9dca4a21-c67a-4414-a864-e8b2c219b9521560780861391.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/113a482c-2de8-4d59-969e-e726156639131560781131121.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/91dff53c-96d0-409d-8aee-f10c0770c6691560781266053.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2009-201.png.png" />
+    <entry file="file://$PROJECT_DIR$/bg-white.png.png" />
+    <entry file="file://$PROJECT_DIR$/20151114_113047-1.jpg.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/Mon Jun 17 15:12:29 WAT 2019cbb23adc-2427-4d24-8e93-56e9b99ab531.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/dc507114-d77f-41c3-ba1c-65acdd4fa6f31560780861394.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/b1db0dc5-ed79-4ccd-bfcf-b528225e91dc1560780861395.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/7dc31a70-4e40-418b-af26-84257ce45e531560780861389.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/1edc4871-8765-4104-b5ce-a3d84ee0accb1560780861391.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/d96c807d-7081-4129-8a59-95a35e3cbf361560780861394.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/f5cb0bc8-8aa4-4a99-bb8a-18ba330e4d531560780861391.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/706bf585-da13-41d0-87fe-d4cf944184621560780861393.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/516df398-29df-4119-bf8d-0c82fc4f9dbb1560780949903.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/9dca4a21-c67a-4414-a864-e8b2c219b9521560780861391.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/113a482c-2de8-4d59-969e-e726156639131560781131121.png" />
+    <entry file="file://$PROJECT_DIR$/public/uploads/properties/91dff53c-96d0-409d-8aee-f10c0770c6691560781266053.png" />
     <entry file="file://$PROJECT_DIR$/public/uploads/properties/bd118131-ad58-4c6e-8135-4fb32a7c78841560781820471.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -785,17 +769,6 @@
     <entry file="file://$PROJECT_DIR$/public/uploads/properties/4120976d-0f0b-4407-839a-d95bb07a077d1560781820238.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
-            <element signature="method#deletePropertyType#0;class#PropertyController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -803,17 +776,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="2570" column="18" selection-start-line="2570" selection-start-column="18" selection-end-line="2570" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/property/upload.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="36">
+          <caret line="4" column="11" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="48" column="116" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
           <folding>
-            <element signature="e#1#39#0#Scala" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="method#postUpload#0;class#PropertyController#0" />
+            <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
+            <element signature="method#deletePropertyType#0;class#PropertyController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="95" column="33" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/property/property.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="79" column="45" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
         </state>
       </provider>
     </entry>
