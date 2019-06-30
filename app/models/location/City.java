@@ -1,5 +1,7 @@
 package models.location;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 
@@ -21,9 +23,11 @@ public class City extends Model {
 
 	@ManyToOne
     @JoinColumn(name = "region_id")
+	@JsonManagedReference
 	public Region region;
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonBackReference
 	public List<Locality> localities;
 
 	public static Finder<Long, City> find = new Finder<>(City.class);

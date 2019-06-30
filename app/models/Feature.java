@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 import play.data.validation.Constraints;
@@ -24,6 +26,7 @@ public class Feature extends Model {
 	public String slug;
 
 	@ManyToMany(mappedBy = "features")
+	@JsonManagedReference
 	public List<Property> properties;
 
 	public static Finder<Long, Feature> find = new Finder<>(Feature.class);

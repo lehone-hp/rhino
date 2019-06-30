@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 
@@ -18,6 +20,7 @@ public class PriceType extends Model {
 	public String name;
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonBackReference
 	public List<Property> properties;
 
 	public static Finder<Long, PriceType> find = new Finder<>(PriceType.class);

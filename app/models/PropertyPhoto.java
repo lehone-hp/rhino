@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 
@@ -18,6 +20,7 @@ public class PropertyPhoto extends Model {
 
 	@ManyToOne
     @JoinColumn(name = "property_id")
+	@JsonManagedReference
 	public Property property;
 
 	public static Finder<Long, PropertyPhoto> find = new Finder<>(PropertyPhoto.class);

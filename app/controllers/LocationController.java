@@ -8,6 +8,7 @@ import models.forms.LocationTemplateForm;
 import models.location.Region;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
 import play.mvc.*;
 import utils.StringUtils;
 
@@ -166,6 +167,34 @@ public class LocationController extends Controller {
 		}
 
 		return redirect(routes.LocationController.getLocalities());
+	}
+
+
+	/*=====================================================================
+	* REST ACTIONS
+	* ====================================================================*/
+	public Result getRegionsByCountry(Long countryId) {
+		Country country = Country.find.byId(countryId);
+		List<Region> regions =
+				Region.find.query().where().eq("country", country).findList();
+
+		return ok(Json.toJson(regions));
+	}
+
+	public Result getCitiesByRegion(Long regionId) {
+		Region region = Region.find.byId(regionId);
+		List<City> cities =
+				City.find.query().where().eq("region", region).findList();
+
+		return ok(Json.toJson(cities));
+	}
+
+	public Result getLocalitiesByCity(Long cityId) {
+		City city = City.find.byId(cityId);
+		List<Locality> localities =
+				Locality.find.query().where().eq("city", city).findList();
+
+		return ok(Json.toJson(localities));
 	}
 
 }

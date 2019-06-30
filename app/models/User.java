@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 
@@ -26,6 +28,7 @@ public class User extends Model {
 	public String password;
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonBackReference
 	public List<Property> properties;
 
 	public static final Finder<Long, User> find = new Finder<>(User.class);

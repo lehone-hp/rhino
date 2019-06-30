@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Fri Jun 21 17:59:05 WAT 2019
+// @DATE:Sun Jun 30 15:19:39 WAT 2019
 
 package router
 
@@ -24,11 +24,11 @@ class Routes(
   UserController_3: controllers.UserController,
   // @LINE:25
   LocationController_6: controllers.LocationController,
-  // @LINE:41
+  // @LINE:47
   PropertyController_2: controllers.PropertyController,
-  // @LINE:53
+  // @LINE:59
   PropertyContactController_7: controllers.PropertyContactController,
-  // @LINE:60
+  // @LINE:66
   Assets_5: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -45,11 +45,11 @@ class Routes(
     UserController_3: controllers.UserController,
     // @LINE:25
     LocationController_6: controllers.LocationController,
-    // @LINE:41
+    // @LINE:47
     PropertyController_2: controllers.PropertyController,
-    // @LINE:53
+    // @LINE:59
     PropertyContactController_7: controllers.PropertyContactController,
-    // @LINE:60
+    // @LINE:66
     Assets_5: controllers.Assets
   ) = this(errorHandler, HomeController_1, AdminController_0, AmenitiesController_4, UserController_3, LocationController_6, PropertyController_2, PropertyContactController_7, Assets_5, "/")
 
@@ -79,6 +79,9 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/localities""", """controllers.LocationController.getLocalities"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/localities""", """controllers.LocationController.createLocality"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/localities/delete/""" + "$" + """id<[^/]+>""", """controllers.LocationController.deleteLocality(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/regions/""" + "$" + """country_id<[^/]+>""", """controllers.LocationController.getRegionsByCountry(country_id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/cities/""" + "$" + """region_id<[^/]+>""", """controllers.LocationController.getCitiesByRegion(region_id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """api/localities/""" + "$" + """city_id<[^/]+>""", """controllers.LocationController.getLocalitiesByCity(city_id:Long)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/properties""", """controllers.PropertyController.getAllProperties"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/properties/upload""", """controllers.PropertyController.getUpload"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/properties/""" + "$" + """id<[^/]+>""", """controllers.PropertyController.getProperty(id:Long)"""),
@@ -384,10 +387,64 @@ class Routes(
   )
 
   // @LINE:41
-  private[this] lazy val controllers_PropertyController_getAllProperties16_route = Route("GET",
+  private[this] lazy val controllers_LocationController_getRegionsByCountry16_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/regions/"), DynamicPart("country_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_LocationController_getRegionsByCountry16_invoker = createInvoker(
+    LocationController_6.getRegionsByCountry(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.LocationController",
+      "getRegionsByCountry",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """api/regions/""" + "$" + """country_id<[^/]+>""",
+      """# Location API routes""",
+      Seq()
+    )
+  )
+
+  // @LINE:42
+  private[this] lazy val controllers_LocationController_getCitiesByRegion17_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/cities/"), DynamicPart("region_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_LocationController_getCitiesByRegion17_invoker = createInvoker(
+    LocationController_6.getCitiesByRegion(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.LocationController",
+      "getCitiesByRegion",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """api/cities/""" + "$" + """region_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:43
+  private[this] lazy val controllers_LocationController_getLocalitiesByCity18_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/localities/"), DynamicPart("city_id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_LocationController_getLocalitiesByCity18_invoker = createInvoker(
+    LocationController_6.getLocalitiesByCity(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.LocationController",
+      "getLocalitiesByCity",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """api/localities/""" + "$" + """city_id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:47
+  private[this] lazy val controllers_PropertyController_getAllProperties19_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties")))
   )
-  private[this] lazy val controllers_PropertyController_getAllProperties16_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_getAllProperties19_invoker = createInvoker(
     PropertyController_2.getAllProperties,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -401,11 +458,11 @@ class Routes(
     )
   )
 
-  // @LINE:42
-  private[this] lazy val controllers_PropertyController_getUpload17_route = Route("GET",
+  // @LINE:48
+  private[this] lazy val controllers_PropertyController_getUpload20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/upload")))
   )
-  private[this] lazy val controllers_PropertyController_getUpload17_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_getUpload20_invoker = createInvoker(
     PropertyController_2.getUpload,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -419,11 +476,11 @@ class Routes(
     )
   )
 
-  // @LINE:43
-  private[this] lazy val controllers_PropertyController_getProperty18_route = Route("GET",
+  // @LINE:49
+  private[this] lazy val controllers_PropertyController_getProperty21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PropertyController_getProperty18_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_getProperty21_invoker = createInvoker(
     PropertyController_2.getProperty(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -437,11 +494,11 @@ class Routes(
     )
   )
 
-  // @LINE:45
-  private[this] lazy val controllers_PropertyController_postUpload19_route = Route("POST",
+  // @LINE:51
+  private[this] lazy val controllers_PropertyController_postUpload22_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/upload")))
   )
-  private[this] lazy val controllers_PropertyController_postUpload19_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_postUpload22_invoker = createInvoker(
     PropertyController_2.postUpload,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -455,11 +512,11 @@ class Routes(
     )
   )
 
-  // @LINE:47
-  private[this] lazy val controllers_PropertyController_getPropertyTypes20_route = Route("GET",
+  // @LINE:53
+  private[this] lazy val controllers_PropertyController_getPropertyTypes23_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_getPropertyTypes20_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_getPropertyTypes23_invoker = createInvoker(
     PropertyController_2.getPropertyTypes,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -473,11 +530,11 @@ class Routes(
     )
   )
 
-  // @LINE:49
-  private[this] lazy val controllers_PropertyController_createPropertyType21_route = Route("POST",
+  // @LINE:55
+  private[this] lazy val controllers_PropertyController_createPropertyType24_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_createPropertyType21_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_createPropertyType24_invoker = createInvoker(
     PropertyController_2.createPropertyType,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -491,11 +548,11 @@ class Routes(
     )
   )
 
-  // @LINE:50
-  private[this] lazy val controllers_PropertyController_deletePropertyType22_route = Route("GET",
+  // @LINE:56
+  private[this] lazy val controllers_PropertyController_deletePropertyType25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PropertyController_deletePropertyType22_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyController_deletePropertyType25_invoker = createInvoker(
     PropertyController_2.deletePropertyType(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -509,11 +566,11 @@ class Routes(
     )
   )
 
-  // @LINE:53
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts23_route = Route("GET",
+  // @LINE:59
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts26_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/property-contacts")))
   )
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts23_invoker = createInvoker(
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts26_invoker = createInvoker(
     PropertyContactController_7.getPropertyContacts,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -527,11 +584,11 @@ class Routes(
     )
   )
 
-  // @LINE:60
-  private[this] lazy val controllers_Assets_versioned24_route = Route("GET",
+  // @LINE:66
+  private[this] lazy val controllers_Assets_versioned27_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned24_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned27_invoker = createInvoker(
     Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -645,57 +702,75 @@ class Routes(
       }
   
     // @LINE:41
-    case controllers_PropertyController_getAllProperties16_route(params@_) =>
-      call { 
-        controllers_PropertyController_getAllProperties16_invoker.call(PropertyController_2.getAllProperties)
+    case controllers_LocationController_getRegionsByCountry16_route(params@_) =>
+      call(params.fromPath[Long]("country_id", None)) { (country_id) =>
+        controllers_LocationController_getRegionsByCountry16_invoker.call(LocationController_6.getRegionsByCountry(country_id))
       }
   
     // @LINE:42
-    case controllers_PropertyController_getUpload17_route(params@_) =>
-      call { 
-        controllers_PropertyController_getUpload17_invoker.call(PropertyController_2.getUpload)
+    case controllers_LocationController_getCitiesByRegion17_route(params@_) =>
+      call(params.fromPath[Long]("region_id", None)) { (region_id) =>
+        controllers_LocationController_getCitiesByRegion17_invoker.call(LocationController_6.getCitiesByRegion(region_id))
       }
   
     // @LINE:43
-    case controllers_PropertyController_getProperty18_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PropertyController_getProperty18_invoker.call(PropertyController_2.getProperty(id))
-      }
-  
-    // @LINE:45
-    case controllers_PropertyController_postUpload19_route(params@_) =>
-      call { 
-        controllers_PropertyController_postUpload19_invoker.call(PropertyController_2.postUpload)
+    case controllers_LocationController_getLocalitiesByCity18_route(params@_) =>
+      call(params.fromPath[Long]("city_id", None)) { (city_id) =>
+        controllers_LocationController_getLocalitiesByCity18_invoker.call(LocationController_6.getLocalitiesByCity(city_id))
       }
   
     // @LINE:47
-    case controllers_PropertyController_getPropertyTypes20_route(params@_) =>
+    case controllers_PropertyController_getAllProperties19_route(params@_) =>
       call { 
-        controllers_PropertyController_getPropertyTypes20_invoker.call(PropertyController_2.getPropertyTypes)
+        controllers_PropertyController_getAllProperties19_invoker.call(PropertyController_2.getAllProperties)
+      }
+  
+    // @LINE:48
+    case controllers_PropertyController_getUpload20_route(params@_) =>
+      call { 
+        controllers_PropertyController_getUpload20_invoker.call(PropertyController_2.getUpload)
       }
   
     // @LINE:49
-    case controllers_PropertyController_createPropertyType21_route(params@_) =>
-      call { 
-        controllers_PropertyController_createPropertyType21_invoker.call(PropertyController_2.createPropertyType)
+    case controllers_PropertyController_getProperty21_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_PropertyController_getProperty21_invoker.call(PropertyController_2.getProperty(id))
       }
   
-    // @LINE:50
-    case controllers_PropertyController_deletePropertyType22_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PropertyController_deletePropertyType22_invoker.call(PropertyController_2.deletePropertyType(id))
+    // @LINE:51
+    case controllers_PropertyController_postUpload22_route(params@_) =>
+      call { 
+        controllers_PropertyController_postUpload22_invoker.call(PropertyController_2.postUpload)
       }
   
     // @LINE:53
-    case controllers_PropertyContactController_getPropertyContacts23_route(params@_) =>
+    case controllers_PropertyController_getPropertyTypes23_route(params@_) =>
       call { 
-        controllers_PropertyContactController_getPropertyContacts23_invoker.call(PropertyContactController_7.getPropertyContacts)
+        controllers_PropertyController_getPropertyTypes23_invoker.call(PropertyController_2.getPropertyTypes)
       }
   
-    // @LINE:60
-    case controllers_Assets_versioned24_route(params@_) =>
+    // @LINE:55
+    case controllers_PropertyController_createPropertyType24_route(params@_) =>
+      call { 
+        controllers_PropertyController_createPropertyType24_invoker.call(PropertyController_2.createPropertyType)
+      }
+  
+    // @LINE:56
+    case controllers_PropertyController_deletePropertyType25_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_PropertyController_deletePropertyType25_invoker.call(PropertyController_2.deletePropertyType(id))
+      }
+  
+    // @LINE:59
+    case controllers_PropertyContactController_getPropertyContacts26_route(params@_) =>
+      call { 
+        controllers_PropertyContactController_getPropertyContacts26_invoker.call(PropertyContactController_7.getPropertyContacts)
+      }
+  
+    // @LINE:66
+    case controllers_Assets_versioned27_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned24_invoker.call(Assets_5.versioned(path, file))
+        controllers_Assets_versioned27_invoker.call(Assets_5.versioned(path, file))
       }
   }
 }

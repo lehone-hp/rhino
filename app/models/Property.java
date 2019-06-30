@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import io.ebean.Finder;
 import io.ebean.Model;
 import models.location.City;
@@ -58,41 +60,51 @@ public class Property extends Model {
 
 	@ManyToOne
     @JoinColumn(name = "property_type_id")
+	@JsonManagedReference
 	public PropertyType propertyType;
 
 	@ManyToOne
     @JoinColumn(name = "price_type_id")
+	@JsonManagedReference
 	public PriceType priceType;
 
 	@ManyToOne
     @JoinColumn(name = "country_id")
+	@JsonManagedReference
 	public Country country;
 
 	@ManyToOne
     @JoinColumn(name = "region_id")
+	@JsonManagedReference
 	public Region region;
 
 	@ManyToOne
     @JoinColumn(name = "city_id")
+	@JsonManagedReference
 	public City city;
 
 	@ManyToOne
     @JoinColumn(name = "locality_id")
+	@JsonManagedReference
 	public Locality locality;
 
 	@ManyToOne
     @JoinColumn(name = "contact_info_id")
+	@JsonManagedReference
 	public ContactInfo contact; // used when there is no user assigned to the property
 
 	@ManyToOne
     @JoinColumn(name = "user_id")
+	@JsonManagedReference
 	public User user;
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonBackReference
 	public List<PropertyPhoto> photos;
 
 	@ManyToMany
 	@JoinTable(name = "properties")
+	@JsonBackReference
 	public List<Feature> features;
 
 

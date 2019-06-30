@@ -37,6 +37,12 @@ GET         /admin/localities                      controllers.LocationControlle
 POST        /admin/localities                      controllers.LocationController.createLocality
 GET         /admin/localities/delete/:id           controllers.LocationController.deleteLocality(id: Long)
 
+## Location API routes
+GET        /api/regions/:country_id                 controllers.LocationController.getRegionsByCountry(country_id: Long)
+GET        /api/cities/:region_id                   controllers.LocationController.getCitiesByRegion(region_id: Long)
+GET        /api/localities/:city_id                 controllers.LocationController.getLocalitiesByCity(city_id: Long)
+
+
 # Properties
 GET         /admin/properties                      controllers.PropertyController.getAllProperties
 GET         /admin/properties/upload               controllers.PropertyController.getUpload

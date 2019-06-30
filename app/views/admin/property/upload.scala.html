@@ -161,7 +161,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Country</label>
-                                    <select class="form-control" name="country">
+                                    <select class="form-control" name="country" id="country">
                                         <option value="">-- select country --</option>
                                         @for(country <- Country.find.all()) {
                                             <option value="@country.id"
@@ -178,7 +178,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Region</label>
-                                    <select class="form-control" name="region">
+                                    <select class="form-control" name="region" id="region">
                                         <option value="">-- select region --</option>
                                         @for(region <- Region.find.all()) {
                                             <option value="@region.id"
@@ -195,7 +195,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>City</label>
-                                    <select class="form-control" name="city">
+                                    <select class="form-control" name="city" id="city">
                                         <option value="">-- select city --</option>
                                         @for(region <- City.find.all()) {
                                             <option value="@region.id"
@@ -212,7 +212,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Locality/Quarter</label>
-                                    <select class="form-control" name="locality">
+                                    <select class="form-control" name="locality" id="locality">
                                         <option value="">-- select quarter --</option>
                                         @for(region <- Locality.find.all()) {
                                             <option value="@region.id"
@@ -329,6 +329,79 @@
 } {
     @*======Footer Script=========*@
     <script>
+        $(function () {
+            $('#country').on('change', function () {
+               var country_id = $('#country').val();
+                $('#region').html('<option>loading...</option>');
+
+                $.ajax({
+                    url: '/api/regions/'+country_id,
+                    type: 'GET',
+                    success: function (data) {
+
+                        var options = '<option>-- select region --</option>';
+
+                        for (var i=0; i<data.length; i++) {
+                            options += '<option value="'+data[i].id+'"> '+data[i].name+' </option>'
+                        }
+
+                        $('#region').html(options);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#region').html('<option>-- select region --/option>');
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+
+            $('#region').on('change', function () {
+                var region_id = $('#region').val();
+                $('#city').html('<option>loading...</option>');
+
+                $.ajax({
+                    url: '/api/cities/' + region_id,
+                    type: 'GET',
+                    success: function (data) {
+
+                        var options = '<option>-- select city --</option>';
+
+                        for (var i = 0; i < data.length; i++) {
+                            options += '<option value="' + data[i].id + '"> ' + data[i].name + ' </option>'
+                        }
+
+                        $('#city').html(options);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#city').html('<option>-- select city --</option>');
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+
+            $('#city').on('change', function () {
+                var city_id = $('#city').val();
+                $('#locality').html('<option>loading...</option>');
+
+                $.ajax({
+                    url: '/api/localities/' + city_id,
+                    type: 'GET',
+                    success: function (data) {
+
+                        var options = '<option>-- select locality --</option>';
+
+                        for (var i = 0; i < data.length; i++) {
+                            options += '<option value="' + data[i].id + '"> ' + data[i].name + ' </option>'
+                        }
+
+                        $('#locality').html(options);
+                    },
+                    error: function (xhr, status, error) {
+                        $('#locality').html('<option>-- select locality --</option>');
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+        });
     </script>
 }
 

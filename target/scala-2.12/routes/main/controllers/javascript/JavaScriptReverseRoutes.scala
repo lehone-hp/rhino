@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Fri Jun 21 17:59:05 WAT 2019
+// @DATE:Sun Jun 30 15:19:39 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -11,7 +11,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:60
+  // @LINE:66
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:60
+    // @LINE:66
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -55,7 +55,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:41
+  // @LINE:47
   class ReversePropertyController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -63,7 +63,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:50
+    // @LINE:56
     def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.deletePropertyType",
       """
@@ -73,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:41
+    // @LINE:47
     def getAllProperties: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getAllProperties",
       """
@@ -83,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:49
+    // @LINE:55
     def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.createPropertyType",
       """
@@ -93,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:45
+    // @LINE:51
     def postUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.postUpload",
       """
@@ -103,7 +103,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:47
+    // @LINE:53
     def getPropertyTypes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getPropertyTypes",
       """
@@ -113,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:42
+    // @LINE:48
     def getUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getUpload",
       """
@@ -123,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:43
+    // @LINE:49
     def getProperty: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getProperty",
       """
@@ -143,12 +143,32 @@ package controllers.javascript {
     }
 
   
+    // @LINE:42
+    def getCitiesByRegion: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.LocationController.getCitiesByRegion",
+      """
+        function(region_id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/cities/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("region_id", region_id0))})
+        }
+      """
+    )
+  
     // @LINE:38
     def deleteLocality: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.deleteLocality",
       """
         function(id0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/localities/delete/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
+        }
+      """
+    )
+  
+    // @LINE:41
+    def getRegionsByCountry: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.LocationController.getRegionsByCountry",
+      """
+        function(country_id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/regions/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("country_id", country_id0))})
         }
       """
     )
@@ -219,6 +239,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "admin/localities"})
+        }
+      """
+    )
+  
+    // @LINE:43
+    def getLocalitiesByCity: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.LocationController.getLocalitiesByCity",
+      """
+        function(city_id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/localities/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("city_id", city_id0))})
         }
       """
     )
@@ -315,7 +345,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:53
+  // @LINE:59
   class ReversePropertyContactController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -323,7 +353,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:53
+    // @LINE:59
     def getPropertyContacts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyContactController.getPropertyContacts",
       """
