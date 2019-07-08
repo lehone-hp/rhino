@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c06eecc3-6b0b-4f4a-8eb4-4c9169ac6eaf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/rhino.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/rhino.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ContactInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ContactInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Feature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Feature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/PriceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/PriceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/PropertyPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/PropertyPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/PropertyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/PropertyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/location/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/location/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/location/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/location/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/location/Locality.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/location/Locality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/location/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/location/Region.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/PropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PropertyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAmenitiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseAmenitiesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAmenitiesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseAmenitiesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controllers/javascript/ReverseHomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes$$anonfun$routes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/router/Routes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/routes" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/ReverseRoutes.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/routes/main/controllers/javascript/JavaScriptReverseRoutes.scala" afterDir="false" />
@@ -76,40 +55,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/LocationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="191" column="9" selection-start-line="191" selection-start-column="9" selection-end-line="191" selection-end-column="9" />
-              <folding>
-                <element signature="method#createRegion#0;class#LocationController#0" />
-                <element signature="method#deleteRegion#0;class#LocationController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/routes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/property/upload.scala.html">
+        <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="370" column="32" selection-start-line="370" selection-start-column="32" selection-end-line="370" selection-end-column="32" />
+            <state relative-caret-position="294">
+              <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
               <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="method#getAllProperties#0;class#PropertyController#0" />
+                <element signature="method#getUpload#0;class#PropertyController#0" />
+                <element signature="method#getProperty#0;class#PropertyController#0" />
+                <element signature="method#postUpload#0;class#PropertyController#0" />
+                <element signature="method#readContentIntoByteArray#0;class#PropertyController#0" />
+                <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
+                <element signature="method#createPropertyType#0;class#PropertyController#0" />
+                <element signature="method#deletePropertyType#0;class#PropertyController#0" />
               </folding>
             </state>
           </provider>
@@ -198,7 +157,6 @@
         <option value="$PROJECT_DIR$/app/views/admin/main.scala.html" />
         <option value="$PROJECT_DIR$/app/views/admin/property/allProperties.scala.html" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/app/controllers/PropertyController.java" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/app/views/admin/property/property.scala.html" />
         <option value="$PROJECT_DIR$/conf/application.conf" />
@@ -214,8 +172,9 @@
         <option value="$PROJECT_DIR$/app/models/PropertyType.java" />
         <option value="$PROJECT_DIR$/app/models/User.java" />
         <option value="$PROJECT_DIR$/app/controllers/LocationController.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/views/admin/property/upload.scala.html" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/controllers/PropertyController.java" />
       </list>
     </option>
   </component>
@@ -247,7 +206,7 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="y" value="25" />
     <option name="width" value="683" />
@@ -309,7 +268,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561906849562" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561917798597" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -513,12 +472,13 @@
       <workItem from="1561134057307" duration="7842000" />
       <workItem from="1561142771288" duration="1748000" />
       <workItem from="1561183186593" duration="89000" />
-      <workItem from="1561895225519" duration="5140000" />
+      <workItem from="1561895225519" duration="7176000" />
+      <workItem from="1561985628007" duration="342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72433000" />
+    <option name="totallyTimeSpent" value="74811000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,10 +490,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18863636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -576,18 +536,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/utils/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/forms/UploadPropertyForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -714,18 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
-          <folding>
-            <element signature="method#postUpload#0;class#PropertyController#0" />
-            <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
-            <element signature="method#deletePropertyType#0;class#PropertyController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/location/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -806,6 +742,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/property/upload.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1642">
+          <caret line="389" column="65" selection-start-line="389" selection-start-column="65" selection-end-line="389" selection-end-column="65" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/LocationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -817,24 +775,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/property/upload.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/PropertyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="370" column="32" selection-start-line="370" selection-start-column="32" selection-end-line="370" selection-end-column="32" />
+        <state relative-caret-position="294">
+          <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#div#6;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="method#getAllProperties#0;class#PropertyController#0" />
+            <element signature="method#getUpload#0;class#PropertyController#0" />
+            <element signature="method#getProperty#0;class#PropertyController#0" />
+            <element signature="method#postUpload#0;class#PropertyController#0" />
+            <element signature="method#readContentIntoByteArray#0;class#PropertyController#0" />
+            <element signature="method#getPropertyTypes#0;class#PropertyController#0" />
+            <element signature="method#createPropertyType#0;class#PropertyController#0" />
+            <element signature="method#deletePropertyType#0;class#PropertyController#0" />
           </folding>
         </state>
       </provider>

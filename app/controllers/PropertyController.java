@@ -36,6 +36,9 @@ public class PropertyController extends Controller {
 	}
 
 	public Result getAllProperties() {
+
+		System.out.println();
+
 		List<Property> properties = Property.find.all();
 		return ok(views.html.admin.property.allProperties.render(properties));
 	}
