@@ -1,2 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m[Error] /home/lehone/repo/github/play/rhino/app/views/admin/amenities/amenities.scala.html:3[0m
-[0m[[0m[31merror[0m] [0m[0m    @: Invalid '@' symbol[0m
+[0m[[0m[31merror[0m] [0m[0m[Error] /home/lehone/repo/github/play/rhino/app/views/index.scala.html:424[0m
+[0m[[0m[31merror[0m] [0m[0m                    <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>: Expected '}' but found '@'[0m

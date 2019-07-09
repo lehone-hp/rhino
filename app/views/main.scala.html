@@ -1,26 +1,215 @@
-@*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
-@(title: String)(content: Html)
+@(title: String)(headerStyle: Html)(content: Html)(footerScript: Html)
 
-@*
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        @* Here's where we render the page title `String`. *
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-    </head>
-    <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *
-        @content
+        <meta charset="utf-8">
+        <title>Lirive - Real Estate HTML Template | Homepage One</title>
+            <!-- Stylesheets -->
+        <link href="@routes.Assets.versioned("app/css/bootstrap.css")" rel="stylesheet">
+        <link href="@routes.Assets.versioned("app/css/style.css")" rel="stylesheet">
+        <link rel="shortcut icon" href="@routes.Assets.versioned("app/images/favicon.ico")" type="image/x-icon">
+        <link rel="icon" href="@routes.Assets.versioned("app/images/favicon.ico")" type="image/x-icon">
+            <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link href="@routes.Assets.versioned("app/css/responsive.css")" rel="stylesheet">
 
-        <script src="@routes.Assets.versioned("javascripts/main.js")" type="text/javascript"></script>
+        @headerStyle
+    </head>
+
+    <body>
+
+        <div class="page-wrapper">
+
+                <!-- Preloader -->
+            <div class="preloader"></div>
+
+                <!-- Main Header-->
+            <header class="main-header">
+
+                <div class="main-box">
+                    <div class="outer-container clearfix">
+
+                            <!--Logo Box-->
+                        <div class="logo-box">
+                            <div class="logo"><a href="@routes.HomeController.index()" title="Red Rhino">
+                                <img src="@routes.Assets.versioned("app/images/logo.png")"
+                                    alt="Red Rhino" title="Red Rhino"></a></div>
+                        </div>
+
+                            <!--Other Links-->
+                        <div class="other-links clearfix">
+                            <div class="link-box"><a href="@routes.AuthController.getLogin()">Sign In</a></div>
+                            <div class="link-box"><a href="@routes.AuthController.getRegister()">Register</a></div>
+                        </div>
+
+                            <!--Nav Outer-->
+                        <div class="nav-outer clearfix">
+                                <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li class="current dropdown"><a href="#">Home</a>
+                                            <ul>
+                                                <li><a href="index.html">Homepage One</a></li>
+                                                <li><a href="index-2.html">Homepage Two</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Agents</a>
+                                            <ul>
+                                                <li><a href="agents.html">Agents List</a></li>
+                                                <li><a href="agent-single.html">Agent Profile</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Property</a>
+                                            <ul>
+                                                <li><a href="properties-list-one.html">Property List I</a></li>
+                                                <li><a href="properties-list-two.html">Property List II</a></li>
+                                                <li><a href="properties-grid-one.html">Property Grid View I</a></li>
+                                                <li><a href="properties-grid-two.html">Property Gird View II</a></li>
+                                                <li><a href="property-details.html">Property Details</a></li>
+                                                <li><a href="add-property.html">Add Property</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Blog</a>
+                                            <ul>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav><!-- Main Menu End-->
+
+                        </div>
+                            <!--Nav Outer End-->
+
+                    </div>
+                </div>
+
+            </header>
+                <!--End Main Header -->
+
+                @content
+
+                <!--Main Footer-->
+            <footer class="main-footer with-padding-top">
+                    <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="auto-container">
+                        <div class="row clearfix">
+                                <!--Big Column-->
+                            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="row clearfix">
+                                        <!--Footer Column-->
+                                    <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                                        <div class="footer-widget about-widget">
+                                            <div class="logo">
+                                                <a href="@routes.AuthController.getLogin()">
+                                                    <img src="@routes.Assets.versioned("app/images/footer-logo.png")" alt=""></a></div>
+                                            <div class="widget-content">
+                                                <div class="text">
+                                                    Sed perspiciatis unde omnis iste natus elit voluptatem accusantium doloremque site laudantium totam rem aperiam.</div>
+                                                <div class="copyright-text">&copy; Lirive 2017, All Rights Reserved.</div>
+
+                                            </div>
+                                        </div>
+                                    </div><!--End Footer Column-->
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                                        <div class="footer-widget links-widget">
+                                            <h2>Quick Links</h2>
+                                            <div class="widget-content">
+                                                <ul class="list">
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Site Map</a></li>
+                                                    <li><a href="#">Support Center</a></li>
+                                                    <li><a href="#">Terms & Conditions</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--End Footer Column-->
+                                </div>
+                            </div><!--End Big Column-->
+
+                            <!--Big Column-->
+                            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="row clearfix">
+
+
+                                        <!--Footer Column-->
+                                    <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                                        <div class="footer-widget contact-widget">
+                                            <h2>Contact Us</h2>
+                                            <div class="widget-content">
+                                                <div class="text">
+                                                    Feel free to ger in touch with us via phone or send us a message.</div>
+                                                <ul class="contact-info">
+                                                    <li><div class="icon"><span class="fa fa-envelope-o"></span></div> <a href="mailto:info@@lirive.com">
+                                                        info@@lirive.com</a></li>
+                                                    <li><div class="icon"><span class="fa fa-phone"></span></div>
+                                                        +880 111 234 4567</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--End Footer Column-->
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                                        <div class="footer-widget social-widget">
+                                            <h2>Folow Us</h2>
+                                            <div class="widget-content">
+                                                <ul class="social-links">
+                                                    <li><a href="#" class="facebook"><span class="fa fa-facebook-f"></span></a></li>
+                                                    <li><a href="#" class="twitter"><span class="fa fa-twitter"></span></a></li>
+                                                    <li><a href="#" class="google-plus"><span class="fa fa-google-plus"></span></a></li>
+                                                    <li><a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a></li>
+                                                    <li><a href="#" class="instagram"><span class="fa fa-instagram"></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--End Footer Column-->
+
+                                </div>
+                            </div><!--End Big Column-->
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+
+
+        </div>
+            <!--End pagewrapper-->
+
+            <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-long-arrow-up"></span></div>
+
+
+        <script src="@routes.Assets.versioned("app/js/jquery.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/bootstrap.min.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/jquery-ui.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/jquery.fancybox.pack.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/jquery.fancybox-media.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/mixitup.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/owl.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/wow.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/appear.js")"></script>
+        <script src="@routes.Assets.versioned("app/js/script.js")"></script>
+
+        @footerScript
     </body>
 </html>
-**@

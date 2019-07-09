@@ -295,3 +295,180 @@ Caused by: javax.validation.UnexpectedTypeException: HV000030: No validator coul
     play.filters.csrf.CSRFFilter
 
 2019-07-09 15:04:43,490 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-92 - Application started (Dev)
+2019-07-09 15:11:14,846 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2019-07-09 15:11:15,125 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-98 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:11:15,126 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-98 - Creating Pool for datasource 'default'
+2019-07-09 15:11:15,247 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-98 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:11:15,315 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-98 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:11:15,316 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-98 - Application started (Dev)
+2019-07-09 15:20:55,318 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-07-09 15:20:55,555 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-99 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:20:55,555 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-99 - Creating Pool for datasource 'default'
+2019-07-09 15:20:55,666 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-99 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:20:55,726 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-99 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:20:55,726 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-99 - Application started (Dev)
+2019-07-09 15:21:50,759 [INFO] from application in application-akka.actor.default-dispatcher-14 - Shutting down connection pool.
+2019-07-09 15:21:50,944 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-104 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:21:50,944 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-104 - Creating Pool for datasource 'default'
+2019-07-09 15:21:51,037 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-104 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:21:51,104 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-104 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:21:51,105 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-104 - Application started (Dev)
+2019-07-09 15:23:27,185 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2019-07-09 15:23:27,366 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-105 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:23:27,366 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-105 - Creating Pool for datasource 'default'
+2019-07-09 15:23:27,450 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-105 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:23:27,521 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-105 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:23:27,522 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-105 - Application started (Dev)
+2019-07-09 15:24:29,056 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2019-07-09 15:24:29,190 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-105 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:24:29,190 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-105 - Creating Pool for datasource 'default'
+2019-07-09 15:24:29,276 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-105 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:24:29,342 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-105 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:24:29,343 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-105 - Application started (Dev)
+2019-07-09 15:24:46,395 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2019-07-09 15:24:46,567 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-138 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:24:46,567 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-138 - Creating Pool for datasource 'default'
+2019-07-09 15:24:46,640 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-138 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:24:46,683 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-138 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:24:46,683 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-138 - Application started (Dev)
+2019-07-09 15:25:05,916 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2019-07-09 15:25:06,053 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-105 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:25:06,053 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-105 - Creating Pool for datasource 'default'
+2019-07-09 15:25:06,136 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-105 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:25:06,210 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-105 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:25:06,211 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-105 - Application started (Dev)
+2019-07-09 15:26:15,753 [INFO] from application in application-akka.actor.default-dispatcher-10 - Shutting down connection pool.
+2019-07-09 15:26:15,919 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-140 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:26:15,919 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-140 - Creating Pool for datasource 'default'
+2019-07-09 15:26:16,053 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-140 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:26:16,111 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-140 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:26:16,111 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-140 - Application started (Dev)
+2019-07-09 15:26:49,898 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-138 - 
+
+! @7cefho5ff - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Expected '}' but found '@']
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:569)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:50)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:241)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsyncUnordered$$anon$31.onPush(Ops.scala:1318)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:588)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:472)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:563)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:745)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:760)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:670)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:588)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:557)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:258)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:225)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2019-07-09 15:27:55,238 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2019-07-09 15:27:55,404 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-102 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:27:55,404 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-102 - Creating Pool for datasource 'default'
+2019-07-09 15:27:55,507 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-102 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:27:55,569 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-102 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:27:55,569 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-102 - Application started (Dev)
+2019-07-09 15:29:00,931 [INFO] from application in application-akka.actor.default-dispatcher-11 - Shutting down connection pool.
+2019-07-09 15:29:01,071 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-139 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:29:01,071 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-139 - Creating Pool for datasource 'default'
+2019-07-09 15:29:01,153 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-139 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:29:01,210 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-139 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:29:01,210 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-139 - Application started (Dev)
+2019-07-09 15:33:55,236 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
+2019-07-09 15:33:55,404 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-157 - Database [default] initialized at jdbc:mysql://localhost/play_rhino
+2019-07-09 15:33:55,405 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-157 - Creating Pool for datasource 'default'
+2019-07-09 15:33:55,496 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-157 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2019-07-09 15:33:55,574 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-157 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.csrf.CSRFFilter
+
+2019-07-09 15:33:55,574 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-157 - Application started (Dev)

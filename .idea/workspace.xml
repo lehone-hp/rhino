@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c06eecc3-6b0b-4f4a-8eb4-4c9169ac6eaf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/main.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/index.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,42 +45,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/AuthController.java">
+        <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="627">
+              <caret line="119" column="115" selection-start-line="119" selection-start-column="115" selection-end-line="119" selection-end-column="115" />
               <folding>
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1378#1379#0" expanded="true" />
-                <element signature="e#2667#2668#0" expanded="true" />
-                <element signature="e#2700#2701#0" expanded="true" />
-                <element signature="e#2661#2662#0" expanded="true" />
-                <element signature="e#2695#2696#0" expanded="true" />
+                <element signature="e#6953#6959#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
+        <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="178" column="101" selection-start-line="178" selection-start-column="101" selection-end-line="178" selection-end-column="101" />
+            <state relative-caret-position="-490">
+              <caret line="506" column="138" selection-start-line="506" selection-start-column="138" selection-end-line="506" selection-end-column="138" />
               <folding>
-                <element signature="n#li#8;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#li#9;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#6394#6443#0#Scala" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="e#3779#3785#0#HTML" expanded="true" />
+                <element signature="e#4521#4527#0#HTML" expanded="true" />
+                <element signature="e#5706#5712#0#HTML" expanded="true" />
+                <element signature="e#6448#6454#0#HTML" expanded="true" />
+                <element signature="e#7640#7646#0#HTML" expanded="true" />
+                <element signature="e#8382#8388#0#HTML" expanded="true" />
+                <element signature="e#9567#9573#0#HTML" expanded="true" />
+                <element signature="e#10309#10315#0#HTML" expanded="true" />
+                <element signature="e#11499#11505#0#HTML" expanded="true" />
+                <element signature="e#12241#12247#0#HTML" expanded="true" />
+                <element signature="e#13426#13432#0#HTML" expanded="true" />
+                <element signature="e#14168#14174#0#HTML" expanded="true" />
+                <element signature="n#section#4;n#!!top" />
+                <element signature="n#section#5;n#!!top" />
+                <element signature="n#section#6;n#!!top" />
+                <element signature="n#section#7;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/User.java">
+        <entry file="file://$PROJECT_DIR$/app/views/auth/login.scala.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="144">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,14 +104,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Cit</find>
-      <find>Region</find>
-      <find>PropertyType</find>
       <find>upload</find>
       <find>&lt;option&gt;</find>
       <find>src</find>
@@ -126,6 +137,9 @@
       <find>Status.</find>
       <find>Status</find>
       <find>ctx</find>
+      <find>footer</find>
+      <find>@</find>
+      <find>images/</find>
     </findStrings>
     <replaceStrings>
       <replace>type=&quot;text/javascript&quot;</replace>
@@ -143,6 +157,7 @@
       <replace>@JsonManagedReference</replace>
       <replace>Context</replace>
       <replace>User</replace>
+      <replace>app/images/</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -151,9 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/InitialData.java" />
-        <option value="$PROJECT_DIR$/app/module/LoadInitialDataModule.java" />
-        <option value="$PROJECT_DIR$/scriptFile.scala" />
         <option value="$PROJECT_DIR$/countries" />
         <option value="$PROJECT_DIR$/app/views/admin/amenities/amenities.scala.html" />
         <option value="$PROJECT_DIR$/app/models/location/LocationTemplateForm.java" />
@@ -202,6 +214,9 @@
         <option value="$PROJECT_DIR$/app/controllers/Secured.java" />
         <option value="$PROJECT_DIR$/app/controllers/AuthController.java" />
         <option value="$PROJECT_DIR$/app/views/admin/main.scala.html" />
+        <option value="$PROJECT_DIR$/public/app/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/app/views/main.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/index.scala.html" />
       </list>
     </option>
   </component>
@@ -234,9 +249,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="683" />
     <option name="y" value="25" />
-    <option name="width" value="683" />
+    <option name="width" value="1366" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -271,19 +285,6 @@
               <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhino" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhino" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhino" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -291,7 +292,7 @@
               <item name="rhino" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
@@ -303,6 +304,19 @@
               <item name="rhino" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhino" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -313,7 +327,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562674206615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562682535913" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -527,12 +541,12 @@
       <workItem from="1562621156776" duration="1312000" />
       <workItem from="1562656113209" duration="2283000" />
       <workItem from="1562664468546" duration="5830000" />
-      <workItem from="1562674815424" duration="4316000" />
+      <workItem from="1562674815424" duration="6024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88552000" />
+    <option name="totallyTimeSpent" value="90260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,7 +561,7 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378788" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0780303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -631,9 +645,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/d96c807d-7081-4129-8a59-95a35e3cbf361560780861394.png" />
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/f5cb0bc8-8aa4-4a99-bb8a-18ba330e4d531560780861391.png" />
-    <entry file="file://$PROJECT_DIR$/public/uploads/properties/706bf585-da13-41d0-87fe-d4cf944184621560780861393.png" />
     <entry file="file://$PROJECT_DIR$/public/uploads/properties/516df398-29df-4119-bf8d-0c82fc4f9dbb1560780949903.png" />
     <entry file="file://$PROJECT_DIR$/public/uploads/properties/9dca4a21-c67a-4414-a864-e8b2c219b9521560780861391.png" />
     <entry file="file://$PROJECT_DIR$/public/uploads/properties/113a482c-2de8-4d59-969e-e726156639131560781131121.png" />
@@ -754,17 +765,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/dashboard.scala.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/UserDB.java" />
     <entry file="file://$PROJECT_DIR$/app/models/forms/LoginForm.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -844,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/auth/main.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="77" column="26" lean-forward="true" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Property.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1782">
@@ -919,10 +912,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/auth/login.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="252">
+          <caret line="178" column="101" selection-start-line="178" selection-start-column="101" selection-end-line="178" selection-end-column="101" />
+          <folding>
+            <element signature="n#li#8;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#9;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#6394#6443#0#Scala" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -948,15 +947,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/main.scala.html">
+    <entry file="file://$PROJECT_DIR$/public/app/scriptFile.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="178" column="101" selection-start-line="178" selection-start-column="101" selection-end-line="178" selection-end-column="101" />
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="n#li#8;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#li#9;n#ul#0;n#div#0;n#nav#0;n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#6394#6443#0#Scala" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/auth/main.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/auth/login.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="119" column="115" selection-start-line="119" selection-start-column="115" selection-end-line="119" selection-end-column="115" />
+          <folding>
+            <element signature="e#6953#6959#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="506" column="138" selection-start-line="506" selection-start-column="138" selection-end-line="506" selection-end-column="138" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#3779#3785#0#HTML" expanded="true" />
+            <element signature="e#4521#4527#0#HTML" expanded="true" />
+            <element signature="e#5706#5712#0#HTML" expanded="true" />
+            <element signature="e#6448#6454#0#HTML" expanded="true" />
+            <element signature="e#7640#7646#0#HTML" expanded="true" />
+            <element signature="e#8382#8388#0#HTML" expanded="true" />
+            <element signature="e#9567#9573#0#HTML" expanded="true" />
+            <element signature="e#10309#10315#0#HTML" expanded="true" />
+            <element signature="e#11499#11505#0#HTML" expanded="true" />
+            <element signature="e#12241#12247#0#HTML" expanded="true" />
+            <element signature="e#13426#13432#0#HTML" expanded="true" />
+            <element signature="e#14168#14174#0#HTML" expanded="true" />
+            <element signature="n#section#4;n#!!top" />
+            <element signature="n#section#5;n#!!top" />
+            <element signature="n#section#6;n#!!top" />
+            <element signature="n#section#7;n#!!top" />
           </folding>
         </state>
       </provider>
