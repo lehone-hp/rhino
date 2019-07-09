@@ -5,11 +5,23 @@
 # An example controller showing a sample home page
 GET         /                                      controllers.HomeController.index
 
+
+# =====================================================================================================================
+# Authentication Routes
+# =====================================================================================================================
+GET         /login                                 controllers.AuthController.getLogin
++ nocsrf
+POST        /login                                 controllers.AuthController.postLogin
+GET         /register                              controllers.AuthController.getRegister
++ nocsrf
+POST         /register                              controllers.AuthController.postRegister
+GET         /logout                                controllers.AuthController.logout
+
 # =====================================================================================================================
 # Admin Routes
 # =====================================================================================================================
 
-GET         /admin/                                controllers.AdminController.getDashboard
+GET         /admin                                 controllers.AdminController.getDashboard
 GET         /admin/dashboard                       controllers.AdminController.getDashboard
 
 
@@ -50,9 +62,9 @@ POST        /admin/localities                      controllers.LocationControlle
 GET         /admin/localities/delete/:id           controllers.LocationController.deleteLocality(id: Long)
 
 ## Location API routes
-GET        /api/regions/:country_id                 controllers.LocationController.getRegionsByCountry(country_id: Long)
-GET        /api/cities/:region_id                   controllers.LocationController.getCitiesByRegion(region_id: Long)
-GET        /api/localities/:city_id                 controllers.LocationController.getLocalitiesByCity(city_id: Long)
+GET         /api/regions/:country_id               controllers.LocationController.getRegionsByCountry(country_id: Long)
+GET         /api/cities/:region_id                 controllers.LocationController.getCitiesByRegion(region_id: Long)
+GET         /api/localities/:city_id               controllers.LocationController.getLocalitiesByCity(city_id: Long)
 
 
 

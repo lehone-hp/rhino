@@ -14,6 +14,7 @@ import utils.StringUtils;
 
 import java.util.List;
 
+@Security.Authenticated(Secured.class)
 public class LocationController extends Controller {
 
 	private FormFactory formFactory;

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Sun Jun 30 16:09:53 WAT 2019
+// @DATE:Tue Jul 09 13:46:49 WAT 2019
 
 import play.api.mvc.Call
 
@@ -11,14 +11,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:85
+  // @LINE:97
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:85
+    // @LINE:97
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))
@@ -26,22 +26,22 @@ package controllers {
   
   }
 
-  // @LINE:12
+  // @LINE:24
   class ReverseAdminController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:12
+    // @LINE:24
     def getDashboard(): Call = {
     
       () match {
       
-        // @LINE:12
+        // @LINE:24
         case ()  =>
           
-          Call("GET", _prefix + { _defaultPrefix } + "admin/")
+          Call("GET", _prefix + { _defaultPrefix } + "admin")
       
       }
     
@@ -49,50 +49,50 @@ package controllers {
   
   }
 
-  // @LINE:61
+  // @LINE:73
   class ReversePropertyController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:70
+    // @LINE:82
     def deletePropertyType(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/propert-types/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
-    // @LINE:61
+    // @LINE:73
     def getAllProperties(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/properties")
     }
   
-    // @LINE:69
+    // @LINE:81
     def createPropertyType(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/propert-types")
     }
   
-    // @LINE:65
+    // @LINE:77
     def postUpload(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/properties/upload")
     }
   
-    // @LINE:67
+    // @LINE:79
     def getPropertyTypes(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/propert-types")
     }
   
-    // @LINE:62
+    // @LINE:74
     def getUpload(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/properties/upload")
     }
   
-    // @LINE:63
+    // @LINE:75
     def getProperty(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/properties/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
@@ -100,80 +100,80 @@ package controllers {
   
   }
 
-  // @LINE:37
+  // @LINE:49
   class ReverseLocationController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:54
+    // @LINE:66
     def getCitiesByRegion(region_id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/cities/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("region_id", region_id)))
     }
   
-    // @LINE:50
+    // @LINE:62
     def deleteLocality(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/localities/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
-    // @LINE:53
+    // @LINE:65
     def getRegionsByCountry(country_id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/regions/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("country_id", country_id)))
     }
   
-    // @LINE:49
+    // @LINE:61
     def createLocality(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/localities")
     }
   
-    // @LINE:40
+    // @LINE:52
     def deleteRegion(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/regions/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
-    // @LINE:39
+    // @LINE:51
     def createRegion(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/regions")
     }
   
-    // @LINE:37
+    // @LINE:49
     def getRegions(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/regions")
     }
   
-    // @LINE:42
+    // @LINE:54
     def getCities(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/cities")
     }
   
-    // @LINE:44
+    // @LINE:56
     def createCity(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/cities")
     }
   
-    // @LINE:47
+    // @LINE:59
     def getLocalities(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/localities")
     }
   
-    // @LINE:55
+    // @LINE:67
     def getLocalitiesByCity(city_id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/localities/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("city_id", city_id)))
     }
   
-    // @LINE:45
+    // @LINE:57
     def deleteCity(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/cities/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
@@ -181,26 +181,26 @@ package controllers {
   
   }
 
-  // @LINE:20
+  // @LINE:32
   class ReverseAmenitiesController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:20
+    // @LINE:32
     def getAmenities(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/amenities")
     }
   
-    // @LINE:22
+    // @LINE:34
     def create(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "admin/amenities")
     }
   
-    // @LINE:23
+    // @LINE:35
     def delete(id:Long): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/amenities/delete/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
@@ -208,14 +208,14 @@ package controllers {
   
   }
 
-  // @LINE:30
+  // @LINE:42
   class ReverseUserController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:30
+    // @LINE:42
     def getOwners(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/landlords")
@@ -238,14 +238,53 @@ package controllers {
   
   }
 
-  // @LINE:78
+  // @LINE:12
+  class ReverseAuthController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:17
+    def postRegister(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "register")
+    }
+  
+    // @LINE:18
+    def logout(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "logout")
+    }
+  
+    // @LINE:12
+    def getLogin(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "login")
+    }
+  
+    // @LINE:15
+    def getRegister(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "register")
+    }
+  
+    // @LINE:14
+    def postLogin(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "login")
+    }
+  
+  }
+
+  // @LINE:90
   class ReversePropertyContactController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:78
+    // @LINE:90
     def getPropertyContacts(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "admin/property-contacts")

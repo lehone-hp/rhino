@@ -27,10 +27,27 @@ public class User extends Model {
 
 	public String password;
 
+	public Status status;
+
+	public Role role;
+
 	@OneToMany(cascade = CascadeType.ALL)
 	@JsonBackReference
 	public List<Property> properties;
 
 	public static final Finder<Long, User> find = new Finder<>(User.class);
 
+	public enum Status {
+		ACTIVE,
+		SUSPENDED,
+		CREATED,
+		VOIDED
+	}
+
+	public enum Role {
+		ADMIN,
+		USER
+	}
 }
+
+

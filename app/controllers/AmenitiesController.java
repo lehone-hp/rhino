@@ -7,12 +7,14 @@ import play.data.FormFactory;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import play.mvc.Security;
 import utils.StringUtils;
 import views.html.admin.amenities.amenities;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Security.Authenticated(Secured.class)
 public class AmenitiesController extends Controller {
 
 	private FormFactory formFactory;

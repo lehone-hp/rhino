@@ -16,6 +16,7 @@ import play.data.FormFactory;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
+import play.mvc.Security;
 
 import javax.inject.Inject;
 import java.io.File;
@@ -26,6 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+@Security.Authenticated(Secured.class)
 public class PropertyController extends Controller {
 
 	private FormFactory formFactory;
@@ -82,6 +84,7 @@ public class PropertyController extends Controller {
 			property.bathRooms = form.bathRooms;
 			property.parlors = form.parlors;
 			property.kitchens = form.kitchens;
+			property.status = Property.Status.PENDING;
 
 			if (form.features != null) {
 				for (Long i : form.features) {

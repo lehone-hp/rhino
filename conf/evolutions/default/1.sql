@@ -106,6 +106,10 @@ create table user (
   email                         varchar(255),
   phone                         varchar(255),
   password                      varchar(255),
+  status                        integer,
+  role                          integer,
+  constraint ck_user_status check ( status in (0,1,2,3)),
+  constraint ck_user_role check ( role in (0,1)),
   constraint pk_user primary key (id)
 );
 

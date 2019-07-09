@@ -111,11 +111,10 @@ public class Property extends Model {
 	public static Finder<Long, Property> find = new Finder<>(Property.class);
 
 	public String getImage() {
-		System.out.println(photos.size());
 		return (this.photos.size() > 0) ? this.photos.get(0).photo : "no-image.png";
 	}
 
-	enum Status {
+	public enum Status {
 		ACTIVE,
 		SOLD,
 		PENDING,

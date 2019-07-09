@@ -4,7 +4,7 @@
 		module="rhino_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190522104256"
+		publication="20190709083122"
 	>
 		<description>
 		rhino

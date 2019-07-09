@@ -4,7 +4,7 @@
 		module="rhino$sources"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20190522104316"
+		publication="20190708225147"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -92,6 +92,10 @@
 		</dependency>
 		<dependency org="com.google.j2objc" name="j2objc-annotations" rev="1.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="j2objc-annotations" type="src" ext="jar" conf="*" e:classifier="sources"/>
+			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="be.objectify" name="deadbolt-java_2.12" rev="2.6.1" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
+			<artifact name="deadbolt-java_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
 		<dependency org="io.jsonwebtoken" name="jjwt" rev="0.7.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master">
@@ -230,7 +234,7 @@
 			<artifact name="htmlunit-driver" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="com.typesafe.play" name="play-java-forms_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
+		<dependency org="com.typesafe.play" name="play-java-forms_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);compile-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*)" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
 			<artifact name="play-java-forms_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
@@ -294,7 +298,7 @@
 			<artifact name="commons-codec" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
+		<dependency org="com.typesafe.play" name="play-akka-http-server_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;compile-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test-internal->default,compile,runtime(*),master(compile),runtime,default(compile),compile(*),master;docs->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
 			<artifact name="play-akka-http-server_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
@@ -322,7 +326,7 @@
 			<artifact name="play-test_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>
-		<dependency org="com.typesafe.play" name="play-logback_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
+		<dependency org="com.typesafe.play" name="play-logback_2.12" rev="2.6.21" transitive="false" conf="compile->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);compile-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);runtime-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*);test-internal->default,compile,runtime,default(compile),master,runtime(*),master(compile),compile(*)" info.apiURL="https://www.playframework.com/documentation/2.6.21/api/scala/index.html">
 			<artifact name="play-logback_2.12" type="src" ext="jar" conf="*" e:classifier="sources"/>
 			<include name="*" type="*" ext="*" conf="" matcher="exact"/>
 		</dependency>

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Sun Jun 30 16:09:53 WAT 2019
+// @DATE:Tue Jul 09 13:46:49 WAT 2019
 
 package controllers;
 
@@ -15,6 +15,7 @@ public class routes {
   public static final controllers.ReverseAmenitiesController AmenitiesController = new controllers.ReverseAmenitiesController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseUserController UserController = new controllers.ReverseUserController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseHomeController HomeController = new controllers.ReverseHomeController(RoutesPrefix.byNamePrefix());
+  public static final controllers.ReverseAuthController AuthController = new controllers.ReverseAuthController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReversePropertyContactController PropertyContactController = new controllers.ReversePropertyContactController(RoutesPrefix.byNamePrefix());
 
   public static class javascript {
@@ -26,6 +27,7 @@ public class routes {
     public static final controllers.javascript.ReverseAmenitiesController AmenitiesController = new controllers.javascript.ReverseAmenitiesController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseUserController UserController = new controllers.javascript.ReverseUserController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseHomeController HomeController = new controllers.javascript.ReverseHomeController(RoutesPrefix.byNamePrefix());
+    public static final controllers.javascript.ReverseAuthController AuthController = new controllers.javascript.ReverseAuthController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReversePropertyContactController PropertyContactController = new controllers.javascript.ReversePropertyContactController(RoutesPrefix.byNamePrefix());
   }
 

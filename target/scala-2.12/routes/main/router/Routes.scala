@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Sun Jun 30 16:09:53 WAT 2019
+// @DATE:Tue Jul 09 13:46:49 WAT 2019
 
 package router
 
@@ -15,47 +15,51 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  HomeController_1: controllers.HomeController,
+  HomeController_2: controllers.HomeController,
   // @LINE:12
+  AuthController_1: controllers.AuthController,
+  // @LINE:24
   AdminController_0: controllers.AdminController,
-  // @LINE:20
-  AmenitiesController_4: controllers.AmenitiesController,
-  // @LINE:30
-  UserController_3: controllers.UserController,
-  // @LINE:37
-  LocationController_6: controllers.LocationController,
-  // @LINE:61
-  PropertyController_2: controllers.PropertyController,
-  // @LINE:78
-  PropertyContactController_7: controllers.PropertyContactController,
-  // @LINE:85
-  Assets_5: controllers.Assets,
+  // @LINE:32
+  AmenitiesController_5: controllers.AmenitiesController,
+  // @LINE:42
+  UserController_4: controllers.UserController,
+  // @LINE:49
+  LocationController_7: controllers.LocationController,
+  // @LINE:73
+  PropertyController_3: controllers.PropertyController,
+  // @LINE:90
+  PropertyContactController_8: controllers.PropertyContactController,
+  // @LINE:97
+  Assets_6: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    HomeController_1: controllers.HomeController,
+    HomeController_2: controllers.HomeController,
     // @LINE:12
+    AuthController_1: controllers.AuthController,
+    // @LINE:24
     AdminController_0: controllers.AdminController,
-    // @LINE:20
-    AmenitiesController_4: controllers.AmenitiesController,
-    // @LINE:30
-    UserController_3: controllers.UserController,
-    // @LINE:37
-    LocationController_6: controllers.LocationController,
-    // @LINE:61
-    PropertyController_2: controllers.PropertyController,
-    // @LINE:78
-    PropertyContactController_7: controllers.PropertyContactController,
-    // @LINE:85
-    Assets_5: controllers.Assets
-  ) = this(errorHandler, HomeController_1, AdminController_0, AmenitiesController_4, UserController_3, LocationController_6, PropertyController_2, PropertyContactController_7, Assets_5, "/")
+    // @LINE:32
+    AmenitiesController_5: controllers.AmenitiesController,
+    // @LINE:42
+    UserController_4: controllers.UserController,
+    // @LINE:49
+    LocationController_7: controllers.LocationController,
+    // @LINE:73
+    PropertyController_3: controllers.PropertyController,
+    // @LINE:90
+    PropertyContactController_8: controllers.PropertyContactController,
+    // @LINE:97
+    Assets_6: controllers.Assets
+  ) = this(errorHandler, HomeController_2, AuthController_1, AdminController_0, AmenitiesController_5, UserController_4, LocationController_7, PropertyController_3, PropertyContactController_8, Assets_6, "/")
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_1, AdminController_0, AmenitiesController_4, UserController_3, LocationController_6, PropertyController_2, PropertyContactController_7, Assets_5, prefix)
+    new Routes(errorHandler, HomeController_2, AuthController_1, AdminController_0, AmenitiesController_5, UserController_4, LocationController_7, PropertyController_3, PropertyContactController_8, Assets_6, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -64,7 +68,12 @@ class Routes(
 
   def documentation = List(
     ("""GET""", this.prefix, """controllers.HomeController.index"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/""", """controllers.AdminController.getDashboard"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.AuthController.getLogin"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.AuthController.postLogin"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.AuthController.getRegister"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """register""", """controllers.AuthController.postRegister"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.AuthController.logout"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin""", """controllers.AdminController.getDashboard"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/dashboard""", """controllers.AdminController.getDashboard"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/amenities""", """controllers.AmenitiesController.getAmenities"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """admin/amenities""", """controllers.AmenitiesController.create"""),
@@ -103,7 +112,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_1.index,
+    HomeController_2.index,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -117,10 +126,102 @@ class Routes(
   )
 
   // @LINE:12
-  private[this] lazy val controllers_AdminController_getDashboard1_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/")))
+  private[this] lazy val controllers_AuthController_getLogin1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
   )
-  private[this] lazy val controllers_AdminController_getDashboard1_invoker = createInvoker(
+  private[this] lazy val controllers_AuthController_getLogin1_invoker = createInvoker(
+    AuthController_1.getLogin,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AuthController",
+      "getLogin",
+      Nil,
+      "GET",
+      this.prefix + """login""",
+      """ =====================================================================================================================
+ Authentication Routes
+ =====================================================================================================================""",
+      Seq()
+    )
+  )
+
+  // @LINE:14
+  private[this] lazy val controllers_AuthController_postLogin2_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  )
+  private[this] lazy val controllers_AuthController_postLogin2_invoker = createInvoker(
+    AuthController_1.postLogin,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AuthController",
+      "postLogin",
+      Nil,
+      "POST",
+      this.prefix + """login""",
+      """""",
+      Seq("""nocsrf""")
+    )
+  )
+
+  // @LINE:15
+  private[this] lazy val controllers_AuthController_getRegister3_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("register")))
+  )
+  private[this] lazy val controllers_AuthController_getRegister3_invoker = createInvoker(
+    AuthController_1.getRegister,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AuthController",
+      "getRegister",
+      Nil,
+      "GET",
+      this.prefix + """register""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:17
+  private[this] lazy val controllers_AuthController_postRegister4_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("register")))
+  )
+  private[this] lazy val controllers_AuthController_postRegister4_invoker = createInvoker(
+    AuthController_1.postRegister,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AuthController",
+      "postRegister",
+      Nil,
+      "POST",
+      this.prefix + """register""",
+      """""",
+      Seq("""nocsrf""")
+    )
+  )
+
+  // @LINE:18
+  private[this] lazy val controllers_AuthController_logout5_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
+  )
+  private[this] lazy val controllers_AuthController_logout5_invoker = createInvoker(
+    AuthController_1.logout,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.AuthController",
+      "logout",
+      Nil,
+      "GET",
+      this.prefix + """logout""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:24
+  private[this] lazy val controllers_AdminController_getDashboard6_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin")))
+  )
+  private[this] lazy val controllers_AdminController_getDashboard6_invoker = createInvoker(
     AdminController_0.getDashboard,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -128,17 +229,17 @@ class Routes(
       "getDashboard",
       Nil,
       "GET",
-      this.prefix + """admin/""",
+      this.prefix + """admin""",
       """""",
       Seq()
     )
   )
 
-  // @LINE:13
-  private[this] lazy val controllers_AdminController_getDashboard2_route = Route("GET",
+  // @LINE:25
+  private[this] lazy val controllers_AdminController_getDashboard7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/dashboard")))
   )
-  private[this] lazy val controllers_AdminController_getDashboard2_invoker = createInvoker(
+  private[this] lazy val controllers_AdminController_getDashboard7_invoker = createInvoker(
     AdminController_0.getDashboard,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -152,12 +253,12 @@ class Routes(
     )
   )
 
-  // @LINE:20
-  private[this] lazy val controllers_AmenitiesController_getAmenities3_route = Route("GET",
+  // @LINE:32
+  private[this] lazy val controllers_AmenitiesController_getAmenities8_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/amenities")))
   )
-  private[this] lazy val controllers_AmenitiesController_getAmenities3_invoker = createInvoker(
-    AmenitiesController_4.getAmenities,
+  private[this] lazy val controllers_AmenitiesController_getAmenities8_invoker = createInvoker(
+    AmenitiesController_5.getAmenities,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AmenitiesController",
@@ -170,12 +271,12 @@ class Routes(
     )
   )
 
-  // @LINE:22
-  private[this] lazy val controllers_AmenitiesController_create4_route = Route("POST",
+  // @LINE:34
+  private[this] lazy val controllers_AmenitiesController_create9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/amenities")))
   )
-  private[this] lazy val controllers_AmenitiesController_create4_invoker = createInvoker(
-    AmenitiesController_4.create,
+  private[this] lazy val controllers_AmenitiesController_create9_invoker = createInvoker(
+    AmenitiesController_5.create,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AmenitiesController",
@@ -188,12 +289,12 @@ class Routes(
     )
   )
 
-  // @LINE:23
-  private[this] lazy val controllers_AmenitiesController_delete5_route = Route("GET",
+  // @LINE:35
+  private[this] lazy val controllers_AmenitiesController_delete10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/amenities/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_AmenitiesController_delete5_invoker = createInvoker(
-    AmenitiesController_4.delete(fakeValue[Long]),
+  private[this] lazy val controllers_AmenitiesController_delete10_invoker = createInvoker(
+    AmenitiesController_5.delete(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.AmenitiesController",
@@ -206,12 +307,12 @@ class Routes(
     )
   )
 
-  // @LINE:30
-  private[this] lazy val controllers_UserController_getOwners6_route = Route("GET",
+  // @LINE:42
+  private[this] lazy val controllers_UserController_getOwners11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/landlords")))
   )
-  private[this] lazy val controllers_UserController_getOwners6_invoker = createInvoker(
-    UserController_3.getOwners,
+  private[this] lazy val controllers_UserController_getOwners11_invoker = createInvoker(
+    UserController_4.getOwners,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.UserController",
@@ -224,12 +325,12 @@ class Routes(
     )
   )
 
-  // @LINE:37
-  private[this] lazy val controllers_LocationController_getRegions7_route = Route("GET",
+  // @LINE:49
+  private[this] lazy val controllers_LocationController_getRegions12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/regions")))
   )
-  private[this] lazy val controllers_LocationController_getRegions7_invoker = createInvoker(
-    LocationController_6.getRegions,
+  private[this] lazy val controllers_LocationController_getRegions12_invoker = createInvoker(
+    LocationController_7.getRegions,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -242,12 +343,12 @@ class Routes(
     )
   )
 
-  // @LINE:39
-  private[this] lazy val controllers_LocationController_createRegion8_route = Route("POST",
+  // @LINE:51
+  private[this] lazy val controllers_LocationController_createRegion13_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/regions")))
   )
-  private[this] lazy val controllers_LocationController_createRegion8_invoker = createInvoker(
-    LocationController_6.createRegion,
+  private[this] lazy val controllers_LocationController_createRegion13_invoker = createInvoker(
+    LocationController_7.createRegion,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -260,12 +361,12 @@ class Routes(
     )
   )
 
-  // @LINE:40
-  private[this] lazy val controllers_LocationController_deleteRegion9_route = Route("GET",
+  // @LINE:52
+  private[this] lazy val controllers_LocationController_deleteRegion14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/regions/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_deleteRegion9_invoker = createInvoker(
-    LocationController_6.deleteRegion(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_deleteRegion14_invoker = createInvoker(
+    LocationController_7.deleteRegion(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -278,12 +379,12 @@ class Routes(
     )
   )
 
-  // @LINE:42
-  private[this] lazy val controllers_LocationController_getCities10_route = Route("GET",
+  // @LINE:54
+  private[this] lazy val controllers_LocationController_getCities15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/cities")))
   )
-  private[this] lazy val controllers_LocationController_getCities10_invoker = createInvoker(
-    LocationController_6.getCities,
+  private[this] lazy val controllers_LocationController_getCities15_invoker = createInvoker(
+    LocationController_7.getCities,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -296,12 +397,12 @@ class Routes(
     )
   )
 
-  // @LINE:44
-  private[this] lazy val controllers_LocationController_createCity11_route = Route("POST",
+  // @LINE:56
+  private[this] lazy val controllers_LocationController_createCity16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/cities")))
   )
-  private[this] lazy val controllers_LocationController_createCity11_invoker = createInvoker(
-    LocationController_6.createCity,
+  private[this] lazy val controllers_LocationController_createCity16_invoker = createInvoker(
+    LocationController_7.createCity,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -314,12 +415,12 @@ class Routes(
     )
   )
 
-  // @LINE:45
-  private[this] lazy val controllers_LocationController_deleteCity12_route = Route("GET",
+  // @LINE:57
+  private[this] lazy val controllers_LocationController_deleteCity17_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/cities/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_deleteCity12_invoker = createInvoker(
-    LocationController_6.deleteCity(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_deleteCity17_invoker = createInvoker(
+    LocationController_7.deleteCity(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -332,12 +433,12 @@ class Routes(
     )
   )
 
-  // @LINE:47
-  private[this] lazy val controllers_LocationController_getLocalities13_route = Route("GET",
+  // @LINE:59
+  private[this] lazy val controllers_LocationController_getLocalities18_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/localities")))
   )
-  private[this] lazy val controllers_LocationController_getLocalities13_invoker = createInvoker(
-    LocationController_6.getLocalities,
+  private[this] lazy val controllers_LocationController_getLocalities18_invoker = createInvoker(
+    LocationController_7.getLocalities,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -350,12 +451,12 @@ class Routes(
     )
   )
 
-  // @LINE:49
-  private[this] lazy val controllers_LocationController_createLocality14_route = Route("POST",
+  // @LINE:61
+  private[this] lazy val controllers_LocationController_createLocality19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/localities")))
   )
-  private[this] lazy val controllers_LocationController_createLocality14_invoker = createInvoker(
-    LocationController_6.createLocality,
+  private[this] lazy val controllers_LocationController_createLocality19_invoker = createInvoker(
+    LocationController_7.createLocality,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -368,12 +469,12 @@ class Routes(
     )
   )
 
-  // @LINE:50
-  private[this] lazy val controllers_LocationController_deleteLocality15_route = Route("GET",
+  // @LINE:62
+  private[this] lazy val controllers_LocationController_deleteLocality20_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/localities/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_deleteLocality15_invoker = createInvoker(
-    LocationController_6.deleteLocality(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_deleteLocality20_invoker = createInvoker(
+    LocationController_7.deleteLocality(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -386,12 +487,12 @@ class Routes(
     )
   )
 
-  // @LINE:53
-  private[this] lazy val controllers_LocationController_getRegionsByCountry16_route = Route("GET",
+  // @LINE:65
+  private[this] lazy val controllers_LocationController_getRegionsByCountry21_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/regions/"), DynamicPart("country_id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_getRegionsByCountry16_invoker = createInvoker(
-    LocationController_6.getRegionsByCountry(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_getRegionsByCountry21_invoker = createInvoker(
+    LocationController_7.getRegionsByCountry(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -404,12 +505,12 @@ class Routes(
     )
   )
 
-  // @LINE:54
-  private[this] lazy val controllers_LocationController_getCitiesByRegion17_route = Route("GET",
+  // @LINE:66
+  private[this] lazy val controllers_LocationController_getCitiesByRegion22_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/cities/"), DynamicPart("region_id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_getCitiesByRegion17_invoker = createInvoker(
-    LocationController_6.getCitiesByRegion(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_getCitiesByRegion22_invoker = createInvoker(
+    LocationController_7.getCitiesByRegion(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -422,12 +523,12 @@ class Routes(
     )
   )
 
-  // @LINE:55
-  private[this] lazy val controllers_LocationController_getLocalitiesByCity18_route = Route("GET",
+  // @LINE:67
+  private[this] lazy val controllers_LocationController_getLocalitiesByCity23_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/localities/"), DynamicPart("city_id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_LocationController_getLocalitiesByCity18_invoker = createInvoker(
-    LocationController_6.getLocalitiesByCity(fakeValue[Long]),
+  private[this] lazy val controllers_LocationController_getLocalitiesByCity23_invoker = createInvoker(
+    LocationController_7.getLocalitiesByCity(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.LocationController",
@@ -440,12 +541,12 @@ class Routes(
     )
   )
 
-  // @LINE:61
-  private[this] lazy val controllers_PropertyController_getAllProperties19_route = Route("GET",
+  // @LINE:73
+  private[this] lazy val controllers_PropertyController_getAllProperties24_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties")))
   )
-  private[this] lazy val controllers_PropertyController_getAllProperties19_invoker = createInvoker(
-    PropertyController_2.getAllProperties,
+  private[this] lazy val controllers_PropertyController_getAllProperties24_invoker = createInvoker(
+    PropertyController_3.getAllProperties,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -458,12 +559,12 @@ class Routes(
     )
   )
 
-  // @LINE:62
-  private[this] lazy val controllers_PropertyController_getUpload20_route = Route("GET",
+  // @LINE:74
+  private[this] lazy val controllers_PropertyController_getUpload25_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/upload")))
   )
-  private[this] lazy val controllers_PropertyController_getUpload20_invoker = createInvoker(
-    PropertyController_2.getUpload,
+  private[this] lazy val controllers_PropertyController_getUpload25_invoker = createInvoker(
+    PropertyController_3.getUpload,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -476,12 +577,12 @@ class Routes(
     )
   )
 
-  // @LINE:63
-  private[this] lazy val controllers_PropertyController_getProperty21_route = Route("GET",
+  // @LINE:75
+  private[this] lazy val controllers_PropertyController_getProperty26_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PropertyController_getProperty21_invoker = createInvoker(
-    PropertyController_2.getProperty(fakeValue[Long]),
+  private[this] lazy val controllers_PropertyController_getProperty26_invoker = createInvoker(
+    PropertyController_3.getProperty(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -494,12 +595,12 @@ class Routes(
     )
   )
 
-  // @LINE:65
-  private[this] lazy val controllers_PropertyController_postUpload22_route = Route("POST",
+  // @LINE:77
+  private[this] lazy val controllers_PropertyController_postUpload27_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/properties/upload")))
   )
-  private[this] lazy val controllers_PropertyController_postUpload22_invoker = createInvoker(
-    PropertyController_2.postUpload,
+  private[this] lazy val controllers_PropertyController_postUpload27_invoker = createInvoker(
+    PropertyController_3.postUpload,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -512,12 +613,12 @@ class Routes(
     )
   )
 
-  // @LINE:67
-  private[this] lazy val controllers_PropertyController_getPropertyTypes23_route = Route("GET",
+  // @LINE:79
+  private[this] lazy val controllers_PropertyController_getPropertyTypes28_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_getPropertyTypes23_invoker = createInvoker(
-    PropertyController_2.getPropertyTypes,
+  private[this] lazy val controllers_PropertyController_getPropertyTypes28_invoker = createInvoker(
+    PropertyController_3.getPropertyTypes,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -530,12 +631,12 @@ class Routes(
     )
   )
 
-  // @LINE:69
-  private[this] lazy val controllers_PropertyController_createPropertyType24_route = Route("POST",
+  // @LINE:81
+  private[this] lazy val controllers_PropertyController_createPropertyType29_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types")))
   )
-  private[this] lazy val controllers_PropertyController_createPropertyType24_invoker = createInvoker(
-    PropertyController_2.createPropertyType,
+  private[this] lazy val controllers_PropertyController_createPropertyType29_invoker = createInvoker(
+    PropertyController_3.createPropertyType,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -548,12 +649,12 @@ class Routes(
     )
   )
 
-  // @LINE:70
-  private[this] lazy val controllers_PropertyController_deletePropertyType25_route = Route("GET",
+  // @LINE:82
+  private[this] lazy val controllers_PropertyController_deletePropertyType30_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/propert-types/delete/"), DynamicPart("id", """[^/]+""",true)))
   )
-  private[this] lazy val controllers_PropertyController_deletePropertyType25_invoker = createInvoker(
-    PropertyController_2.deletePropertyType(fakeValue[Long]),
+  private[this] lazy val controllers_PropertyController_deletePropertyType30_invoker = createInvoker(
+    PropertyController_3.deletePropertyType(fakeValue[Long]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyController",
@@ -566,12 +667,12 @@ class Routes(
     )
   )
 
-  // @LINE:78
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts26_route = Route("GET",
+  // @LINE:90
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts31_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("admin/property-contacts")))
   )
-  private[this] lazy val controllers_PropertyContactController_getPropertyContacts26_invoker = createInvoker(
-    PropertyContactController_7.getPropertyContacts,
+  private[this] lazy val controllers_PropertyContactController_getPropertyContacts31_invoker = createInvoker(
+    PropertyContactController_8.getPropertyContacts,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PropertyContactController",
@@ -584,12 +685,12 @@ class Routes(
     )
   )
 
-  // @LINE:85
-  private[this] lazy val controllers_Assets_versioned27_route = Route("GET",
+  // @LINE:97
+  private[this] lazy val controllers_Assets_versioned32_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned27_invoker = createInvoker(
-    Assets_5.versioned(fakeValue[String], fakeValue[Asset]),
+  private[this] lazy val controllers_Assets_versioned32_invoker = createInvoker(
+    Assets_6.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -608,169 +709,199 @@ class Routes(
     // @LINE:6
     case controllers_HomeController_index0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_1.index)
+        controllers_HomeController_index0_invoker.call(HomeController_2.index)
       }
   
     // @LINE:12
-    case controllers_AdminController_getDashboard1_route(params@_) =>
+    case controllers_AuthController_getLogin1_route(params@_) =>
       call { 
-        controllers_AdminController_getDashboard1_invoker.call(AdminController_0.getDashboard)
+        controllers_AuthController_getLogin1_invoker.call(AuthController_1.getLogin)
       }
   
-    // @LINE:13
-    case controllers_AdminController_getDashboard2_route(params@_) =>
+    // @LINE:14
+    case controllers_AuthController_postLogin2_route(params@_) =>
       call { 
-        controllers_AdminController_getDashboard2_invoker.call(AdminController_0.getDashboard)
+        controllers_AuthController_postLogin2_invoker.call(AuthController_1.postLogin)
       }
   
-    // @LINE:20
-    case controllers_AmenitiesController_getAmenities3_route(params@_) =>
+    // @LINE:15
+    case controllers_AuthController_getRegister3_route(params@_) =>
       call { 
-        controllers_AmenitiesController_getAmenities3_invoker.call(AmenitiesController_4.getAmenities)
+        controllers_AuthController_getRegister3_invoker.call(AuthController_1.getRegister)
       }
   
-    // @LINE:22
-    case controllers_AmenitiesController_create4_route(params@_) =>
+    // @LINE:17
+    case controllers_AuthController_postRegister4_route(params@_) =>
       call { 
-        controllers_AmenitiesController_create4_invoker.call(AmenitiesController_4.create)
+        controllers_AuthController_postRegister4_invoker.call(AuthController_1.postRegister)
       }
   
-    // @LINE:23
-    case controllers_AmenitiesController_delete5_route(params@_) =>
+    // @LINE:18
+    case controllers_AuthController_logout5_route(params@_) =>
+      call { 
+        controllers_AuthController_logout5_invoker.call(AuthController_1.logout)
+      }
+  
+    // @LINE:24
+    case controllers_AdminController_getDashboard6_route(params@_) =>
+      call { 
+        controllers_AdminController_getDashboard6_invoker.call(AdminController_0.getDashboard)
+      }
+  
+    // @LINE:25
+    case controllers_AdminController_getDashboard7_route(params@_) =>
+      call { 
+        controllers_AdminController_getDashboard7_invoker.call(AdminController_0.getDashboard)
+      }
+  
+    // @LINE:32
+    case controllers_AmenitiesController_getAmenities8_route(params@_) =>
+      call { 
+        controllers_AmenitiesController_getAmenities8_invoker.call(AmenitiesController_5.getAmenities)
+      }
+  
+    // @LINE:34
+    case controllers_AmenitiesController_create9_route(params@_) =>
+      call { 
+        controllers_AmenitiesController_create9_invoker.call(AmenitiesController_5.create)
+      }
+  
+    // @LINE:35
+    case controllers_AmenitiesController_delete10_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_AmenitiesController_delete5_invoker.call(AmenitiesController_4.delete(id))
-      }
-  
-    // @LINE:30
-    case controllers_UserController_getOwners6_route(params@_) =>
-      call { 
-        controllers_UserController_getOwners6_invoker.call(UserController_3.getOwners)
-      }
-  
-    // @LINE:37
-    case controllers_LocationController_getRegions7_route(params@_) =>
-      call { 
-        controllers_LocationController_getRegions7_invoker.call(LocationController_6.getRegions)
-      }
-  
-    // @LINE:39
-    case controllers_LocationController_createRegion8_route(params@_) =>
-      call { 
-        controllers_LocationController_createRegion8_invoker.call(LocationController_6.createRegion)
-      }
-  
-    // @LINE:40
-    case controllers_LocationController_deleteRegion9_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_LocationController_deleteRegion9_invoker.call(LocationController_6.deleteRegion(id))
+        controllers_AmenitiesController_delete10_invoker.call(AmenitiesController_5.delete(id))
       }
   
     // @LINE:42
-    case controllers_LocationController_getCities10_route(params@_) =>
+    case controllers_UserController_getOwners11_route(params@_) =>
       call { 
-        controllers_LocationController_getCities10_invoker.call(LocationController_6.getCities)
-      }
-  
-    // @LINE:44
-    case controllers_LocationController_createCity11_route(params@_) =>
-      call { 
-        controllers_LocationController_createCity11_invoker.call(LocationController_6.createCity)
-      }
-  
-    // @LINE:45
-    case controllers_LocationController_deleteCity12_route(params@_) =>
-      call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_LocationController_deleteCity12_invoker.call(LocationController_6.deleteCity(id))
-      }
-  
-    // @LINE:47
-    case controllers_LocationController_getLocalities13_route(params@_) =>
-      call { 
-        controllers_LocationController_getLocalities13_invoker.call(LocationController_6.getLocalities)
+        controllers_UserController_getOwners11_invoker.call(UserController_4.getOwners)
       }
   
     // @LINE:49
-    case controllers_LocationController_createLocality14_route(params@_) =>
+    case controllers_LocationController_getRegions12_route(params@_) =>
       call { 
-        controllers_LocationController_createLocality14_invoker.call(LocationController_6.createLocality)
+        controllers_LocationController_getRegions12_invoker.call(LocationController_7.getRegions)
       }
   
-    // @LINE:50
-    case controllers_LocationController_deleteLocality15_route(params@_) =>
+    // @LINE:51
+    case controllers_LocationController_createRegion13_route(params@_) =>
+      call { 
+        controllers_LocationController_createRegion13_invoker.call(LocationController_7.createRegion)
+      }
+  
+    // @LINE:52
+    case controllers_LocationController_deleteRegion14_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_LocationController_deleteLocality15_invoker.call(LocationController_6.deleteLocality(id))
-      }
-  
-    // @LINE:53
-    case controllers_LocationController_getRegionsByCountry16_route(params@_) =>
-      call(params.fromPath[Long]("country_id", None)) { (country_id) =>
-        controllers_LocationController_getRegionsByCountry16_invoker.call(LocationController_6.getRegionsByCountry(country_id))
+        controllers_LocationController_deleteRegion14_invoker.call(LocationController_7.deleteRegion(id))
       }
   
     // @LINE:54
-    case controllers_LocationController_getCitiesByRegion17_route(params@_) =>
-      call(params.fromPath[Long]("region_id", None)) { (region_id) =>
-        controllers_LocationController_getCitiesByRegion17_invoker.call(LocationController_6.getCitiesByRegion(region_id))
+    case controllers_LocationController_getCities15_route(params@_) =>
+      call { 
+        controllers_LocationController_getCities15_invoker.call(LocationController_7.getCities)
       }
   
-    // @LINE:55
-    case controllers_LocationController_getLocalitiesByCity18_route(params@_) =>
-      call(params.fromPath[Long]("city_id", None)) { (city_id) =>
-        controllers_LocationController_getLocalitiesByCity18_invoker.call(LocationController_6.getLocalitiesByCity(city_id))
+    // @LINE:56
+    case controllers_LocationController_createCity16_route(params@_) =>
+      call { 
+        controllers_LocationController_createCity16_invoker.call(LocationController_7.createCity)
+      }
+  
+    // @LINE:57
+    case controllers_LocationController_deleteCity17_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_LocationController_deleteCity17_invoker.call(LocationController_7.deleteCity(id))
+      }
+  
+    // @LINE:59
+    case controllers_LocationController_getLocalities18_route(params@_) =>
+      call { 
+        controllers_LocationController_getLocalities18_invoker.call(LocationController_7.getLocalities)
       }
   
     // @LINE:61
-    case controllers_PropertyController_getAllProperties19_route(params@_) =>
+    case controllers_LocationController_createLocality19_route(params@_) =>
       call { 
-        controllers_PropertyController_getAllProperties19_invoker.call(PropertyController_2.getAllProperties)
+        controllers_LocationController_createLocality19_invoker.call(LocationController_7.createLocality)
       }
   
     // @LINE:62
-    case controllers_PropertyController_getUpload20_route(params@_) =>
-      call { 
-        controllers_PropertyController_getUpload20_invoker.call(PropertyController_2.getUpload)
-      }
-  
-    // @LINE:63
-    case controllers_PropertyController_getProperty21_route(params@_) =>
+    case controllers_LocationController_deleteLocality20_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PropertyController_getProperty21_invoker.call(PropertyController_2.getProperty(id))
+        controllers_LocationController_deleteLocality20_invoker.call(LocationController_7.deleteLocality(id))
       }
   
     // @LINE:65
-    case controllers_PropertyController_postUpload22_route(params@_) =>
-      call { 
-        controllers_PropertyController_postUpload22_invoker.call(PropertyController_2.postUpload)
+    case controllers_LocationController_getRegionsByCountry21_route(params@_) =>
+      call(params.fromPath[Long]("country_id", None)) { (country_id) =>
+        controllers_LocationController_getRegionsByCountry21_invoker.call(LocationController_7.getRegionsByCountry(country_id))
+      }
+  
+    // @LINE:66
+    case controllers_LocationController_getCitiesByRegion22_route(params@_) =>
+      call(params.fromPath[Long]("region_id", None)) { (region_id) =>
+        controllers_LocationController_getCitiesByRegion22_invoker.call(LocationController_7.getCitiesByRegion(region_id))
       }
   
     // @LINE:67
-    case controllers_PropertyController_getPropertyTypes23_route(params@_) =>
-      call { 
-        controllers_PropertyController_getPropertyTypes23_invoker.call(PropertyController_2.getPropertyTypes)
+    case controllers_LocationController_getLocalitiesByCity23_route(params@_) =>
+      call(params.fromPath[Long]("city_id", None)) { (city_id) =>
+        controllers_LocationController_getLocalitiesByCity23_invoker.call(LocationController_7.getLocalitiesByCity(city_id))
       }
   
-    // @LINE:69
-    case controllers_PropertyController_createPropertyType24_route(params@_) =>
+    // @LINE:73
+    case controllers_PropertyController_getAllProperties24_route(params@_) =>
       call { 
-        controllers_PropertyController_createPropertyType24_invoker.call(PropertyController_2.createPropertyType)
+        controllers_PropertyController_getAllProperties24_invoker.call(PropertyController_3.getAllProperties)
       }
   
-    // @LINE:70
-    case controllers_PropertyController_deletePropertyType25_route(params@_) =>
+    // @LINE:74
+    case controllers_PropertyController_getUpload25_route(params@_) =>
+      call { 
+        controllers_PropertyController_getUpload25_invoker.call(PropertyController_3.getUpload)
+      }
+  
+    // @LINE:75
+    case controllers_PropertyController_getProperty26_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
-        controllers_PropertyController_deletePropertyType25_invoker.call(PropertyController_2.deletePropertyType(id))
+        controllers_PropertyController_getProperty26_invoker.call(PropertyController_3.getProperty(id))
       }
   
-    // @LINE:78
-    case controllers_PropertyContactController_getPropertyContacts26_route(params@_) =>
+    // @LINE:77
+    case controllers_PropertyController_postUpload27_route(params@_) =>
       call { 
-        controllers_PropertyContactController_getPropertyContacts26_invoker.call(PropertyContactController_7.getPropertyContacts)
+        controllers_PropertyController_postUpload27_invoker.call(PropertyController_3.postUpload)
       }
   
-    // @LINE:85
-    case controllers_Assets_versioned27_route(params@_) =>
+    // @LINE:79
+    case controllers_PropertyController_getPropertyTypes28_route(params@_) =>
+      call { 
+        controllers_PropertyController_getPropertyTypes28_invoker.call(PropertyController_3.getPropertyTypes)
+      }
+  
+    // @LINE:81
+    case controllers_PropertyController_createPropertyType29_route(params@_) =>
+      call { 
+        controllers_PropertyController_createPropertyType29_invoker.call(PropertyController_3.createPropertyType)
+      }
+  
+    // @LINE:82
+    case controllers_PropertyController_deletePropertyType30_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_PropertyController_deletePropertyType30_invoker.call(PropertyController_3.deletePropertyType(id))
+      }
+  
+    // @LINE:90
+    case controllers_PropertyContactController_getPropertyContacts31_route(params@_) =>
+      call { 
+        controllers_PropertyContactController_getPropertyContacts31_invoker.call(PropertyContactController_8.getPropertyContacts)
+      }
+  
+    // @LINE:97
+    case controllers_Assets_versioned32_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned27_invoker.call(Assets_5.versioned(path, file))
+        controllers_Assets_versioned32_invoker.call(Assets_6.versioned(path, file))
       }
   }
 }
