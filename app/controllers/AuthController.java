@@ -98,4 +98,12 @@ public class AuthController extends Controller {
 		return redirect(routes.HomeController.index());
 	}
 
+	public static Boolean isLoggedIn() {
+		return Secured.isLoggedIn(ctx());
+	}
+	
+	public static User getUser() {
+		return Secured.getUserInfo(ctx());
+	}
+	
 }

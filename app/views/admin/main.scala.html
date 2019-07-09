@@ -52,63 +52,74 @@
                             <a href="@routes.PropertyController.getAllProperties()"> <i class="menu-icon fa fa-home"></i>
                                 All Properties </a>
                         </li>
-                        <li @if(requestHeader.uri == routes.PropertyController.getUpload().toString) {
-                            class="active"}>
-                            <a href="@routes.PropertyController.getUpload()">
-                                <i class="menu-icon fa fa-upload"></i>Upload New </a>
-                        </li>
-                        <li @if(requestHeader.uri == routes.PropertyContactController.getPropertyContacts().toString) {
-                            class="active"}>
-                            <a href="@routes.PropertyContactController.getPropertyContacts()">
-                                <i class="menu-icon fa fa-envelope"></i>Contacts <span class="badge badge-danger">1</span></a>
-                        </li>
-                        <li @if(requestHeader.uri == routes.PropertyController.getPropertyTypes().toString) {
-                            class="active"}>
-                            <a href="@routes.PropertyController.getPropertyTypes()"> <i class="menu-icon fa fa-cogs"></i>
-                                Property Type </a>
-                        </li>
+
+                        @if(AuthController.getUser.role == User.Role.USER) {
+                            <li @if(requestHeader.uri == routes.PropertyController.getUpload().toString) {
+                                class="active"}>
+                                <a href="@routes.PropertyController.getUpload()">
+                                    <i class="menu-icon fa fa-upload"></i>Upload New </a>
+                            </li>
+                            <li @if(requestHeader.uri == routes.PropertyContactController.getPropertyContacts().toString) {
+                                class="active"}>
+                                <a href="@routes.PropertyContactController.getPropertyContacts()">
+                                    <i class="menu-icon fa fa-envelope"></i>Contacts <span class="badge badge-danger">
+                                    1</span></a>
+                            </li>
+                        }
+
+                        @if(AuthController.getUser.role == User.Role.ADMIN) {
+                            <li @if(requestHeader.uri == routes.PropertyController.getPropertyTypes().toString) {
+                                class="active"}>
+                                <a href="@routes.PropertyController.getPropertyTypes()"> <i class="menu-icon fa fa-cogs"></i>
+                                    Property Type </a>
+                            </li>
+                        }
 
 
-                        <li class="menu-title">Manage</li>
-                            <!-- /.menu-title -->
-                        <li @if(requestHeader.uri == routes.UserController.getOwners().toString) {
-                            class="active"}>
-                            <a href="@routes.UserController.getOwners()">
-                                <i class="menu-icon fa fa-users"></i>Landlords / Owners </a>
-                        </li>
-                        <li class="menu-item-has-children dropdown
+                        @if(AuthController.getUser.role == User.Role.ADMIN) {
+                            <li class="menu-title">Manage</li>
+                                <!-- /.menu-title -->
+                            <li @if(requestHeader.uri == routes.UserController.getOwners().toString) {
+                                class="active"}>
+                                <a href="@routes.UserController.getOwners()">
+                                    <i class="menu-icon fa fa-users"></i>Landlords / Owners </a>
+                            </li>
+                            <li class="menu-item-has-children dropdown
                                     @if(requestHeader.uri == routes.LocationController.getRegions().toString) {active}
-                            @if(requestHeader.uri == routes.LocationController.getCities().toString) {active}
-                            @if(requestHeader.uri == routes.LocationController.getLocalities().toString) {active}">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                                <i class="menu-icon fa fa-map-marker"></i>
-                                Location</a>
-                            <ul class="sub-menu children dropdown-menu">
-                                <li><i class="menu-icon fa fa-map-marker"></i>
-                                    <a href="@routes.LocationController.getRegions()">Region</a></li>
-                                <li><i class="menu-icon fa fa-map-marker"></i>
-                                    <a href="@routes.LocationController.getCities()">City</a></li>
-                                <li><i class="menu-icon fa fa-map-marker"></i>
-                                    <a href="@routes.LocationController.getLocalities()">Quarter/Locality</a></li>
-                            </ul>
-                        </li>
-                        <li @if(requestHeader.uri == routes.AmenitiesController.getAmenities().toString) {
-                            class="active"}>
-                            <a href="@routes.AmenitiesController.getAmenities()">
-                                <i class="menu-icon fa fa-th-list"></i>Amenities/Features </a>
-                        </li>
+                                @if(requestHeader.uri == routes.LocationController.getCities().toString) {active}
+                                @if(requestHeader.uri == routes.LocationController.getLocalities().toString) {active}">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="menu-icon fa fa-map-marker"></i>
+                                    Location</a>
+                                <ul class="sub-menu children dropdown-menu">
+                                    <li><i class="menu-icon fa fa-map-marker"></i>
+                                        <a href="@routes.LocationController.getRegions()">Region</a></li>
+                                    <li><i class="menu-icon fa fa-map-marker"></i>
+                                        <a href="@routes.LocationController.getCities()">City</a></li>
+                                    <li><i class="menu-icon fa fa-map-marker"></i>
+                                        <a href="@routes.LocationController.getLocalities()">Quarter/Locality</a></li>
+                                </ul>
+                            </li>
+                            <li @if(requestHeader.uri == routes.AmenitiesController.getAmenities().toString) {
+                                class="active"}>
+                                <a href="@routes.AmenitiesController.getAmenities()">
+                                    <i class="menu-icon fa fa-th-list"></i>Amenities/Features </a>
+                            </li>
+                        }
 
-                        <li class="menu-title">Authorization</li>
-                            <!-- /.menu-title -->
+                        <li class="menu-title">Account</li>
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Roles </a>
+                            <a href="#">
+                                <i class="menu-icon fa fa-user"></i>Profile </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-tag"></i>Permissions </a>
+                            <a href="#">
+                                <i class="menu-icon fa fa-lock"></i>Change Password </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="menu-icon fa fa-sign-out"></i>Logout </a>
+                            <a href="@routes.AuthController.logout()">
+                                <i class="menu-icon fa fa-sign-out"></i>Logout </a>
                         </li>
 
                     </ul>
@@ -134,16 +145,7 @@
                 </div>
                 <div class="top-right">
                     <div class="header-menu">
-                        <div class="header-left">
-                            @*
-                            <button class="search-trigger"><i class="fa fa-search"></i></button>
-                            <div class="form-inline">
-                            <form class="search-form">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
-                            <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
-                            </form>
-                            </div>
-                            *@
+                        <div class="header-left mt-3">
 
                         <div class="dropdown for-notification">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -175,11 +177,6 @@
 
                             <div class="user-menu dropdown-menu">
                                 <a class="nav-link" href="#"><i class="fa fa-user"></i>My Profile</a>
-
-                                <a class="nav-link" href="#"><i class="fa fa-bell-o"></i>Notifications <span class="count">
-                                    13</span></a>
-
-                                <a class="nav-link" href="#"><i class="fa fa-cog"></i>Settings</a>
 
                                 <a class="nav-link" href="@routes.AuthController.logout">
                                     <i class="fa fa-power-off"></i>Logout</a>
