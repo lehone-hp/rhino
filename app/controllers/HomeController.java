@@ -17,5 +17,25 @@ public class HomeController extends Controller {
     public Result index() {
         return ok(views.html.index.render());
     }
+	
+	public Result agents() {
+		return ok(views.html.agents.render());
+	}
+	
+	public Result getProperties() {
+        return ok(views.html.property.render());
+    }
+    
+    public Result getProperty(String slug) {
+        return ok(views.html.propertydetail.render());
+    }
+    
+    public Result aboutUs() {
+        return ok(views.html.about.render());
+    }
+    
+    public Result contactUs() {
+        return ok(views.html.contact.render());
+    }
 
 }

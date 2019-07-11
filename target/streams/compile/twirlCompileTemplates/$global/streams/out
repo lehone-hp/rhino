@@ -1,2 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m[Error] /home/lehone/repo/github/play/rhino/app/views/index.scala.html:424[0m
-[0m[[0m[31merror[0m] [0m[0m                    <div class="designation">Company Agent @<a href="#">Reki Housing</a></div>: Expected '}' but found '@'[0m
+[0m[[0m[31merror[0m] [0m[0m[Error] /home/lehone/repo/github/play/rhino/app/views/property.detail.scala.html:1[0m
+[0m[[0m[31merror[0m] [0m[0m@(): Invalid template name [property.detail.scala.html], filenames must only consist of alphanumeric characters and underscores or periods.[0m

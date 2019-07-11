@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Tue Jul 09 13:46:49 WAT 2019
+// @DATE:Thu Jul 11 10:38:52 WAT 2019
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -8,10 +8,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:6
+// @LINE:10
 package controllers.javascript {
 
-  // @LINE:97
+  // @LINE:105
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -19,7 +19,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:97
+    // @LINE:105
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -31,7 +31,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:24
+  // @LINE:32
   class ReverseAdminController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -39,7 +39,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:24
+    // @LINE:32
     def getDashboard: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AdminController.getDashboard",
       """
@@ -55,7 +55,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:73
+  // @LINE:81
   class ReversePropertyController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -63,7 +63,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:82
+    // @LINE:90
     def deletePropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.deletePropertyType",
       """
@@ -73,7 +73,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:73
+    // @LINE:81
     def getAllProperties: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getAllProperties",
       """
@@ -83,7 +83,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:81
+    // @LINE:89
     def createPropertyType: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.createPropertyType",
       """
@@ -93,7 +93,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:77
+    // @LINE:85
     def postUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.postUpload",
       """
@@ -103,7 +103,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:79
+    // @LINE:87
     def getPropertyTypes: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getPropertyTypes",
       """
@@ -113,7 +113,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:74
+    // @LINE:82
     def getUpload: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getUpload",
       """
@@ -123,7 +123,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:75
+    // @LINE:83
     def getProperty: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyController.getProperty",
       """
@@ -135,7 +135,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:49
+  // @LINE:57
   class ReverseLocationController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -143,7 +143,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:66
+    // @LINE:74
     def getCitiesByRegion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getCitiesByRegion",
       """
@@ -153,7 +153,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:62
+    // @LINE:70
     def deleteLocality: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.deleteLocality",
       """
@@ -163,7 +163,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:65
+    // @LINE:73
     def getRegionsByCountry: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getRegionsByCountry",
       """
@@ -173,7 +173,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:61
+    // @LINE:69
     def createLocality: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.createLocality",
       """
@@ -183,7 +183,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:52
+    // @LINE:60
     def deleteRegion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.deleteRegion",
       """
@@ -193,7 +193,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:51
+    // @LINE:59
     def createRegion: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.createRegion",
       """
@@ -203,7 +203,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:49
+    // @LINE:57
     def getRegions: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getRegions",
       """
@@ -213,7 +213,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:54
+    // @LINE:62
     def getCities: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getCities",
       """
@@ -223,7 +223,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:56
+    // @LINE:64
     def createCity: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.createCity",
       """
@@ -233,7 +233,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:59
+    // @LINE:67
     def getLocalities: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getLocalities",
       """
@@ -243,7 +243,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:67
+    // @LINE:75
     def getLocalitiesByCity: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.getLocalitiesByCity",
       """
@@ -253,7 +253,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:57
+    // @LINE:65
     def deleteCity: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.LocationController.deleteCity",
       """
@@ -265,7 +265,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:32
+  // @LINE:40
   class ReverseAmenitiesController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -273,7 +273,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:32
+    // @LINE:40
     def getAmenities: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AmenitiesController.getAmenities",
       """
@@ -283,7 +283,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:34
+    // @LINE:42
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AmenitiesController.create",
       """
@@ -293,7 +293,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:43
     def delete: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AmenitiesController.delete",
       """
@@ -305,7 +305,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:42
+  // @LINE:50
   class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -313,7 +313,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:42
+    // @LINE:50
     def getOwners: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.getOwners",
       """
@@ -325,7 +325,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:6
+  // @LINE:10
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -333,7 +333,47 @@ package controllers.javascript {
     }
 
   
-    // @LINE:6
+    // @LINE:15
+    def contactUs: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.contactUs",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "contact"})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def getProperties: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getProperties",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "properties"})
+        }
+      """
+    )
+  
+    // @LINE:13
+    def getProperty: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.getProperty",
+      """
+        function(slug0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "properties/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("slug", slug0))})
+        }
+      """
+    )
+  
+    // @LINE:11
+    def agents: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.agents",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "agents"})
+        }
+      """
+    )
+  
+    // @LINE:10
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
@@ -343,9 +383,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:14
+    def aboutUs: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.aboutUs",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "about"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:12
+  // @LINE:20
   class ReverseAuthController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -353,7 +403,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:25
     def postRegister: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.postRegister",
       """
@@ -363,7 +413,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:18
+    // @LINE:26
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.logout",
       """
@@ -373,7 +423,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:20
     def getLogin: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.getLogin",
       """
@@ -383,7 +433,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:15
+    // @LINE:23
     def getRegister: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.getRegister",
       """
@@ -393,7 +443,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:22
     def postLogin: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AuthController.postLogin",
       """
@@ -405,7 +455,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:90
+  // @LINE:98
   class ReversePropertyContactController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -413,7 +463,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:90
+    // @LINE:98
     def getPropertyContacts: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PropertyContactController.getPropertyContacts",
       """

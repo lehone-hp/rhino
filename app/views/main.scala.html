@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Lirive - Real Estate HTML Template | Homepage One</title>
+        <title>Green House | @title </title>
             <!-- Stylesheets -->
         <link href="@routes.Assets.versioned("app/css/bootstrap.css")" rel="stylesheet">
         <link href="@routes.Assets.versioned("app/css/style.css")" rel="stylesheet">
@@ -33,9 +33,9 @@
 
                             <!--Logo Box-->
                         <div class="logo-box">
-                            <div class="logo"><a href="@routes.HomeController.index()" title="Red Rhino">
+                            <div class="logo" style="margin-top: 2rem"><a href="@routes.HomeController.index()" title="Green House">
                                 <img src="@routes.Assets.versioned("app/images/logo.png")"
-                                    alt="Red Rhino" title="Red Rhino"></a></div>
+                                    alt="Green House" title="Green House"></a></div>
                         </div>
 
                             <!--Other Links-->
@@ -59,35 +59,25 @@
 
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
-                                        <li class="current dropdown"><a href="#">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Homepage One</a></li>
-                                                <li><a href="index-2.html">Homepage Two</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Agents</a>
-                                            <ul>
-                                                <li><a href="agents.html">Agents List</a></li>
-                                                <li><a href="agent-single.html">Agent Profile</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Property</a>
-                                            <ul>
-                                                <li><a href="properties-list-one.html">Property List I</a></li>
-                                                <li><a href="properties-list-two.html">Property List II</a></li>
-                                                <li><a href="properties-grid-one.html">Property Grid View I</a></li>
-                                                <li><a href="properties-grid-two.html">Property Gird View II</a></li>
-                                                <li><a href="property-details.html">Property Details</a></li>
-                                                <li><a href="add-property.html">Add Property</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="#">Blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li @if(requestHeader.uri == routes.HomeController.index().toString) {
+                                            class="current"}>
+                                            <a href="@routes.HomeController.index()">Home</a></li>
+
+                                        <li @if(requestHeader.uri == routes.HomeController.agents().toString) {
+                                            class="current"}>
+                                            <a href="@routes.HomeController.agents()">Agents</a></li>
+
+                                        <li @if(requestHeader.uri == routes.HomeController.getProperties().toString) {
+                                            class="current"}>
+                                            <a href="@routes.HomeController.getProperties()">Property</a></li>
+
+                                        <li @if(requestHeader.uri == routes.HomeController.aboutUs().toString) {
+                                            class="current"}>
+                                            <a href="@routes.HomeController.aboutUs()">About Us</a></li>
+
+                                        <li @if(requestHeader.uri == routes.HomeController.contactUs().toString) {
+                                            class="current"}>
+                                            <a href="@routes.HomeController.contactUs()">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav><!-- Main Menu End-->
