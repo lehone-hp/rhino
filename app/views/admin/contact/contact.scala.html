@@ -1,0 +1,70 @@
+@()
+
+@views.html.admin.main("User's Contact") {
+    @*======Header Style==========*@
+} {
+    @*======Content===============*@
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Contacts from Contact Page</strong>
+                </div>
+                <div class="card-body card-block">
+                    <form action="#" method="GET">
+                        <div class="row">
+                            <div class="form-group col-sm-8">
+                                <input type="text" class="form-control"
+                                    name="q" value=""
+                                    placeholder="Search by name, phone, email...">
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <select class="form-control" name="date">
+                                    <option value="">--Sort by date--</option>
+                                    <option value="1">Date Descending</option>
+                                    <option value="2">Date Ascending</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-2">
+                                <button class="btn btn-primary">Filter</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-unread">
+                                    <td>Lenya Hope</td>
+                                    <td>lehone4hope@@gmail.com</td>
+                                    <td>675230094</td>
+                                    <td>urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was...</td>
+                                    <td>28/03/19, 12:01 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Lenya Hope</td>
+                                    <td>lehone4hope@@gmail.com</td>
+                                    <td>675230094</td>
+                                    <td>urvived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was...</td>
+                                    <td>28/03/19, 12:01 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+} {
+    @*======Footer Script=========*@
+}

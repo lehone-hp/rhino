@@ -113,6 +113,24 @@ public class Property extends Model {
 	public String getImage() {
 		return (this.photos.size() > 0) ? this.photos.get(0).photo : "no-image.png";
 	}
+	
+	public String getAddress() {
+		String address = "";
+		if (this.locality != null) {
+			address += this.locality.name +", ";
+		}
+		if (this.city != null) {
+			address += this.city.name +", ";
+		}
+		if (this.region != null) {
+			address += this.region.name +", ";
+		}
+		if (this.country != null) {
+			address += this.country.name;
+		}
+		
+		return address;
+	}
 
 	public enum Status {
 		ACTIVE,

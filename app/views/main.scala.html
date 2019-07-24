@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Green House | @title </title>
+        <title>Green Home | @title </title>
             <!-- Stylesheets -->
         <link href="@routes.Assets.versioned("app/css/bootstrap.css")" rel="stylesheet">
         <link href="@routes.Assets.versioned("app/css/style.css")" rel="stylesheet">
@@ -33,15 +33,19 @@
 
                             <!--Logo Box-->
                         <div class="logo-box">
-                            <div class="logo" style="margin-top: 2rem"><a href="@routes.HomeController.index()" title="Green House">
+                            <div class="logo" style="margin-top: 2rem"><a href="@routes.HomeController.index()" title="Green Home">
                                 <img src="@routes.Assets.versioned("app/images/logo.png")"
-                                    alt="Green House" title="Green House"></a></div>
+                                    alt="Green Home" title="Green Home"></a></div>
                         </div>
 
                             <!--Other Links-->
                         <div class="other-links clearfix">
-                            <div class="link-box"><a href="@routes.AuthController.getLogin()">Sign In</a></div>
-                            <div class="link-box"><a href="@routes.AuthController.getRegister()">Register</a></div>
+                            @if(AuthController.isLoggedIn) {
+                                <div class="link-box"><a href="@routes.AdminController.getDashboard()">Dashboard</a></div>
+                            } else {
+                                <div class="link-box"><a href="@routes.AuthController.getLogin()">Sign In</a></div>
+                                <div class="link-box"><a href="@routes.AuthController.getRegister()">Register</a></div>
+                            }
                         </div>
 
                             <!--Nav Outer-->
@@ -107,11 +111,11 @@
                                         <div class="footer-widget about-widget">
                                             <div class="logo">
                                                 <a href="@routes.AuthController.getLogin()">
-                                                    <img src="@routes.Assets.versioned("app/images/footer-logo.png")" alt=""></a></div>
+                                                    <img src="@routes.Assets.versioned("app/images/logo.png")" alt=""></a></div>
                                             <div class="widget-content">
                                                 <div class="text">
                                                     Sed perspiciatis unde omnis iste natus elit voluptatem accusantium doloremque site laudantium totam rem aperiam.</div>
-                                                <div class="copyright-text">&copy; Lirive 2017, All Rights Reserved.</div>
+                                                <div class="copyright-text">&copy; GreenHome 2019, All Rights Reserved.</div>
 
                                             </div>
                                         </div>
@@ -123,10 +127,10 @@
                                             <h2>Quick Links</h2>
                                             <div class="widget-content">
                                                 <ul class="list">
-                                                    <li><a href="#">About</a></li>
-                                                    <li><a href="#">Site Map</a></li>
-                                                    <li><a href="#">Support Center</a></li>
-                                                    <li><a href="#">Terms & Conditions</a></li>
+                                                    <li><a href="@routes.HomeController.index()">Home</a></li>
+                                                    <li><a href="@routes.HomeController.getProperties()">Properties</a></li>
+                                                    <li><a href="@routes.HomeController.aboutUs()">About</a></li>
+                                                    <li><a href="@routes.HomeController.contactUs()">Support Center</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -148,9 +152,9 @@
                                                     Feel free to ger in touch with us via phone or send us a message.</div>
                                                 <ul class="contact-info">
                                                     <li><div class="icon"><span class="fa fa-envelope-o"></span></div> <a href="mailto:info@@lirive.com">
-                                                        info@@lirive.com</a></li>
+                                                        info@@greenhouse.com</a></li>
                                                     <li><div class="icon"><span class="fa fa-phone"></span></div>
-                                                        +880 111 234 4567</li>
+                                                        +237 671 256 210</li>
                                                 </ul>
                                             </div>
                                         </div>

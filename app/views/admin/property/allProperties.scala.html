@@ -50,7 +50,18 @@
                                             alt="Property Name">
                                         <h5 class="text-sm-center mt-2 mb-1">@property.name</h5>
                                         <h5 class="text-sm-center mt-2 mb-1">@property.price FCFA</h5>
-                                        <div class="location text-sm-center"><i class="fa fa-map-marker"></i> Molyko, Buea</div>
+                                        <div class="location text-sm-center"><i class="fa fa-map-marker"></i> @property.region.name, @property.city.name, @property.locality.name </div>
+
+                                        @if(property.status == Property.Status.PENDING) {
+                                            <span class="badge badge-warning badge-floating">pending</span>
+                                        }
+                                        @if(property.status == Property.Status.ACTIVE) {
+                                            <span class="badge badge-success badge-floating">approved</span>
+                                        }
+                                        @if(property.status == Property.Status.VOIDED) {
+                                            <span class="badge badge-success badge-floating">voided</span>
+                                        }
+
                                     </div>
                                     <hr>
                                     <div class="card-text text-sm-center">

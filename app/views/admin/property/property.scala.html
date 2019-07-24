@@ -27,7 +27,7 @@
 
                         </div>
                     } else {
-                        <h4 class="mt-0">No photos have been uploaded for this vehicle</h4>
+                        <h4 class="mt-0">No photos have been uploaded for this property</h4>
                     }
                     </div>
                 </div>
@@ -121,7 +121,17 @@
                         <h5>Basic Property Information</h5>
                     </div>
                     <div class="card-body">
-                        <h4 class="property-name">@property.name</h4>
+                        @if(property.status == Property.Status.PENDING) {
+                            <span class="badge badge-warning">pending</span>
+                        }
+                        @if(property.status == Property.Status.ACTIVE) {
+                            <span class="badge badge-success">approved</span>
+                        }
+                        @if(property.status == Property.Status.VOIDED) {
+                            <span class="badge badge-danger">voided</span>
+                        }
+
+                        <h4 class="property-name mt-1">@property.name</h4>
                         <h5 class="property-price"><span>Price:</span> XAF @property.price </h5>
                         <a href="#" class="btn btn-primary btn-sm">Edit</a>
                         <button class="btn btn-danger btn-sm">Delete</button>
@@ -134,6 +144,28 @@
 
                     </div>
                 </div>
+
+                @if(AuthController.getUserRole == User.Role.ADMIN) {
+                    <div class="card property-show">
+                        <div class="card-header">
+                            <h5>Update Property Status</h5>
+                        </div>
+                        <div class="card-body">
+                            @if(property.status == Property.Status.PENDING) {
+                                <a href="@routes.PropertyController.activateProperty(property.id)"
+                                class="btn btn-primary">Approve Property</a>
+                            }
+                            @if(property.status == Property.Status.ACTIVE) {
+                                <a href="@routes.PropertyController.voidProperty(property.id)"
+                                class="btn btn-danger">Void Property</a>
+                            }
+                            @if(property.status == Property.Status.VOIDED) {
+                                <a href="@routes.PropertyController.activateProperty(property.id)"
+                                class="btn btn-info">ReActivate Property</a>
+                            }
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     } else {

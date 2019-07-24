@@ -106,4 +106,7 @@ public class AuthController extends Controller {
 		return Secured.getUserInfo(ctx());
 	}
 	
+	public static User.Role getUserRole() {
+		return getUser().role;
+	}
 }

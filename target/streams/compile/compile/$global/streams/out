@@ -1,20 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:34:57: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("name").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:46:58: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("email").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:59:58: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("phone").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:34:57: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("name").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                        ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:46:58: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("email").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/register.scala.html:59:58: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                value="@regForm("phone").value()"[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/lehone/repo/github/play/rhino/app/views/auth/login.scala.html:32:64: method value in class Field is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                    value="@loginForm("email").value()"[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

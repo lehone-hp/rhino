@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/lehone/repo/github/play/rhino/conf/routes
-// @DATE:Thu Jul 11 10:38:52 WAT 2019
+// @DATE:Fri Jul 12 04:51:26 WAT 2019
 
 package controllers;
 
@@ -8,6 +8,7 @@ import router.RoutesPrefix;
 
 public class routes {
   
+  public static final controllers.ReverseContactController ContactController = new controllers.ReverseContactController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseAdminController AdminController = new controllers.ReverseAdminController(RoutesPrefix.byNamePrefix());
   public static final controllers.ReversePropertyController PropertyController = new controllers.ReversePropertyController(RoutesPrefix.byNamePrefix());
@@ -20,6 +21,7 @@ public class routes {
 
   public static class javascript {
     
+    public static final controllers.javascript.ReverseContactController ContactController = new controllers.javascript.ReverseContactController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseAdminController AdminController = new controllers.javascript.ReverseAdminController(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReversePropertyController PropertyController = new controllers.javascript.ReversePropertyController(RoutesPrefix.byNamePrefix());

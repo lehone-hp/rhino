@@ -5,6 +5,7 @@ import models.PriceType;
 import models.Property;
 import models.PropertyPhoto;
 import models.PropertyType;
+import models.User;
 import models.forms.StringForm;
 import models.forms.UploadPropertyForm;
 import models.location.City;
@@ -17,12 +18,14 @@ import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
 import play.mvc.Security;
+import utils.StringUtils;
 
 import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -38,10 +41,18 @@ public class PropertyController extends Controller {
 	}
 
 	public Result getAllProperties() {
-
-		System.out.println();
-
-		List<Property> properties = Property.find.all();
+		
+		List<Property> properties = new ArrayList<>();
+		
+		User user = AuthController.getUser();
+		if (user != null) {
+			if (user.role == User.Role.USER) {
+				properties = Property.find.query().where().eq("user", user).findList();
+			} else {
+				properties = Property.find.all();
+			}
+		}
+		
 		return ok(views.html.admin.property.allProperties.render(properties));
 	}
 
@@ -66,6 +77,7 @@ public class PropertyController extends Controller {
 
 			Property property = new Property();
 			property.name = form.title;
+			property.slug = StringUtils.slug(form.title+" "+new Date().getTime());
 			property.propertyType = PropertyType.find.byId(form.propertyType);
 			property.forSale = "sale".equals(form.status);
 			property.area = form.area;
@@ -85,6 +97,7 @@ public class PropertyController extends Controller {
 			property.parlors = form.parlors;
 			property.kitchens = form.kitchens;
 			property.status = Property.Status.PENDING;
+			property.user = AuthController.getUser();
 
 			if (form.features != null) {
 				for (Long i : form.features) {
@@ -139,6 +152,28 @@ public class PropertyController extends Controller {
 		return bFile;
 	}
 
+	public Result activateProperty(Long prop_id) {
+		Property property = Property.find.byId(prop_id);
+		if (property != null) {
+			property.status = Property.Status.ACTIVE;
+			property.save();
+		}
+		
+		flash("success", "Property has been approved");
+		return redirect(routes.PropertyController.getProperty(prop_id));
+	}
+	
+	public Result voidProperty(Long prop_id) {
+		Property property = Property.find.byId(prop_id);
+		if (property != null) {
+			property.status = Property.Status.VOIDED;
+			property.save();
+		}
+		
+		flash("success", "Property has been voided");
+		return redirect(routes.PropertyController.getProperty(prop_id));
+	}
+	
 	/*-----------------------------------------------
 	 | Property Type Actions
 	 ------------------------------------------------*/

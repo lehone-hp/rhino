@@ -14,7 +14,8 @@
             <div class="col-md-5">
                 <div class="card mt-5">
                     <div class="card-body border">
-                        <h3 class="card-title text-center">Sign Up</h3>
+                        <h3 class="card-title text-center">Register</h3>
+                        <p class="text-center">Create an account as GreenHome Agent</p>
 
                         @if(flash.containsKey("login_error")) {
                             <div class="sufee-alert alert with-close alert-danger alert-dismissible fade show">
@@ -87,7 +88,7 @@
                             </div>
 
                             <div class="form-group d-flex justify-content-between mt-3">
-                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <button type="submit" class="btn btn-success">Sign Up</button>
                                 <a href="@routes.AuthController.getLogin()">Already have an account?</a>
                             </div>
                         }

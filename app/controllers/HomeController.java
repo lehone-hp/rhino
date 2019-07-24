@@ -1,6 +1,8 @@
 package controllers;
 
+import models.Property;
 import play.mvc.*;
+import java.util.List;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -15,7 +17,10 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(views.html.index.render());
+    	List<Property> propertyList =
+			    Property.find.query().where().eq("status", Property.Status.ACTIVE).findList();
+    	
+    	return ok(views.html.index.render(propertyList));
     }
 	
 	public Result agents() {
@@ -23,11 +28,15 @@ public class HomeController extends Controller {
 	}
 	
 	public Result getProperties() {
-        return ok(views.html.property.render());
+		List<Property> propertyList =
+				Property.find.query().where().eq("status", Property.Status.ACTIVE).findList();
+		
+		return ok(views.html.property.render(propertyList));
     }
     
     public Result getProperty(String slug) {
-        return ok(views.html.propertydetail.render());
+    	Property property = Property.find.query().where().eq("slug", slug).findOne();
+        return ok(views.html.propertydetail.render(property));
     }
     
     public Result aboutUs() {

@@ -1,782 +1,619 @@
-@()
+@(properties: List[Property])
 
-@main("Welcome to Green House") {
-  <!-- HEADER STYLE -->
+    @main("Welcome to Green Home") {
+        <!-- HEADER STYLE -->
 
-}{
-  <!-- CONTENT -->
-  <!--Home Banner-->
-  <section class="home-banner with-border">
-      <!--Banner Slider-->
-    <div class="banner-slider-container">
-      <ul class="banner-slider owl-theme owl-carousel">
-        <li class="slide-item" style="background-image:url(@routes.Assets.versioned("app/images/main-slider/1.jpg"));"></li>
-        <li class="slide-item" style="background-image:url(@routes.Assets.versioned("app/images/main-slider/2.jpg"));"></li>
-        <li class="slide-item" style="background-image:url(@routes.Assets.versioned("app/images/main-slider/3.jpg"));"></li>
-      </ul>
-    </div>
+    } {
+        <!-- CONTENT -->
+        <!--Home Banner-->
+        <section class="home-banner with-border">
+                <!--Banner Slider-->
+            <div class="banner-slider-container">
+                <ul class="banner-slider owl-theme owl-carousel">
+                    <li class="slide-item" style="background-image: url(@routes.Assets.versioned("app/images/main-slider/1.jpg"));"></li>
+                    <li class="slide-item" style="background-image: url(@routes.Assets.versioned("app/images/main-slider/2.jpg"));"></li>
+                    <li class="slide-item" style="background-image: url(@routes.Assets.versioned("app/images/main-slider/3.jpg"));"></li>
+                </ul>
+            </div>
 
-      <!--Banner Search Form-->
-    <div class="banner-search-container">
-      <div class="form-outer">
-        <div class="banner-search-form">
-          <h1>Find your dream home just in a click</h1>
-          <div class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint.</div>
+                <!--Banner Search Form-->
+            <div class="banner-search-container">
+                <div class="form-outer">
+                    <div class="banner-search-form">
+                        <h1>Find your dream home just in a click</h1>
+                        <div class="text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint.</div>
 
-          <div class="banner-form-box">
-            <div class="default-form">
-              <form method="post" action="properties-list-one.html">
+                        <div class="banner-form-box">
+                            <div class="default-form">
+                                <form method="post" action="properties-list-one.html">
+                                    <div class="row clearfix">
+                                        <div class="form-group col-md-3 col-sm-4 col-xs-12">
+                                            <select class="custom-select-box">
+                                                <option>Property Type</option>
+                                                <option>Residential</option>
+                                                <option>Commercial</option>
+                                                <option>Agriculture</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-4 col-xs-12">
+                                            <input type="text" name="field-name" value="" placeholder="Enter Location" required>
+                                        </div>
+                                        <div class="form-group col-md-3 col-sm-4 col-xs-12">
+                                            <button type="submit" class="theme-btn btn-style-one">SEARCH</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+            <!--Property Listing-->
+        <section class="property-listing">
+            <div class="auto-container">
+                <div class="mixitup-gallery">
+                        <!--Heading-->
+                    <div class="sec-title centered">
+                        <h2>Latest Properties</h2>
+                    </div>
+
+                        <!--Filter-->
+                    <div class="filters gallery-filters">
+                        <ul class="filter-tabs filter-btns clearfix">
+                            <li class="active filter" data-role="button" data-filter="all">Any Type</li>
+                            <li class="filter" data-role="button" data-filter=".for-sell">For Sell</li>
+                            <li class="filter" data-role="button" data-filter=".for-rent">For Rent</li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-list row clearfix">
+
+                        @if(properties.size() > 0) {
+                            @for(property <- properties) {
+                                    <!--Default Property Box-->
+                                <div class="default-property-box mix all @if(property.forSale){for-sell}else{for-rent} col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><a href="@routes.HomeController.getProperty(property.slug)">
+                                                <img src="@routes.Assets.versioned("uploads/properties/"+property.getImage())" alt=""></a></figure>
+                                            <div class="property-price">XAF @property.price / <span class="text-capitalize">@property.priceType.name </span></div>
+                                        </div>
+                                        <div class="lower-content">
+                                            @*<div class="rating-review">
+                                                <div class="ratings"><span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span></div>
+                                                <div class="rev">(105 reviews)</div>
+                                            </div>*@
+                                            <div class="property-title">
+                                                <h3><a href="@routes.HomeController.getProperty(property.slug)">@property.name</a></h3>
+                                                <div class="location"><span class="fa fa-map-marker"></span>
+                                                        &nbsp; @property.getAddress()</div>
+                                            </div>
+                                            <div class="prop-info clearfix">
+                                                <div class="prop-for"><span class="for">@if(property.forSale){For sell}else{For rent}</span>
+                                                    <span class="area">@if(property.area != null){ @property.area sq ft.}</span>
+                                                </div>
+                                                <div class="link-box"><a href="@routes.HomeController.getProperty(property.slug)" class="theme-btn">
+                                                View Details <span class="fa fa-angle-right"></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="property-meta">
+                                                <ul class="clearfix">
+                                                    <li><span class="icon fa fa-user"></span> @property.user.name</li>
+                                                    <li><span class="icon fa fa-bed"></span> @property.bedRooms</li>
+                                                    <li><span class="icon fa fa-bathtub"></span> @property.bathRooms</li>
+                                                    <li><span class="icon fa fa-television"></span> @property.parlors</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        } else {
+                            <h2 class="text-center">No Property Uploaded</h2>
+                        }
+
+                    </div>
+                </div>
+                <div class="view-all"><a href="@routes.HomeController.getProperties()" class="theme-btn btn-style-two">
+                    Explore More Properties</a></div>
+
+            </div>
+        </section>
+
+
+            <!--Popular Places-->
+        <section class="popular-places">
+            <div class="auto-container">
+                    <!--Heading-->
+                <div class="sec-title centered">
+                    <h2>Popular Places</h2>
+                </div>
+
+                <div class="popular-place-carousel owl-theme owl-carousel">
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Buea</h4>
+                                    <div class="count">24 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-8.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Limbe</h4>
+                                    <div class="count">11 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-9.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Douala</h4>
+                                    <div class="count">20 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Kumba</h4>
+                                    <div class="count">24 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-8.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Tiko</h4>
+                                    <div class="count">11 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-9.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Kribi</h4>
+                                    <div class="count">20 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+                        <!--Popular Place Box-->
+                    <div class="popular-place-box">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
+                                <div class="overlay-content">
+                                    <h4>Mutengene</h4>
+                                    <div class="count">24 Properties</div>
+                                </div>
+                            </div>
+                            <a href="#" class="link-overlay"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+            <!--Team Section-->
+        <section class="team-section">
+            <div class="auto-container">
+                    <!--Heading-->
+                <div class="sec-title centered">
+                    <h2>Creative Agents</h2>
+                </div>
+
                 <div class="row clearfix">
-                  <div class="form-group col-md-3 col-sm-4 col-xs-12">
-                    <select class="custom-select-box">
-                      <option>Property Type</option>
-                      <option>Residential</option>
-                      <option>Commercial</option>
-                      <option>Agriculture</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-6 col-sm-4 col-xs-12">
-                    <input type="text" name="field-name" value="" placeholder="Enter Location" required>
-                  </div>
-                  <div class="form-group col-md-3 col-sm-4 col-xs-12">
-                    <button type="submit" class="theme-btn btn-style-one">SEARCH</button>
-                  </div>
+                        <!--Team Member-->
+                    <div class="team-member col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="clearfix">
+                                    <!--Image Column-->
+                                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                                    <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-1.jpg")" alt=""></a></figure>
+                                </div>
+                                    <!--Content Column-->
+                                <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="title">
+                                            <h3><a href="agent-single.html">Miraz Kadri</a></h3>
+                                            <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+                                        </div>
+                                        <div class="desc-text">
+                                            Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
+                                        <div class="social-links">
+                                            <ul class="clearfix">
+                                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!--Team Member-->
+                    <div class="team-member col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="clearfix">
+                                    <!--Image Column-->
+                                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                                    <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-2.jpg")" alt=""></a></figure>
+                                </div>
+                                    <!--Content Column-->
+                                <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="title">
+                                            <h3><a href="agent-single.html">Miraz Kadri</a></h3>
+                                            <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+                                        </div>
+                                        <div class="desc-text">
+                                            Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
+                                        <div class="social-links">
+                                            <ul class="clearfix">
+                                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!--Team Member-->
+                    <div class="team-member col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="clearfix">
+                                    <!--Image Column-->
+                                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                                    <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-3.jpg")" alt=""></a></figure>
+                                </div>
+                                    <!--Content Column-->
+                                <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="title">
+                                            <h3><a href="agent-single.html">Miraz Kadri</a></h3>
+                                            <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+                                        </div>
+                                        <div class="desc-text">
+                                            Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
+                                        <div class="social-links">
+                                            <ul class="clearfix">
+                                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!--Team Member-->
+                    <div class="team-member col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="clearfix">
+                                    <!--Image Column-->
+                                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                                    <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-4.jpg")" alt=""></a></figure>
+                                </div>
+                                    <!--Content Column-->
+                                <div class="content-column col-md-7 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="title">
+                                            <h3><a href="agent-single.html">Miraz Kadri</a></h3>
+                                            <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+                                        </div>
+                                        <div class="desc-text">
+                                            Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
+                                        <div class="social-links">
+                                            <ul class="clearfix">
+                                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </form>
+
+                <div class="view-all"><a href="@routes.HomeController.agents()" class="theme-btn btn-style-two">View More Agents</a></div>
+
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-    <!--Property Listing-->
-  <section class="property-listing">
-    <div class="auto-container">
-      <div class="mixitup-gallery">
-          <!--Heading-->
+        </section>
+        @*
+        <!--Testimonials Section-->
+        <section class="testimonials-style-one">
+        <div class="auto-container">
+        <!--Heading-->
         <div class="sec-title centered">
-          <h2>Latest Properties</h2>
-        </div>
-
-          <!--Filter-->
-        <div class="filters gallery-filters">
-          <ul class="filter-tabs filter-btns clearfix">
-            <li class="active filter" data-role="button" data-filter="all">Any Type</li>
-            <li class="filter" data-role="button" data-filter=".for-sell">For Sell</li>
-            <li class="filter" data-role="button" data-filter=".for-rent">For Rent</li>
-          </ul>
-        </div>
-
-        <div class="filter-list row clearfix">
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-1.jpg")" alt=""></a></figure>
-                <div class="property-price">$1,000 / Month</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-2.jpg")" alt=""></a></figure>
-                <div class="property-price">$27,000</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For sell</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-3.jpg")" alt=""></a></figure>
-                <div class="property-price">$15,00 / Month</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-4.jpg")" alt=""></a></figure>
-                <div class="property-price">$27,000</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For sell</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-rent col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-5.jpg")" alt=""></a></figure>
-                <div class="property-price">$800 / Month</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For rent</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-            <!--Default Property Box-->
-          <div class="default-property-box mix all for-sell col-lg-4 col-md-6 col-sm-6 col-xs-12">
-            <div class="inner-box">
-              <div class="image-box">
-                <figure class="image"><a href="property-details.html"><img src="@routes.Assets.versioned("app/images/resource/featured-image-6.jpg")" alt=""></a></figure>
-                <div class="property-price">$27,000</div>
-              </div>
-              <div class="lower-content">
-                <div class="rating-review">
-                  <div class="ratings"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                  <div class="rev">(105 reviews)</div>
-                </div>
-                <div class="property-title">
-                  <h3><a href="property-details.html">146 Woodhaven Preserve</a></h3>
-                  <div class="location"><span class="fa fa-map-marker"></span>&nbsp; 10037 North Douglas Hwy.</div>
-                </div>
-                <div class="prop-info clearfix">
-                  <div class="prop-for"><span class="for">For sell</span><span class="area">1600 sq ft.</span></div>
-                  <div class="link-box"><a href="property-details.html" class="theme-btn">View Details <span class="fa fa-angle-right"></span></a></div>
-                </div>
-                <div class="property-meta">
-                  <ul class="clearfix">
-                    <li><span class="icon fa fa-user"></span> Kelium Smith</li>
-                    <li><span class="icon fa fa-calendar"></span> 02 Days ago</li>
-                    <li class="options"><a href="#"><span class="fa fa-heart-o"></span></a> &ensp; <a href="#"><span class="fa fa-share-alt"></span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="view-all"><a href="properties-list-one.html" class="theme-btn btn-style-two">Explore More Properties</a></div>
-
-    </div>
-  </section>
-
-
-    <!--Popular Places-->
-  <section class="popular-places">
-    <div class="auto-container">
-        <!--Heading-->
-      <div class="sec-title centered">
-        <h2>Popular Places</h2>
-      </div>
-
-      <div class="popular-place-carousel owl-theme owl-carousel">
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Vegas</h4>
-                <div class="count">24 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-8.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>New York</h4>
-                <div class="count">11 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-9.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Angeles</h4>
-                <div class="count">20 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Vegas</h4>
-                <div class="count">24 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-8.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>New York</h4>
-                <div class="count">11 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-9.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Angeles</h4>
-                <div class="count">20 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-7.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Vegas</h4>
-                <div class="count">24 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-8.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>New York</h4>
-                <div class="count">11 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-          <!--Popular Place Box-->
-        <div class="popular-place-box">
-          <div class="inner-box">
-            <div class="image-box">
-              <figure class="image"><img src="@routes.Assets.versioned("app/images/resource/featured-image-9.jpg")" alt=""></figure>
-              <div class="overlay-content">
-                <h4>Las Angeles</h4>
-                <div class="count">20 Properties</div>
-              </div>
-            </div>
-            <a href="#" class="link-overlay"></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-    <!--Team Section-->
-  <section class="team-section">
-    <div class="auto-container">
-        <!--Heading-->
-      <div class="sec-title centered">
-        <h2>Creative Agents</h2>
-      </div>
-
-      <div class="row clearfix">
-          <!--Team Member-->
-        <div class="team-member col-md-6 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <div class="clearfix">
-                <!--Image Column-->
-              <div class="image-column col-md-5 col-sm-12 col-xs-12">
-                <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-1.jpg")" alt=""></a></figure>
-              </div>
-                <!--Content Column-->
-              <div class="content-column col-md-7 col-sm-12 col-xs-12">
-                <div class="inner">
-                  <div class="title">
-                    <h3><a href="agent-single.html">Miraz Kadri</a></h3>
-                    <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                  </div>
-                  <div class="desc-text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
-                  <div class="social-links">
-                    <ul class="clearfix">
-                      <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <!--Team Member-->
-        <div class="team-member col-md-6 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <div class="clearfix">
-                <!--Image Column-->
-              <div class="image-column col-md-5 col-sm-12 col-xs-12">
-                <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-2.jpg")" alt=""></a></figure>
-              </div>
-                <!--Content Column-->
-              <div class="content-column col-md-7 col-sm-12 col-xs-12">
-                <div class="inner">
-                  <div class="title">
-                    <h3><a href="agent-single.html">Miraz Kadri</a></h3>
-                    <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                  </div>
-                  <div class="desc-text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
-                  <div class="social-links">
-                    <ul class="clearfix">
-                      <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <!--Team Member-->
-        <div class="team-member col-md-6 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <div class="clearfix">
-                <!--Image Column-->
-              <div class="image-column col-md-5 col-sm-12 col-xs-12">
-                <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-3.jpg")" alt=""></a></figure>
-              </div>
-                <!--Content Column-->
-              <div class="content-column col-md-7 col-sm-12 col-xs-12">
-                <div class="inner">
-                  <div class="title">
-                    <h3><a href="agent-single.html">Miraz Kadri</a></h3>
-                    <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                  </div>
-                  <div class="desc-text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
-                  <div class="social-links">
-                    <ul class="clearfix">
-                      <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <!--Team Member-->
-        <div class="team-member col-md-6 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <div class="clearfix">
-                <!--Image Column-->
-              <div class="image-column col-md-5 col-sm-12 col-xs-12">
-                <figure class="image"><a href="agent-single.html"><img src="@routes.Assets.versioned("app/images/resource/team-image-4.jpg")" alt=""></a></figure>
-              </div>
-                <!--Content Column-->
-              <div class="content-column col-md-7 col-sm-12 col-xs-12">
-                <div class="inner">
-                  <div class="title">
-                    <h3><a href="agent-single.html">Miraz Kadri</a></h3>
-                    <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                  </div>
-                  <div class="desc-text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div>
-                  <div class="social-links">
-                    <ul class="clearfix">
-                      <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                      <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                      <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="view-all"><a href="agents.html" class="theme-btn btn-style-two">View More Agents</a></div>
-
-    </div>
-  </section>
-
-@*
-    <!--Testimonials Section-->
-  <section class="testimonials-style-one">
-    <div class="auto-container">
-        <!--Heading-->
-      <div class="sec-title centered">
         <h2>Testimonials</h2>
-      </div>
+        </div>
 
-      <div class="carousel-outer">
+        <div class="carousel-outer">
         <div class="testimonial-carousel-one single-item-carousel owl-theme owl-carousel">
-            <!--Slide Item-->
-          <div class="slide-item">
-            <div class="slide-inner">
-              <div class="clearfix">
-                  <!--Image Column-->
-                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                  <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
-                </div>
-                  <!--Content Column-->
-                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                  <div class="inner">
-                    <div class="icon"></div>
-                    <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
-                    <div class="author-info">
-                      <h4>Shah Paran</h4>
-                      <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--Slide Item-->
+        <div class="slide-item">
+        <div class="slide-inner">
+        <div class="clearfix">
+        <!--Image Column-->
+        <div class="image-column col-md-3 col-sm-12 col-xs-12">
+        <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
+        </div>
+        <!--Content Column-->
+        <div class="content-column col-md-9 col-sm-12 col-xs-12">
+        <div class="inner">
+        <div class="icon"></div>
+        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+        <div class="author-info">
+        <h4>Shah Paran</h4>
+        <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            <!--Slide Item-->
-          <div class="slide-item">
-            <div class="slide-inner">
-              <div class="clearfix">
-                  <!--Image Column-->
-                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                  <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
-                </div>
-                  <!--Content Column-->
-                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                  <div class="inner">
-                    <div class="icon"></div>
-                    <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
-                    <div class="author-info">
-                      <h4>Shah Paran</h4>
-                      <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--Slide Item-->
+        <div class="slide-item">
+        <div class="slide-inner">
+        <div class="clearfix">
+        <!--Image Column-->
+        <div class="image-column col-md-3 col-sm-12 col-xs-12">
+        <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
+        </div>
+        <!--Content Column-->
+        <div class="content-column col-md-9 col-sm-12 col-xs-12">
+        <div class="inner">
+        <div class="icon"></div>
+        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+        <div class="author-info">
+        <h4>Shah Paran</h4>
+        <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            <!--Slide Item-->
-          <div class="slide-item">
-            <div class="slide-inner">
-              <div class="clearfix">
-                  <!--Image Column-->
-                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                  <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
-                </div>
-                  <!--Content Column-->
-                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                  <div class="inner">
-                    <div class="icon"></div>
-                    <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
-                    <div class="author-info">
-                      <h4>Shah Paran</h4>
-                      <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--Slide Item-->
+        <div class="slide-item">
+        <div class="slide-inner">
+        <div class="clearfix">
+        <!--Image Column-->
+        <div class="image-column col-md-3 col-sm-12 col-xs-12">
+        <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
+        </div>
+        <!--Content Column-->
+        <div class="content-column col-md-9 col-sm-12 col-xs-12">
+        <div class="inner">
+        <div class="icon"></div>
+        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+        <div class="author-info">
+        <h4>Shah Paran</h4>
+        <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            <!--Slide Item-->
-          <div class="slide-item">
-            <div class="slide-inner">
-              <div class="clearfix">
-                  <!--Image Column-->
-                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                  <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
-                </div>
-                  <!--Content Column-->
-                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                  <div class="inner">
-                    <div class="icon"></div>
-                    <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
-                    <div class="author-info">
-                      <h4>Shah Paran</h4>
-                      <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--Slide Item-->
+        <div class="slide-item">
+        <div class="slide-inner">
+        <div class="clearfix">
+        <!--Image Column-->
+        <div class="image-column col-md-3 col-sm-12 col-xs-12">
+        <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
+        </div>
+        <!--Content Column-->
+        <div class="content-column col-md-9 col-sm-12 col-xs-12">
+        <div class="inner">
+        <div class="icon"></div>
+        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+        <div class="author-info">
+        <h4>Shah Paran</h4>
+        <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-            <!--Slide Item-->
-          <div class="slide-item">
-            <div class="slide-inner">
-              <div class="clearfix">
-                  <!--Image Column-->
-                <div class="image-column col-md-3 col-sm-12 col-xs-12">
-                  <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
-                </div>
-                  <!--Content Column-->
-                <div class="content-column col-md-9 col-sm-12 col-xs-12">
-                  <div class="inner">
-                    <div class="icon"></div>
-                    <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
-                    <div class="author-info">
-                      <h4>Shah Paran</h4>
-                      <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--Slide Item-->
+        <div class="slide-item">
+        <div class="slide-inner">
+        <div class="clearfix">
+        <!--Image Column-->
+        <div class="image-column col-md-3 col-sm-12 col-xs-12">
+        <figure class="image"><img src="app/images/resource/featured-image-10.jpg" alt=""></figure>
+        </div>
+        <!--Content Column-->
+        <div class="content-column col-md-9 col-sm-12 col-xs-12">
+        <div class="inner">
+        <div class="icon"></div>
+        <div class="slide-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</div>
+        <div class="author-info">
+        <h4>Shah Paran</h4>
+        <div class="designation">Company Agent @@<a href="#">Reki Housing</a></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
         </div>
-      </div>
+        </div>
 
-    </div>
-  </section>
+        </div>
+        </section>
 
-
-    <!--News Section-->
-  <section class="news-section">
-    <div class="auto-container">
+        <!--News Section-->
+        <section class="news-section">
+        <div class="auto-container">
         <!--Heading-->
-      <div class="sec-title centered">
-        <h2>Latest News</h2>
-      </div>
-
-      <div class="row clearfix">
-          <!--News Style One-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-1.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">
-                <ul>
-                  <li>Jonathan Doe  / 28 Feb 2017</li>
-                </ul>
-              </div>
-              <h3><a href="blog-details.html">Nemo enim ipsam voluptatem quia</a></h3>
-              <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
-            </div>
-          </div>
-        </div>
-          <!--News Style One-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-2.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">
-                <ul>
-                  <li>Jonathan Doe  / 28 Feb 2017</li>
-                </ul>
-              </div>
-              <h3><a href="blog-details.html">Voluptatem accusantium doloremque</a></h3>
-              <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
-            </div>
-          </div>
-        </div>
-          <!--News Style One-->
-        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
-          <div class="inner-box">
-            <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-3.jpg" alt=""></a></figure>
-            <div class="lower-content">
-              <div class="post-meta">
-                <ul>
-                  <li>Jonathan Doe  / 28 Feb 2017</li>
-                </ul>
-              </div>
-              <h3><a href="blog-details.html">Excepteur sint occaecat cupidatat</a></h3>
-              <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="view-all"><a href="blog.html" class="theme-btn btn-style-two">View More News</a></div>
-
-    </div>
-  </section>
-
-
-    <!--Sponsors Section-->
-  <section class="sponsors-section">
-    <div class="auto-container">
-        <!--Heading-->
-      <div class="sec-title centered">
-        <h2>Our Partners</h2>
-      </div>
-
-      <ul class="sponsors-carousel owl-theme owl-carousel">
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/1.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/2.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/3.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/4.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/1.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/2.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/3.png" alt=""></a></figure></li>
-        <li><figure class="image"><a href="#"><img src="app/images/sponsors/4.png" alt=""></a></figure></li>
-      </ul>
-
-    </div>
-  </section>
-
-    <!--NewsLetter Section-->
-  <section class="newsletter-section with-negative-margin">
-    <div class="auto-container">
-      <div class="outer-box">
-          <!--Heading-->
         <div class="sec-title centered">
-          <h2>Get Update</h2>
+        <h2>Latest News</h2>
         </div>
 
-          <!--Newsletter Style One-->
+        <div class="row clearfix">
+        <!--News Style One-->
+        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
+        <div class="inner-box">
+        <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-1.jpg" alt=""></a></figure>
+        <div class="lower-content">
+        <div class="post-meta">
+        <ul>
+        <li>Jonathan Doe / 28 Feb 2017</li>
+        </ul>
+        </div>
+        <h3><a href="blog-details.html">Nemo enim ipsam voluptatem quia</a></h3>
+        <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
+        </div>
+        </div>
+        </div>
+        <!--News Style One-->
+        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
+        <div class="inner-box">
+        <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-2.jpg" alt=""></a></figure>
+        <div class="lower-content">
+        <div class="post-meta">
+        <ul>
+        <li>Jonathan Doe / 28 Feb 2017</li>
+        </ul>
+        </div>
+        <h3><a href="blog-details.html">Voluptatem accusantium doloremque</a></h3>
+        <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
+        </div>
+        </div>
+        </div>
+        <!--News Style One-->
+        <div class="news-style-one col-md-4 col-sm-6 col-xs-12">
+        <div class="inner-box">
+        <figure class="image-box"><a href="blog-details.html"><img src="app/images/resource/blog-image-3.jpg" alt=""></a></figure>
+        <div class="lower-content">
+        <div class="post-meta">
+        <ul>
+        <li>Jonathan Doe / 28 Feb 2017</li>
+        </ul>
+        </div>
+        <h3><a href="blog-details.html">Excepteur sint occaecat cupidatat</a></h3>
+        <div class="text">Duis aute irure dolor in voccaecat reprehenderit in voluptate velit esse cillum dolore.</div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="view-all"><a href="blog.html" class="theme-btn btn-style-two">View More News</a></div>
+
+        </div>
+        </section>
+
+        <!--Sponsors Section-->
+        <section class="sponsors-section">
+        <div class="auto-container">
+        <!--Heading-->
+        <div class="sec-title centered">
+        <h2>Our Partners</h2>
+        </div>
+
+        <ul class="sponsors-carousel owl-theme owl-carousel">
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/1.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/2.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/3.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/4.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/1.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/2.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/3.png" alt=""></a></figure></li>
+        <li><figure class="image"><a href="#"><img src="app/images/sponsors/4.png" alt=""></a></figure></li>
+        </ul>
+
+        </div>
+        </section>
+
+        <!--NewsLetter Section-->
+        <section class="newsletter-section with-negative-margin">
+        <div class="auto-container">
+        <div class="outer-box">
+        <!--Heading-->
+        <div class="sec-title centered">
+        <h2>Get Update</h2>
+        </div>
+
+        <!--Newsletter Style One-->
         <div class="newsletter-style-one">
-          <div class="desc-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia est deserunt mollit anim laborum. Sed perspiciatis unde omnis iste natus.</div>
+        <div class="desc-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia est deserunt mollit anim laborum. Sed perspiciatis unde omnis iste natus.</div>
 
-          <form method="post" action="contact.html">
-            <div class="form-group">
-              <input type="email" name="text" value="" placeholder="Enter Your Email" required>
-              <button type="submit" class="theme-btn">Subscribe</button>
-            </div>
-          </form>
+        <form method="post" action="contact.html">
+        <div class="form-group">
+        <input type="email" name="text" value="" placeholder="Enter Your Email" required>
+        <button type="submit" class="theme-btn">Subscribe</button>
         </div>
-      </div>
-    </div>
-  </section>*@
+        </form>
+        </div>
+        </div>
+        </div>
+        </section>*@
+    } {
+            <!-- FOOTER SCRIPT -->
 
-}{
-  <!-- FOOTER SCRIPT -->
-
-}
+    }
